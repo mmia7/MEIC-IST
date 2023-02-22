@@ -1,0 +1,1673 @@
+Oct  7 14:47:50 ubuntu kernel: [    0.000000] Linux version 5.15.0-48-generic (buildd@lcy02-amd64-080) (gcc (Ubuntu 11.2.0-19ubuntu1) 11.2.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #54-Ubuntu SMP Fri Aug 26 13:26:29 UTC 2022 (Ubuntu 5.15.0-48.54-generic 5.15.53)
+Oct  7 14:47:50 ubuntu kernel: [    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.15.0-48-generic root=UUID=d2908b80-1631-4e9a-a168-f39b717d0fad ro quiet splash
+Oct  7 14:47:50 ubuntu kernel: [    0.000000] KERNEL supported cpus:
+Oct  7 14:47:50 ubuntu kernel: [    0.000000]   Intel GenuineIntel
+Oct  7 14:47:50 ubuntu kernel: [    0.000000]   AMD AuthenticAMD
+Oct  7 14:47:50 ubuntu kernel: [    0.000000]   Hygon HygonGenuine
+Oct  7 14:47:50 ubuntu kernel: [    0.000000]   Centaur CentaurHauls
+Oct  7 14:47:50 ubuntu kernel: [    0.000000]   zhaoxin   Shanghai  
+Oct  7 14:47:50 ubuntu kernel: [    0.000000] x86/fpu: x87 FPU will use FXSAVE
+Oct  7 14:47:50 ubuntu kernel: [    0.000000] signal: max sigframe size: 1440
+Oct  7 14:47:50 ubuntu kernel: [    0.000000] BIOS-provided physical RAM map:
+Oct  7 14:47:50 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+Oct  7 14:47:50 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+Oct  7 14:47:50 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+Oct  7 14:47:50 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000dffeffff] usable
+Oct  7 14:47:50 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x00000000dfff0000-0x00000000dfffffff] ACPI data
+Oct  7 14:47:50 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+Oct  7 14:47:50 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+Oct  7 14:47:50 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+Oct  7 14:47:50 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000011fffffff] usable
+Oct  7 14:47:50 ubuntu kernel: [    0.000000] NX (Execute Disable) protection: active
+Oct  7 14:47:50 ubuntu kernel: [    0.000000] SMBIOS 2.5 present.
+Oct  7 14:47:50 ubuntu kernel: [    0.000000] DMI: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Oct  7 14:47:50 ubuntu kernel: [    0.000000] Hypervisor detected: KVM
+Oct  7 14:47:50 ubuntu kernel: [    0.000000] kvm-clock: Using msrs 4b564d01 and 4b564d00
+Oct  7 14:47:50 ubuntu kernel: [    0.000000] kvm-clock: cpu 0, msr b2201001, primary cpu clock
+Oct  7 14:47:50 ubuntu kernel: [    0.000002] kvm-clock: using sched offset of 1337706303068 cycles
+Oct  7 14:47:50 ubuntu kernel: [    0.000005] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+Oct  7 14:47:50 ubuntu kernel: [    0.000008] tsc: Detected 3191.998 MHz processor
+Oct  7 14:47:50 ubuntu kernel: [    0.002624] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Oct  7 14:47:50 ubuntu kernel: [    0.002628] e820: remove [mem 0x000a0000-0x000fffff] usable
+Oct  7 14:47:50 ubuntu kernel: [    0.002634] last_pfn = 0x120000 max_arch_pfn = 0x400000000
+Oct  7 14:47:50 ubuntu kernel: [    0.002697] Disabled
+Oct  7 14:47:50 ubuntu kernel: [    0.002698] x86/PAT: MTRRs disabled, skipping PAT initialization too.
+Oct  7 14:47:50 ubuntu kernel: [    0.002703] CPU MTRRs all blank - virtualized system.
+Oct  7 14:47:50 ubuntu kernel: [    0.002705] x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WB  WT  UC- UC  
+Oct  7 14:47:50 ubuntu kernel: [    0.002707] last_pfn = 0xdfff0 max_arch_pfn = 0x400000000
+Oct  7 14:47:50 ubuntu kernel: [    0.002772] found SMP MP-table at [mem 0x0009fff0-0x0009ffff]
+Oct  7 14:47:50 ubuntu kernel: [    0.002986] RAMDISK: [mem 0x3072f000-0x3438efff]
+Oct  7 14:47:50 ubuntu kernel: [    0.002991] ACPI: Early table checksum verification disabled
+Oct  7 14:47:50 ubuntu kernel: [    0.002995] ACPI: RSDP 0x00000000000E0000 000024 (v02 VBOX  )
+Oct  7 14:47:50 ubuntu kernel: [    0.003000] ACPI: XSDT 0x00000000DFFF0030 00003C (v01 VBOX   VBOXXSDT 00000001 ASL  00000061)
+Oct  7 14:47:50 ubuntu kernel: [    0.003005] ACPI: FACP 0x00000000DFFF00F0 0000F4 (v04 VBOX   VBOXFACP 00000001 ASL  00000061)
+Oct  7 14:47:50 ubuntu kernel: [    0.003011] ACPI: DSDT 0x00000000DFFF0470 002325 (v02 VBOX   VBOXBIOS 00000002 INTL 20100528)
+Oct  7 14:47:50 ubuntu kernel: [    0.003015] ACPI: FACS 0x00000000DFFF0200 000040
+Oct  7 14:47:50 ubuntu kernel: [    0.003018] ACPI: FACS 0x00000000DFFF0200 000040
+Oct  7 14:47:50 ubuntu kernel: [    0.003022] ACPI: APIC 0x00000000DFFF0240 000054 (v02 VBOX   VBOXAPIC 00000001 ASL  00000061)
+Oct  7 14:47:50 ubuntu kernel: [    0.003025] ACPI: SSDT 0x00000000DFFF02A0 0001CC (v01 VBOX   VBOXCPUT 00000002 INTL 20100528)
+Oct  7 14:47:50 ubuntu kernel: [    0.003028] ACPI: Reserving FACP table memory at [mem 0xdfff00f0-0xdfff01e3]
+Oct  7 14:47:50 ubuntu kernel: [    0.003030] ACPI: Reserving DSDT table memory at [mem 0xdfff0470-0xdfff2794]
+Oct  7 14:47:50 ubuntu kernel: [    0.003030] ACPI: Reserving FACS table memory at [mem 0xdfff0200-0xdfff023f]
+Oct  7 14:47:50 ubuntu kernel: [    0.003031] ACPI: Reserving FACS table memory at [mem 0xdfff0200-0xdfff023f]
+Oct  7 14:47:50 ubuntu kernel: [    0.003032] ACPI: Reserving APIC table memory at [mem 0xdfff0240-0xdfff0293]
+Oct  7 14:47:50 ubuntu kernel: [    0.003033] ACPI: Reserving SSDT table memory at [mem 0xdfff02a0-0xdfff046b]
+Oct  7 14:47:50 ubuntu kernel: [    0.004716] No NUMA configuration found
+Oct  7 14:47:50 ubuntu kernel: [    0.004718] Faking a node at [mem 0x0000000000000000-0x000000011fffffff]
+Oct  7 14:47:50 ubuntu kernel: [    0.004727] NODE_DATA(0) allocated [mem 0x11ffd2000-0x11fffbfff]
+Oct  7 14:47:50 ubuntu kernel: [    0.005631] Zone ranges:
+Oct  7 14:47:50 ubuntu kernel: [    0.005632]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Oct  7 14:47:50 ubuntu kernel: [    0.005635]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Oct  7 14:47:50 ubuntu kernel: [    0.005636]   Normal   [mem 0x0000000100000000-0x000000011fffffff]
+Oct  7 14:47:50 ubuntu kernel: [    0.005637]   Device   empty
+Oct  7 14:47:50 ubuntu kernel: [    0.005638] Movable zone start for each node
+Oct  7 14:47:50 ubuntu kernel: [    0.005640] Early memory node ranges
+Oct  7 14:47:50 ubuntu kernel: [    0.005641]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+Oct  7 14:47:50 ubuntu kernel: [    0.005642]   node   0: [mem 0x0000000000100000-0x00000000dffeffff]
+Oct  7 14:47:50 ubuntu kernel: [    0.005643]   node   0: [mem 0x0000000100000000-0x000000011fffffff]
+Oct  7 14:47:50 ubuntu kernel: [    0.005644] Initmem setup node 0 [mem 0x0000000000001000-0x000000011fffffff]
+Oct  7 14:47:50 ubuntu kernel: [    0.005693] On node 0, zone DMA: 1 pages in unavailable ranges
+Oct  7 14:47:50 ubuntu kernel: [    0.006660] On node 0, zone DMA: 97 pages in unavailable ranges
+Oct  7 14:47:50 ubuntu kernel: [    0.031318] On node 0, zone Normal: 16 pages in unavailable ranges
+Oct  7 14:47:50 ubuntu kernel: [    0.034093] ACPI: PM-Timer IO Port: 0x4008
+Oct  7 14:47:50 ubuntu kernel: [    0.034482] IOAPIC[0]: apic_id 1, version 32, address 0xfec00000, GSI 0-23
+Oct  7 14:47:50 ubuntu kernel: [    0.034487] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Oct  7 14:47:50 ubuntu kernel: [    0.034489] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 low level)
+Oct  7 14:47:50 ubuntu kernel: [    0.034493] ACPI: Using ACPI (MADT) for SMP configuration information
+Oct  7 14:47:50 ubuntu kernel: [    0.034534] smpboot: Allowing 1 CPUs, 0 hotplug CPUs
+Oct  7 14:47:50 ubuntu kernel: [    0.034685] PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Oct  7 14:47:50 ubuntu kernel: [    0.034687] PM: hibernation: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+Oct  7 14:47:50 ubuntu kernel: [    0.034688] PM: hibernation: Registered nosave memory: [mem 0x000a0000-0x000effff]
+Oct  7 14:47:50 ubuntu kernel: [    0.034689] PM: hibernation: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+Oct  7 14:47:50 ubuntu kernel: [    0.034690] PM: hibernation: Registered nosave memory: [mem 0xdfff0000-0xdfffffff]
+Oct  7 14:47:50 ubuntu kernel: [    0.034691] PM: hibernation: Registered nosave memory: [mem 0xe0000000-0xfebfffff]
+Oct  7 14:47:50 ubuntu kernel: [    0.034691] PM: hibernation: Registered nosave memory: [mem 0xfec00000-0xfec00fff]
+Oct  7 14:47:50 ubuntu kernel: [    0.034692] PM: hibernation: Registered nosave memory: [mem 0xfec01000-0xfedfffff]
+Oct  7 14:47:50 ubuntu kernel: [    0.034693] PM: hibernation: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+Oct  7 14:47:50 ubuntu kernel: [    0.034693] PM: hibernation: Registered nosave memory: [mem 0xfee01000-0xfffbffff]
+Oct  7 14:47:50 ubuntu kernel: [    0.034694] PM: hibernation: Registered nosave memory: [mem 0xfffc0000-0xffffffff]
+Oct  7 14:47:50 ubuntu kernel: [    0.034695] [mem 0xe0000000-0xfebfffff] available for PCI devices
+Oct  7 14:47:50 ubuntu kernel: [    0.034696] Booting paravirtualized kernel on KVM
+Oct  7 14:47:50 ubuntu kernel: [    0.034698] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+Oct  7 14:47:50 ubuntu kernel: [    0.034704] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:1 nr_cpu_ids:1 nr_node_ids:1
+Oct  7 14:47:50 ubuntu kernel: [    0.035593] percpu: Embedded 60 pages/cpu s208896 r8192 d28672 u2097152
+Oct  7 14:47:50 ubuntu kernel: [    0.035623] pcpu-alloc: s208896 r8192 d28672 u2097152 alloc=1*2097152
+Oct  7 14:47:50 ubuntu kernel: [    0.035626] pcpu-alloc: [0] 0 
+Oct  7 14:47:50 ubuntu kernel: [    0.035764] kvm-guest: PV spinlocks disabled, single CPU
+Oct  7 14:47:50 ubuntu kernel: [    0.035772] Built 1 zonelists, mobility grouping on.  Total pages: 1031920
+Oct  7 14:47:50 ubuntu kernel: [    0.035774] Policy zone: Normal
+Oct  7 14:47:50 ubuntu kernel: [    0.035775] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.15.0-48-generic root=UUID=d2908b80-1631-4e9a-a168-f39b717d0fad ro quiet splash
+Oct  7 14:47:50 ubuntu kernel: [    0.035844] Unknown kernel command line parameters "splash BOOT_IMAGE=/boot/vmlinuz-5.15.0-48-generic", will be passed to user space.
+Oct  7 14:47:50 ubuntu kernel: [    0.036147] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+Oct  7 14:47:50 ubuntu kernel: [    0.036288] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+Oct  7 14:47:50 ubuntu kernel: [    0.036329] mem auto-init: stack:off, heap alloc:on, heap free:off
+Oct  7 14:47:50 ubuntu kernel: [    0.065373] Memory: 3947548K/4193848K available (16393K kernel code, 4377K rwdata, 10804K rodata, 3224K init, 6580K bss, 246040K reserved, 0K cma-reserved)
+Oct  7 14:47:50 ubuntu kernel: [    0.065613] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Oct  7 14:47:50 ubuntu kernel: [    0.065671] Kernel/User page tables isolation: enabled
+Oct  7 14:47:50 ubuntu kernel: [    0.065685] ftrace: allocating 50485 entries in 198 pages
+Oct  7 14:47:50 ubuntu kernel: [    0.091094] ftrace: allocated 198 pages with 4 groups
+Oct  7 14:47:50 ubuntu kernel: [    0.092358] rcu: Hierarchical RCU implementation.
+Oct  7 14:47:50 ubuntu kernel: [    0.092360] rcu: 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=1.
+Oct  7 14:47:50 ubuntu kernel: [    0.092362] 	Rude variant of Tasks RCU enabled.
+Oct  7 14:47:50 ubuntu kernel: [    0.092362] 	Tracing variant of Tasks RCU enabled.
+Oct  7 14:47:50 ubuntu kernel: [    0.092363] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+Oct  7 14:47:50 ubuntu kernel: [    0.092364] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+Oct  7 14:47:50 ubuntu kernel: [    0.097908] NR_IRQS: 524544, nr_irqs: 256, preallocated irqs: 16
+Oct  7 14:47:50 ubuntu kernel: [    0.165158] Console: colour VGA+ 80x25
+Oct  7 14:47:50 ubuntu kernel: [    0.165170] printk: console [tty0] enabled
+Oct  7 14:47:50 ubuntu kernel: [    0.165199] ACPI: Core revision 20210730
+Oct  7 14:47:50 ubuntu kernel: [    0.165490] APIC: Switch to symmetric I/O mode setup
+Oct  7 14:47:50 ubuntu kernel: [    0.188215] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+Oct  7 14:47:50 ubuntu kernel: [    0.188757] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x2e02c314322, max_idle_ns: 440795292111 ns
+Oct  7 14:47:50 ubuntu kernel: [    0.188766] Calibrating delay loop (skipped) preset value.. 6383.99 BogoMIPS (lpj=12767992)
+Oct  7 14:47:50 ubuntu kernel: [    0.188768] pid_max: default: 32768 minimum: 301
+Oct  7 14:47:50 ubuntu kernel: [    0.188814] LSM: Security Framework initializing
+Oct  7 14:47:50 ubuntu kernel: [    0.188825] landlock: Up and running.
+Oct  7 14:47:50 ubuntu kernel: [    0.188826] Yama: becoming mindful.
+Oct  7 14:47:50 ubuntu kernel: [    0.188971] AppArmor: AppArmor initialized
+Oct  7 14:47:50 ubuntu kernel: [    0.189017] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+Oct  7 14:47:50 ubuntu kernel: [    0.189026] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+Oct  7 14:47:50 ubuntu kernel: [    0.194687] Last level iTLB entries: 4KB 128, 2MB 8, 4MB 8
+Oct  7 14:47:50 ubuntu kernel: [    0.194701] Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+Oct  7 14:47:50 ubuntu kernel: [    0.194706] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Oct  7 14:47:50 ubuntu kernel: [    0.194708] Spectre V2 : Mitigation: Retpolines
+Oct  7 14:47:50 ubuntu kernel: [    0.194709] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+Oct  7 14:47:50 ubuntu kernel: [    0.194709] RETBleed: WARNING: Spectre v2 mitigation leaves CPU vulnerable to RETBleed attacks, data leaks possible!
+Oct  7 14:47:50 ubuntu kernel: [    0.196765] RETBleed: Vulnerable
+Oct  7 14:47:50 ubuntu kernel: [    0.196766] Speculative Store Bypass: Vulnerable
+Oct  7 14:47:50 ubuntu kernel: [    0.196773] MDS: Mitigation: Clear CPU buffers
+Oct  7 14:47:50 ubuntu kernel: [    0.196773] MMIO Stale Data: Mitigation: Clear CPU buffers
+Oct  7 14:47:50 ubuntu kernel: [    0.212762] Freeing SMP alternatives memory: 40K
+Oct  7 14:47:50 ubuntu kernel: [    0.324764] APIC calibration not consistent with PM-Timer: 103ms instead of 100ms
+Oct  7 14:47:50 ubuntu kernel: [    0.324767] APIC delta adjusted to PM-Timer: 6310861 (6500370)
+Oct  7 14:47:50 ubuntu kernel: [    0.325219] smpboot: CPU0: Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz (family: 0x6, model: 0x5e, stepping: 0x3)
+Oct  7 14:47:50 ubuntu kernel: [    0.326028] Performance Events: unsupported p6 CPU model 94 no PMU driver, software events only.
+Oct  7 14:47:50 ubuntu kernel: [    0.326091] rcu: Hierarchical SRCU implementation.
+Oct  7 14:47:50 ubuntu kernel: [    0.326861] NMI watchdog: Perf NMI watchdog permanently disabled
+Oct  7 14:47:50 ubuntu kernel: [    0.327043] smp: Bringing up secondary CPUs ...
+Oct  7 14:47:50 ubuntu kernel: [    0.327044] smp: Brought up 1 node, 1 CPU
+Oct  7 14:47:50 ubuntu kernel: [    0.327045] smpboot: Max logical packages: 1
+Oct  7 14:47:50 ubuntu kernel: [    0.327046] smpboot: Total of 1 processors activated (6383.99 BogoMIPS)
+Oct  7 14:47:50 ubuntu kernel: [    0.327406] devtmpfs: initialized
+Oct  7 14:47:50 ubuntu kernel: [    0.327445] x86/mm: Memory block size: 128MB
+Oct  7 14:47:50 ubuntu kernel: [    0.328238] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+Oct  7 14:47:50 ubuntu kernel: [    0.328243] futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+Oct  7 14:47:50 ubuntu kernel: [    0.328289] pinctrl core: initialized pinctrl subsystem
+Oct  7 14:47:50 ubuntu kernel: [    0.328766] PM: RTC time: 13:47:28, date: 2022-10-07
+Oct  7 14:47:50 ubuntu kernel: [    0.329064] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Oct  7 14:47:50 ubuntu kernel: [    0.331036] DMA: preallocated 512 KiB GFP_KERNEL pool for atomic allocations
+Oct  7 14:47:50 ubuntu kernel: [    0.331069] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Oct  7 14:47:50 ubuntu kernel: [    0.331101] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Oct  7 14:47:50 ubuntu kernel: [    0.331107] audit: initializing netlink subsys (disabled)
+Oct  7 14:47:50 ubuntu kernel: [    0.331474] thermal_sys: Registered thermal governor 'fair_share'
+Oct  7 14:47:50 ubuntu kernel: [    0.331475] thermal_sys: Registered thermal governor 'bang_bang'
+Oct  7 14:47:50 ubuntu kernel: [    0.331476] thermal_sys: Registered thermal governor 'step_wise'
+Oct  7 14:47:50 ubuntu kernel: [    0.331476] thermal_sys: Registered thermal governor 'user_space'
+Oct  7 14:47:50 ubuntu kernel: [    0.331477] thermal_sys: Registered thermal governor 'power_allocator'
+Oct  7 14:47:50 ubuntu kernel: [    0.331494] EISA bus registered
+Oct  7 14:47:50 ubuntu kernel: [    0.331495] cpuidle: using governor ladder
+Oct  7 14:47:50 ubuntu kernel: [    0.331496] cpuidle: using governor menu
+Oct  7 14:47:50 ubuntu kernel: [    0.331571] ACPI: bus type PCI registered
+Oct  7 14:47:50 ubuntu kernel: [    0.331573] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Oct  7 14:47:50 ubuntu kernel: [    0.331984] PCI: Using configuration type 1 for base access
+Oct  7 14:47:50 ubuntu kernel: [    0.332762] Kprobes globally optimized
+Oct  7 14:47:50 ubuntu kernel: [    0.332762] audit: type=2000 audit(1665151788.722:1): state=initialized audit_enabled=0 res=1
+Oct  7 14:47:50 ubuntu kernel: [    0.332762] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+Oct  7 14:47:50 ubuntu kernel: [    0.332762] ACPI: Added _OSI(Module Device)
+Oct  7 14:47:50 ubuntu kernel: [    0.332762] ACPI: Added _OSI(Processor Device)
+Oct  7 14:47:50 ubuntu kernel: [    0.332762] ACPI: Added _OSI(3.0 _SCP Extensions)
+Oct  7 14:47:50 ubuntu kernel: [    0.332762] ACPI: Added _OSI(Processor Aggregator Device)
+Oct  7 14:47:50 ubuntu kernel: [    0.332762] ACPI: Added _OSI(Linux-Dell-Video)
+Oct  7 14:47:50 ubuntu kernel: [    0.332762] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+Oct  7 14:47:50 ubuntu kernel: [    0.332762] ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+Oct  7 14:47:50 ubuntu kernel: [    0.333437] ACPI: 2 ACPI AML tables successfully acquired and loaded
+Oct  7 14:47:50 ubuntu kernel: [    0.338587] ACPI: Interpreter enabled
+Oct  7 14:47:50 ubuntu kernel: [    0.338595] ACPI: PM: (supports S0 S5)
+Oct  7 14:47:50 ubuntu kernel: [    0.338597] ACPI: Using IOAPIC for interrupt routing
+Oct  7 14:47:50 ubuntu kernel: [    0.339060] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Oct  7 14:47:50 ubuntu kernel: [    0.339061] PCI: Using E820 reservations for host bridge windows
+Oct  7 14:47:50 ubuntu kernel: [    0.339247] ACPI: Enabled 2 GPEs in block 00 to 07
+Oct  7 14:47:50 ubuntu kernel: [    0.350820] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Oct  7 14:47:50 ubuntu kernel: [    0.350826] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI EDR HPX-Type3]
+Oct  7 14:47:50 ubuntu kernel: [    0.351816] acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+Oct  7 14:47:50 ubuntu kernel: [    0.351824] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+Oct  7 14:47:50 ubuntu kernel: [    0.353237] PCI host bridge to bus 0000:00
+Oct  7 14:47:50 ubuntu kernel: [    0.353239] pci_bus 0000:00: root bus resource [bus 00-ff]
+Oct  7 14:47:50 ubuntu kernel: [    0.353241] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Oct  7 14:47:50 ubuntu kernel: [    0.353242] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Oct  7 14:47:50 ubuntu kernel: [    0.353244] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Oct  7 14:47:50 ubuntu kernel: [    0.353245] pci_bus 0000:00: root bus resource [mem 0xe0000000-0xfdffffff window]
+Oct  7 14:47:50 ubuntu kernel: [    0.354298] pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+Oct  7 14:47:50 ubuntu kernel: [    0.363184] pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+Oct  7 14:47:50 ubuntu kernel: [    0.366759] pci 0000:00:01.1: [8086:7111] type 00 class 0x01018a
+Oct  7 14:47:50 ubuntu kernel: [    0.368884] pci 0000:00:01.1: reg 0x20: [io  0xd000-0xd00f]
+Oct  7 14:47:50 ubuntu kernel: [    0.369552] pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+Oct  7 14:47:50 ubuntu kernel: [    0.369554] pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+Oct  7 14:47:50 ubuntu kernel: [    0.369555] pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+Oct  7 14:47:50 ubuntu kernel: [    0.369556] pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+Oct  7 14:47:50 ubuntu kernel: [    0.377053] pci 0000:00:02.0: [15ad:0405] type 00 class 0x030000
+Oct  7 14:47:50 ubuntu kernel: [    0.378858] pci 0000:00:02.0: reg 0x10: [io  0xd010-0xd01f]
+Oct  7 14:47:50 ubuntu kernel: [    0.380081] pci 0000:00:02.0: reg 0x14: [mem 0xe0000000-0xe0ffffff pref]
+Oct  7 14:47:50 ubuntu kernel: [    0.381174] pci 0000:00:02.0: reg 0x18: [mem 0xf0000000-0xf01fffff]
+Oct  7 14:47:50 ubuntu kernel: [    0.385404] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+Oct  7 14:47:50 ubuntu kernel: [    0.392957] pci 0000:00:03.0: [8086:100e] type 00 class 0x020000
+Oct  7 14:47:50 ubuntu kernel: [    0.393523] pci 0000:00:03.0: reg 0x10: [mem 0xf0200000-0xf021ffff]
+Oct  7 14:47:50 ubuntu kernel: [    0.394183] pci 0000:00:03.0: reg 0x18: [io  0xd020-0xd027]
+Oct  7 14:47:50 ubuntu kernel: [    0.402854] pci 0000:00:04.0: [80ee:cafe] type 00 class 0x088000
+Oct  7 14:47:50 ubuntu kernel: [    0.403713] pci 0000:00:04.0: reg 0x10: [io  0xd040-0xd05f]
+Oct  7 14:47:50 ubuntu kernel: [    0.404248] pci 0000:00:04.0: reg 0x14: [mem 0xf0400000-0xf07fffff]
+Oct  7 14:47:50 ubuntu kernel: [    0.405045] pci 0000:00:04.0: reg 0x18: [mem 0xf0800000-0xf0803fff pref]
+Oct  7 14:47:50 ubuntu kernel: [    0.413817] pci 0000:00:05.0: [8086:2415] type 00 class 0x040100
+Oct  7 14:47:50 ubuntu kernel: [    0.414366] pci 0000:00:05.0: reg 0x10: [io  0xd100-0xd1ff]
+Oct  7 14:47:50 ubuntu kernel: [    0.414641] pci 0000:00:05.0: reg 0x14: [io  0xd200-0xd23f]
+Oct  7 14:47:50 ubuntu kernel: [    0.422534] pci 0000:00:06.0: [106b:003f] type 00 class 0x0c0310
+Oct  7 14:47:50 ubuntu kernel: [    0.423105] pci 0000:00:06.0: reg 0x10: [mem 0xf0804000-0xf0804fff]
+Oct  7 14:47:50 ubuntu kernel: [    0.432367] pci 0000:00:07.0: [8086:7113] type 00 class 0x068000
+Oct  7 14:47:50 ubuntu kernel: [    0.434429] pci 0000:00:07.0: quirk: [io  0x4000-0x403f] claimed by PIIX4 ACPI
+Oct  7 14:47:50 ubuntu kernel: [    0.434471] pci 0000:00:07.0: quirk: [io  0x4100-0x410f] claimed by PIIX4 SMB
+Oct  7 14:47:50 ubuntu kernel: [    0.469173] pci 0000:00:0d.0: [8086:2829] type 00 class 0x010601
+Oct  7 14:47:50 ubuntu kernel: [    0.469780] pci 0000:00:0d.0: reg 0x10: [io  0xd240-0xd247]
+Oct  7 14:47:50 ubuntu kernel: [    0.470090] pci 0000:00:0d.0: reg 0x14: [io  0xd248-0xd24b]
+Oct  7 14:47:50 ubuntu kernel: [    0.470378] pci 0000:00:0d.0: reg 0x18: [io  0xd250-0xd257]
+Oct  7 14:47:50 ubuntu kernel: [    0.470752] pci 0000:00:0d.0: reg 0x1c: [io  0xd258-0xd25b]
+Oct  7 14:47:50 ubuntu kernel: [    0.471107] pci 0000:00:0d.0: reg 0x20: [io  0xd260-0xd26f]
+Oct  7 14:47:50 ubuntu kernel: [    0.471394] pci 0000:00:0d.0: reg 0x24: [mem 0xf0806000-0xf0807fff]
+Oct  7 14:47:50 ubuntu kernel: [    0.582079] ACPI: PCI: Interrupt link LNKA configured for IRQ 11
+Oct  7 14:47:50 ubuntu kernel: [    0.582839] ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+Oct  7 14:47:50 ubuntu kernel: [    0.583137] ACPI: PCI: Interrupt link LNKC configured for IRQ 9
+Oct  7 14:47:50 ubuntu kernel: [    0.583365] ACPI: PCI: Interrupt link LNKD configured for IRQ 11
+Oct  7 14:47:50 ubuntu kernel: [    0.583705] iommu: Default domain type: Translated 
+Oct  7 14:47:50 ubuntu kernel: [    0.583707] iommu: DMA domain TLB invalidation policy: lazy mode 
+Oct  7 14:47:50 ubuntu kernel: [    0.583981] SCSI subsystem initialized
+Oct  7 14:47:50 ubuntu kernel: [    0.584026] libata version 3.00 loaded.
+Oct  7 14:47:50 ubuntu kernel: [    0.584111] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+Oct  7 14:47:50 ubuntu kernel: [    0.584113] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Oct  7 14:47:50 ubuntu kernel: [    0.584116] pci 0000:00:02.0: vgaarb: bridge control possible
+Oct  7 14:47:50 ubuntu kernel: [    0.584117] vgaarb: loaded
+Oct  7 14:47:50 ubuntu kernel: [    0.584153] ACPI: bus type USB registered
+Oct  7 14:47:50 ubuntu kernel: [    0.584183] usbcore: registered new interface driver usbfs
+Oct  7 14:47:50 ubuntu kernel: [    0.584190] usbcore: registered new interface driver hub
+Oct  7 14:47:50 ubuntu kernel: [    0.584193] usbcore: registered new device driver usb
+Oct  7 14:47:50 ubuntu kernel: [    0.584226] pps_core: LinuxPPS API ver. 1 registered
+Oct  7 14:47:50 ubuntu kernel: [    0.584227] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Oct  7 14:47:50 ubuntu kernel: [    0.584229] PTP clock support registered
+Oct  7 14:47:50 ubuntu kernel: [    0.584322] EDAC MC: Ver: 3.0.0
+Oct  7 14:47:50 ubuntu kernel: [    0.586031] NetLabel: Initializing
+Oct  7 14:47:50 ubuntu kernel: [    0.586032] NetLabel:  domain hash size = 128
+Oct  7 14:47:50 ubuntu kernel: [    0.586033] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Oct  7 14:47:50 ubuntu kernel: [    0.586050] NetLabel:  unlabeled traffic allowed by default
+Oct  7 14:47:50 ubuntu kernel: [    0.586093] PCI: Using ACPI for IRQ routing
+Oct  7 14:47:50 ubuntu kernel: [    0.586095] PCI: pci_cache_line_size set to 64 bytes
+Oct  7 14:47:50 ubuntu kernel: [    0.587013] e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+Oct  7 14:47:50 ubuntu kernel: [    0.587015] e820: reserve RAM buffer [mem 0xdfff0000-0xdfffffff]
+Oct  7 14:47:50 ubuntu kernel: [    0.588394] clocksource: Switched to clocksource kvm-clock
+Oct  7 14:47:50 ubuntu kernel: [    0.632919] VFS: Disk quotas dquot_6.6.0
+Oct  7 14:47:50 ubuntu kernel: [    0.632919] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Oct  7 14:47:50 ubuntu kernel: [    0.632919] AppArmor: AppArmor Filesystem Enabled
+Oct  7 14:47:50 ubuntu kernel: [    0.632919] pnp: PnP ACPI init
+Oct  7 14:47:50 ubuntu kernel: [    0.646351] pnp: PnP ACPI: found 2 devices
+Oct  7 14:47:50 ubuntu kernel: [    0.653446] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Oct  7 14:47:50 ubuntu kernel: [    0.653508] NET: Registered PF_INET protocol family
+Oct  7 14:47:50 ubuntu kernel: [    0.655386] IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+Oct  7 14:47:50 ubuntu kernel: [    0.669484] tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+Oct  7 14:47:50 ubuntu kernel: [    0.669484] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Oct  7 14:47:50 ubuntu kernel: [    0.669484] TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Oct  7 14:47:50 ubuntu kernel: [    0.669484] TCP bind hash table entries: 32768 (order: 7, 524288 bytes, linear)
+Oct  7 14:47:50 ubuntu kernel: [    0.669484] TCP: Hash tables configured (established 32768 bind 32768)
+Oct  7 14:47:50 ubuntu kernel: [    0.669484] MPTCP token hash table entries: 4096 (order: 4, 98304 bytes, linear)
+Oct  7 14:47:50 ubuntu kernel: [    0.677031] UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+Oct  7 14:47:50 ubuntu kernel: [    0.677283] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+Oct  7 14:47:50 ubuntu kernel: [    0.677330] NET: Registered PF_UNIX/PF_LOCAL protocol family
+Oct  7 14:47:50 ubuntu kernel: [    0.677334] NET: Registered PF_XDP protocol family
+Oct  7 14:47:50 ubuntu kernel: [    0.677346] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Oct  7 14:47:50 ubuntu kernel: [    0.677348] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Oct  7 14:47:50 ubuntu kernel: [    0.677350] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Oct  7 14:47:50 ubuntu kernel: [    0.677351] pci_bus 0000:00: resource 7 [mem 0xe0000000-0xfdffffff window]
+Oct  7 14:47:50 ubuntu kernel: [    0.677465] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+Oct  7 14:47:50 ubuntu kernel: [    0.677509] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+Oct  7 14:47:50 ubuntu kernel: [    0.682111] PCI: CLS 0 bytes, default 64
+Oct  7 14:47:50 ubuntu kernel: [    0.682152] Trying to unpack rootfs image as initramfs...
+Oct  7 14:47:50 ubuntu kernel: [    0.687027] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Oct  7 14:47:50 ubuntu kernel: [    0.687030] software IO TLB: mapped [mem 0x00000000dbff0000-0x00000000dfff0000] (64MB)
+Oct  7 14:47:50 ubuntu kernel: [    0.687147] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x2e02c314322, max_idle_ns: 440795292111 ns
+Oct  7 14:47:50 ubuntu kernel: [    0.687171] clocksource: Switched to clocksource tsc
+Oct  7 14:47:50 ubuntu kernel: [    0.687207] platform rtc_cmos: registered platform RTC device (no PNP device found)
+Oct  7 14:47:50 ubuntu kernel: [    0.687730] Initialise system trusted keyrings
+Oct  7 14:47:50 ubuntu kernel: [    0.687740] Key type blacklist registered
+Oct  7 14:47:50 ubuntu kernel: [    0.697567] workingset: timestamp_bits=36 max_order=20 bucket_order=0
+Oct  7 14:47:50 ubuntu kernel: [    0.699688] zbud: loaded
+Oct  7 14:47:50 ubuntu kernel: [    0.700013] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Oct  7 14:47:50 ubuntu kernel: [    0.700200] fuse: init (API version 7.34)
+Oct  7 14:47:50 ubuntu kernel: [    0.700379] integrity: Platform Keyring initialized
+Oct  7 14:47:50 ubuntu kernel: [    0.701470] Key type asymmetric registered
+Oct  7 14:47:50 ubuntu kernel: [    0.701470] Asymmetric key parser 'x509' registered
+Oct  7 14:47:50 ubuntu kernel: [    0.701470] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 243)
+Oct  7 14:47:50 ubuntu kernel: [    0.701470] io scheduler mq-deadline registered
+Oct  7 14:47:50 ubuntu kernel: [    0.701470] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+Oct  7 14:47:50 ubuntu kernel: [    0.721134] ACPI: AC: AC Adapter [AC] (on-line)
+Oct  7 14:47:50 ubuntu kernel: [    0.721182] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+Oct  7 14:47:50 ubuntu kernel: [    0.721205] ACPI: button: Power Button [PWRF]
+Oct  7 14:47:50 ubuntu kernel: [    0.721322] input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+Oct  7 14:47:50 ubuntu kernel: [    0.721337] ACPI: button: Sleep Button [SLPF]
+Oct  7 14:47:50 ubuntu kernel: [    0.721677] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+Oct  7 14:47:50 ubuntu kernel: [    0.723463] Linux agpgart interface v0.103
+Oct  7 14:47:50 ubuntu kernel: [    0.724854] loop: module loaded
+Oct  7 14:47:50 ubuntu kernel: [    0.724854] ata_piix 0000:00:01.1: version 2.13
+Oct  7 14:47:50 ubuntu kernel: [    0.727735] scsi host0: ata_piix
+Oct  7 14:47:50 ubuntu kernel: [    0.730053] scsi host1: ata_piix
+Oct  7 14:47:50 ubuntu kernel: [    0.730128] ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14
+Oct  7 14:47:50 ubuntu kernel: [    0.730130] ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15
+Oct  7 14:47:50 ubuntu kernel: [    0.730276] tun: Universal TUN/TAP device driver, 1.6
+Oct  7 14:47:50 ubuntu kernel: [    0.731650] PPP generic driver version 2.4.2
+Oct  7 14:47:50 ubuntu kernel: [    0.731694] VFIO - User Level meta-driver version: 0.3
+Oct  7 14:47:50 ubuntu kernel: [    0.733709] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Oct  7 14:47:50 ubuntu kernel: [    0.733714] ehci-pci: EHCI PCI platform driver
+Oct  7 14:47:50 ubuntu kernel: [    0.733719] ehci-platform: EHCI generic platform driver
+Oct  7 14:47:50 ubuntu kernel: [    0.733723] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+Oct  7 14:47:50 ubuntu kernel: [    0.733775] ohci-pci: OHCI PCI platform driver
+Oct  7 14:47:50 ubuntu kernel: [    0.735047] ohci-pci 0000:00:06.0: OHCI PCI host controller
+Oct  7 14:47:50 ubuntu kernel: [    0.735053] ohci-pci 0000:00:06.0: new USB bus registered, assigned bus number 1
+Oct  7 14:47:50 ubuntu kernel: [    0.735684] ohci-pci 0000:00:06.0: irq 22, io mem 0xf0804000
+Oct  7 14:47:50 ubuntu kernel: [    0.797943] usb usb1: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.15
+Oct  7 14:47:50 ubuntu kernel: [    0.797947] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Oct  7 14:47:50 ubuntu kernel: [    0.797949] usb usb1: Product: OHCI PCI host controller
+Oct  7 14:47:50 ubuntu kernel: [    0.797950] usb usb1: Manufacturer: Linux 5.15.0-48-generic ohci_hcd
+Oct  7 14:47:50 ubuntu kernel: [    0.797951] usb usb1: SerialNumber: 0000:00:06.0
+Oct  7 14:47:50 ubuntu kernel: [    0.798089] hub 1-0:1.0: USB hub found
+Oct  7 14:47:50 ubuntu kernel: [    0.798170] hub 1-0:1.0: 12 ports detected
+Oct  7 14:47:50 ubuntu kernel: [    0.806080] ohci-platform: OHCI generic platform driver
+Oct  7 14:47:50 ubuntu kernel: [    0.806092] uhci_hcd: USB Universal Host Controller Interface driver
+Oct  7 14:47:50 ubuntu kernel: [    0.806132] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+Oct  7 14:47:50 ubuntu kernel: [    0.810812] serio: i8042 KBD port at 0x60,0x64 irq 1
+Oct  7 14:47:50 ubuntu kernel: [    0.810818] serio: i8042 AUX port at 0x60,0x64 irq 12
+Oct  7 14:47:50 ubuntu kernel: [    0.810905] mousedev: PS/2 mouse device common for all mice
+Oct  7 14:47:50 ubuntu kernel: [    0.812792] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+Oct  7 14:47:50 ubuntu kernel: [    0.826495] rtc_cmos rtc_cmos: registered as rtc0
+Oct  7 14:47:50 ubuntu kernel: [    0.827115] rtc_cmos rtc_cmos: setting system clock to 2022-10-07T13:47:28 UTC (1665150448)
+Oct  7 14:47:50 ubuntu kernel: [    0.827191] rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
+Oct  7 14:47:50 ubuntu kernel: [    0.827199] i2c_dev: i2c /dev entries driver
+Oct  7 14:47:50 ubuntu kernel: [    0.827217] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+Oct  7 14:47:50 ubuntu kernel: [    0.827264] device-mapper: uevent: version 1.0.3
+Oct  7 14:47:50 ubuntu kernel: [    0.827363] device-mapper: ioctl: 4.45.0-ioctl (2021-03-22) initialised: dm-devel@redhat.com
+Oct  7 14:47:50 ubuntu kernel: [    0.827394] platform eisa.0: Probing EISA bus 0
+Oct  7 14:47:50 ubuntu kernel: [    0.827396] platform eisa.0: EISA: Cannot allocate resource for mainboard
+Oct  7 14:47:50 ubuntu kernel: [    0.827398] platform eisa.0: Cannot allocate resource for EISA slot 1
+Oct  7 14:47:50 ubuntu kernel: [    0.827399] platform eisa.0: Cannot allocate resource for EISA slot 2
+Oct  7 14:47:50 ubuntu kernel: [    0.827400] platform eisa.0: Cannot allocate resource for EISA slot 3
+Oct  7 14:47:50 ubuntu kernel: [    0.827400] platform eisa.0: Cannot allocate resource for EISA slot 4
+Oct  7 14:47:50 ubuntu kernel: [    0.827401] platform eisa.0: Cannot allocate resource for EISA slot 5
+Oct  7 14:47:50 ubuntu kernel: [    0.827402] platform eisa.0: Cannot allocate resource for EISA slot 6
+Oct  7 14:47:50 ubuntu kernel: [    0.827415] platform eisa.0: Cannot allocate resource for EISA slot 7
+Oct  7 14:47:50 ubuntu kernel: [    0.827416] platform eisa.0: Cannot allocate resource for EISA slot 8
+Oct  7 14:47:50 ubuntu kernel: [    0.827417] platform eisa.0: EISA: Detected 0 cards
+Oct  7 14:47:50 ubuntu kernel: [    0.827419] intel_pstate: CPU model not supported
+Oct  7 14:47:50 ubuntu kernel: [    0.827426] ledtrig-cpu: registered to indicate activity on CPUs
+Oct  7 14:47:50 ubuntu kernel: [    0.827563] intel_pmc_core intel_pmc_core.0:  initialized
+Oct  7 14:47:50 ubuntu kernel: [    0.827651] drop_monitor: Initializing network drop monitor service
+Oct  7 14:47:50 ubuntu kernel: [    0.827885] NET: Registered PF_INET6 protocol family
+Oct  7 14:47:50 ubuntu kernel: [    0.928110] ata2.00: ATAPI: VBOX CD-ROM, 1.0, max UDMA/133
+Oct  7 14:47:50 ubuntu kernel: [    0.932095] scsi 1:0:0:0: CD-ROM            VBOX     CD-ROM           1.0  PQ: 0 ANSI: 5
+Oct  7 14:47:50 ubuntu kernel: [    0.959235] sr 1:0:0:0: [sr0] scsi3-mmc drive: 32x/32x xa/form2 tray
+Oct  7 14:47:50 ubuntu kernel: [    0.959239] cdrom: Uniform CD-ROM driver Revision: 3.20
+Oct  7 14:47:50 ubuntu kernel: [    0.990918] sr 1:0:0:0: Attached scsi CD-ROM sr0
+Oct  7 14:47:50 ubuntu kernel: [    0.991629] sr 1:0:0:0: Attached scsi generic sg0 type 5
+Oct  7 14:47:50 ubuntu kernel: [    1.036780] Freeing initrd memory: 61824K
+Oct  7 14:47:50 ubuntu kernel: [    1.282062] Segment Routing with IPv6
+Oct  7 14:47:50 ubuntu kernel: [    1.282124] In-situ OAM (IOAM) with IPv6
+Oct  7 14:47:50 ubuntu kernel: [    1.282174] NET: Registered PF_PACKET protocol family
+Oct  7 14:47:50 ubuntu kernel: [    1.282230] Key type dns_resolver registered
+Oct  7 14:47:50 ubuntu kernel: [    1.291938] IPI shorthand broadcast: enabled
+Oct  7 14:47:50 ubuntu kernel: [    1.291991] sched_clock: Marking stable (1209117166, 82411411)->(1301807958, -10279381)
+Oct  7 14:47:50 ubuntu kernel: [    1.292121] registered taskstats version 1
+Oct  7 14:47:50 ubuntu kernel: [    1.292139] Loading compiled-in X.509 certificates
+Oct  7 14:47:50 ubuntu kernel: [    1.292598] Loaded X.509 cert 'Build time autogenerated kernel key: 812a45ce66042b92679f0afa96ba2ce919aefad9'
+Oct  7 14:47:50 ubuntu kernel: [    1.293084] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+Oct  7 14:47:50 ubuntu kernel: [    1.293489] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+Oct  7 14:47:50 ubuntu kernel: [    1.293490] blacklist: Loading compiled-in revocation X.509 certificates
+Oct  7 14:47:50 ubuntu kernel: [    1.293504] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+Oct  7 14:47:50 ubuntu kernel: [    1.293556] zswap: loaded using pool lzo/zbud
+Oct  7 14:47:50 ubuntu kernel: [    1.293724] Key type ._fscrypt registered
+Oct  7 14:47:50 ubuntu kernel: [    1.293726] Key type .fscrypt registered
+Oct  7 14:47:50 ubuntu kernel: [    1.293726] Key type fscrypt-provisioning registered
+Oct  7 14:47:50 ubuntu kernel: [    1.301358] Key type encrypted registered
+Oct  7 14:47:50 ubuntu kernel: [    1.301362] AppArmor: AppArmor sha1 policy hashing enabled
+Oct  7 14:47:50 ubuntu kernel: [    1.301368] ima: No TPM chip found, activating TPM-bypass!
+Oct  7 14:47:50 ubuntu kernel: [    1.301372] Loading compiled-in module X.509 certificates
+Oct  7 14:47:50 ubuntu kernel: [    1.301898] Loaded X.509 cert 'Build time autogenerated kernel key: 812a45ce66042b92679f0afa96ba2ce919aefad9'
+Oct  7 14:47:50 ubuntu kernel: [    1.301901] ima: Allocated hash algorithm: sha1
+Oct  7 14:47:50 ubuntu kernel: [    1.301906] ima: No architecture policies found
+Oct  7 14:47:50 ubuntu kernel: [    1.301913] evm: Initialising EVM extended attributes:
+Oct  7 14:47:50 ubuntu kernel: [    1.301914] evm: security.selinux
+Oct  7 14:47:50 ubuntu kernel: [    1.301914] evm: security.SMACK64
+Oct  7 14:47:50 ubuntu kernel: [    1.301915] evm: security.SMACK64EXEC
+Oct  7 14:47:50 ubuntu kernel: [    1.301916] evm: security.SMACK64TRANSMUTE
+Oct  7 14:47:50 ubuntu kernel: [    1.301916] evm: security.SMACK64MMAP
+Oct  7 14:47:50 ubuntu kernel: [    1.301917] evm: security.apparmor
+Oct  7 14:47:50 ubuntu kernel: [    1.301917] evm: security.ima
+Oct  7 14:47:50 ubuntu kernel: [    1.301917] evm: security.capability
+Oct  7 14:47:50 ubuntu kernel: [    1.301918] evm: HMAC attrs: 0x1
+Oct  7 14:47:50 ubuntu kernel: [    1.302229] PM:   Magic number: 10:165:786
+Oct  7 14:47:50 ubuntu kernel: [    1.302395] RAS: Correctable Errors collector initialized.
+Oct  7 14:47:50 ubuntu kernel: [    1.303593] Freeing unused decrypted memory: 2036K
+Oct  7 14:47:50 ubuntu kernel: [    1.303979] Freeing unused kernel image (initmem) memory: 3224K
+Oct  7 14:47:50 ubuntu kernel: [    1.312966] Write protecting the kernel read-only data: 30720k
+Oct  7 14:47:50 ubuntu kernel: [    1.313212] Freeing unused kernel image (text/rodata gap) memory: 2036K
+Oct  7 14:47:50 ubuntu kernel: [    1.313404] Freeing unused kernel image (rodata/data gap) memory: 1484K
+Oct  7 14:47:50 ubuntu kernel: [    1.362501] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Oct  7 14:47:50 ubuntu kernel: [    1.362505] x86/mm: Checking user space page tables
+Oct  7 14:47:50 ubuntu kernel: [    1.415725] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Oct  7 14:47:50 ubuntu kernel: [    1.415734] Run /init as init process
+Oct  7 14:47:50 ubuntu kernel: [    1.415736]   with arguments:
+Oct  7 14:47:50 ubuntu kernel: [    1.415737]     /init
+Oct  7 14:47:50 ubuntu kernel: [    1.415737]     splash
+Oct  7 14:47:50 ubuntu kernel: [    1.415738]   with environment:
+Oct  7 14:47:50 ubuntu kernel: [    1.415739]     HOME=/
+Oct  7 14:47:50 ubuntu kernel: [    1.415739]     TERM=linux
+Oct  7 14:47:50 ubuntu kernel: [    1.415740]     BOOT_IMAGE=/boot/vmlinuz-5.15.0-48-generic
+Oct  7 14:47:50 ubuntu kernel: [    1.424958] usb 1-1: new full-speed USB device number 2 using ohci-pci
+Oct  7 14:47:50 ubuntu kernel: [    1.690849] e1000: Intel(R) PRO/1000 Network Driver
+Oct  7 14:47:50 ubuntu kernel: [    1.690852] e1000: Copyright (c) 1999-2006 Intel Corporation.
+Oct  7 14:47:50 ubuntu kernel: [    1.701728] piix4_smbus 0000:00:07.0: SMBus Host Controller at 0x4100, revision 0
+Oct  7 14:47:50 ubuntu kernel: [    1.705965] ahci 0000:00:0d.0: version 3.0
+Oct  7 14:47:50 ubuntu kernel: [    1.739700] ahci 0000:00:0d.0: SSS flag set, parallel bus scan disabled
+Oct  7 14:47:50 ubuntu kernel: [    1.740607] ahci 0000:00:0d.0: AHCI 0001.0100 32 slots 1 ports 3 Gbps 0x1 impl SATA mode
+Oct  7 14:47:50 ubuntu kernel: [    1.740610] ahci 0000:00:0d.0: flags: 64bit ncq stag only ccc 
+Oct  7 14:47:50 ubuntu kernel: [    1.744540] ACPI: video: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+Oct  7 14:47:50 ubuntu kernel: [    1.744607] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/LNXVIDEO:00/input/input5
+Oct  7 14:47:50 ubuntu kernel: [    1.767722] scsi host2: ahci
+Oct  7 14:47:50 ubuntu kernel: [    1.768923] ata3: SATA max UDMA/133 abar m8192@0xf0806000 port 0xf0806100 irq 21
+Oct  7 14:47:50 ubuntu kernel: [    1.817753] usb 1-1: New USB device found, idVendor=80ee, idProduct=0021, bcdDevice= 1.00
+Oct  7 14:47:50 ubuntu kernel: [    1.817758] usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+Oct  7 14:47:50 ubuntu kernel: [    1.817759] usb 1-1: Product: USB Tablet
+Oct  7 14:47:50 ubuntu kernel: [    1.817761] usb 1-1: Manufacturer: VirtualBox
+Oct  7 14:47:50 ubuntu kernel: [    1.875312] hid: raw HID events driver (C) Jiri Kosina
+Oct  7 14:47:50 ubuntu kernel: [    1.988249] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input4
+Oct  7 14:47:50 ubuntu kernel: [    2.096287] ata3: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+Oct  7 14:47:50 ubuntu kernel: [    2.097319] ata3.00: ATA-6: VBOX HARDDISK, 1.0, max UDMA/133
+Oct  7 14:47:50 ubuntu kernel: [    2.097322] ata3.00: 27262976 sectors, multi 128: LBA48 NCQ (depth 32)
+Oct  7 14:47:50 ubuntu kernel: [    2.107022] ata3.00: configured for UDMA/133
+Oct  7 14:47:50 ubuntu kernel: [    2.107107] scsi 2:0:0:0: Direct-Access     ATA      VBOX HARDDISK    1.0  PQ: 0 ANSI: 5
+Oct  7 14:47:50 ubuntu kernel: [    2.107334] sd 2:0:0:0: [sda] 27262976 512-byte logical blocks: (14.0 GB/13.0 GiB)
+Oct  7 14:47:50 ubuntu kernel: [    2.107352] sd 2:0:0:0: [sda] Write Protect is off
+Oct  7 14:47:50 ubuntu kernel: [    2.107354] sd 2:0:0:0: [sda] Mode Sense: 00 3a 00 00
+Oct  7 14:47:50 ubuntu kernel: [    2.107361] sd 2:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct  7 14:47:50 ubuntu kernel: [    2.107676] sd 2:0:0:0: Attached scsi generic sg1 type 0
+Oct  7 14:47:50 ubuntu kernel: [    2.168870]  sda: sda1 sda2 sda3
+Oct  7 14:47:50 ubuntu kernel: [    2.188150] sd 2:0:0:0: [sda] Attached SCSI disk
+Oct  7 14:47:50 ubuntu kernel: [    2.220273] usbcore: registered new interface driver usbhid
+Oct  7 14:47:50 ubuntu kernel: [    2.220275] usbhid: USB HID core driver
+Oct  7 14:47:50 ubuntu kernel: [    2.231542] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0001/input/input6
+Oct  7 14:47:50 ubuntu kernel: [    2.232343] hid-generic 0003:80EE:0021.0001: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+Oct  7 14:47:50 ubuntu kernel: [    2.739346] e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 08:00:27:d0:83:b7
+Oct  7 14:47:50 ubuntu kernel: [    2.739353] e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
+Oct  7 14:47:50 ubuntu kernel: [    2.741694] e1000 0000:00:03.0 enp0s3: renamed from eth0
+Oct  7 14:47:50 ubuntu kernel: [    2.868130] EXT4-fs (sda3): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+Oct  7 14:47:50 ubuntu kernel: [    3.138354] random: systemd: uninitialized urandom read (16 bytes read)
+Oct  7 14:47:50 ubuntu kernel: [    3.625176] random: systemd: uninitialized urandom read (16 bytes read)
+Oct  7 14:47:50 ubuntu kernel: [    3.627847] random: systemd: uninitialized urandom read (16 bytes read)
+Oct  7 14:47:50 ubuntu kernel: [    3.836922] mtd device must be supplied (device name is empty)
+Oct  7 14:47:50 ubuntu kernel: [    3.910013] EXT4-fs (sda3): re-mounted. Opts: errors=remount-ro. Quota mode: none.
+Oct  7 14:47:50 ubuntu kernel: [    3.954203] lp: driver loaded but no devices found
+Oct  7 14:47:50 ubuntu kernel: [    3.980983] Adding 1423356k swap on /swapfile.  Priority:-2 extents:5 across:1456124k FS
+Oct  7 14:47:50 ubuntu kernel: [    3.983573] ppdev: user-space parallel port driver
+Oct  7 14:47:50 ubuntu kernel: [    4.002750] IPMI message handler: version 39.2
+Oct  7 14:47:50 ubuntu kernel: [    4.011494] ipmi device interface
+Oct  7 14:47:50 ubuntu kernel: [    4.146472] random: systemd: uninitialized urandom read (16 bytes read)
+Oct  7 14:47:50 ubuntu kernel: [    4.147983] random: systemd-journal: uninitialized urandom read (16 bytes read)
+Oct  7 14:47:50 ubuntu kernel: [    4.205435] vmwgfx 0000:00:02.0: vgaarb: deactivate vga console
+Oct  7 14:47:50 ubuntu kernel: [    4.210859] random: systemd: uninitialized urandom read (16 bytes read)
+Oct  7 14:47:50 ubuntu kernel: [    4.221480] Console: switching to colour dummy device 80x25
+Oct  7 14:47:50 ubuntu kernel: [    4.231095] [TTM] Zone  kernel: Available graphics memory: 2009226 KiB
+Oct  7 14:47:50 ubuntu kernel: [    4.231297] vmwgfx 0000:00:02.0: [drm] FIFO at 0x00000000f0000000 size is 2048 kiB
+Oct  7 14:47:50 ubuntu kernel: [    4.231322] vmwgfx 0000:00:02.0: [drm] VRAM at 0x00000000e0000000 size is 16384 kiB
+Oct  7 14:47:50 ubuntu kernel: [    4.231510] vmwgfx 0000:00:02.0: [drm] Running on SVGA version 2.
+Oct  7 14:47:50 ubuntu kernel: [    4.231553] vmwgfx 0000:00:02.0: [drm] DMA map mode: Caching DMA mappings.
+Oct  7 14:47:50 ubuntu kernel: [    4.231907] vmwgfx 0000:00:02.0: [drm] Legacy memory limits: VRAM = 16384 kB, FIFO = 2048 kB, surface = 507904 kB
+Oct  7 14:47:50 ubuntu kernel: [    4.231910] vmwgfx 0000:00:02.0: [drm] MOB limits: max mob size = 0 kB, max mob pages = 0
+Oct  7 14:47:50 ubuntu kernel: [    4.231912] vmwgfx 0000:00:02.0: [drm] Capabilities: cursor, cursor bypass 2, alpha cursor, 3D, extended fifo, pitchlock, irq mask, gmr, traces, gmr2, screen object 2, 
+Oct  7 14:47:50 ubuntu kernel: [    4.231913] vmwgfx 0000:00:02.0: [drm] Max GMR ids is 8192
+Oct  7 14:47:50 ubuntu kernel: [    4.231914] vmwgfx 0000:00:02.0: [drm] Max number of GMR pages is 1048576
+Oct  7 14:47:50 ubuntu kernel: [    4.231915] vmwgfx 0000:00:02.0: [drm] Maximum display memory size is 16384 kiB
+Oct  7 14:47:50 ubuntu kernel: [    4.263130] vmwgfx 0000:00:02.0: [drm] Screen Object display unit initialized
+Oct  7 14:47:50 ubuntu kernel: [    4.263801] vmwgfx 0000:00:02.0: [drm] Fifo max 0x00200000 min 0x00001000 cap 0x00000355
+Oct  7 14:47:50 ubuntu kernel: [    4.263812] vmwgfx 0000:00:02.0: [drm] Available shader model: Legacy.
+Oct  7 14:47:50 ubuntu kernel: [    4.263836] [drm:vmw_host_printf [vmwgfx]] *ERROR* Failed to send host log message.
+Oct  7 14:47:50 ubuntu kernel: [    4.271282] fbcon: svgadrmfb (fb0) is primary device
+Oct  7 14:47:50 ubuntu kernel: [    4.288232] loop0: detected capacity change from 0 to 820832
+Oct  7 14:47:50 ubuntu kernel: [    4.303867] loop1: detected capacity change from 0 to 8
+Oct  7 14:47:50 ubuntu kernel: [    4.307618] loop2: detected capacity change from 0 to 126896
+Oct  7 14:47:50 ubuntu kernel: [    4.316989] loop3: detected capacity change from 0 to 93928
+Oct  7 14:47:50 ubuntu kernel: [    4.319320] Console: switching to colour frame buffer device 100x37
+Oct  7 14:47:50 ubuntu kernel: [    4.323086] [drm] Initialized vmwgfx 2.19.0 20210722 for 0000:00:02.0 on minor 0
+Oct  7 14:47:50 ubuntu kernel: [    4.326728] loop4: detected capacity change from 0 to 334424
+Oct  7 14:47:50 ubuntu kernel: [    4.333521] loop5: detected capacity change from 0 to 187776
+Oct  7 14:47:50 ubuntu kernel: [    4.400065] loop6: detected capacity change from 0 to 96176
+Oct  7 14:47:50 ubuntu kernel: [    4.416978] loop7: detected capacity change from 0 to 568
+Oct  7 14:47:50 ubuntu kernel: [    5.365658] random: crng init done
+Oct  7 14:47:50 ubuntu kernel: [    5.365661] random: 105 urandom warning(s) missed due to ratelimiting
+Oct  7 14:47:50 ubuntu kernel: [    5.450439] vboxguest: host-version: 6.1.38r153438 0x8000000f
+Oct  7 14:47:50 ubuntu kernel: [    5.519460] vbg_heartbeat_init: Setting up heartbeat to trigger every 2000 milliseconds
+Oct  7 14:47:50 ubuntu kernel: [    5.519580] input: VirtualBox mouse integration as /devices/pci0000:00/0000:00:04.0/input/input7
+Oct  7 14:47:50 ubuntu kernel: [    5.583592] vboxguest: misc device minor 123, IRQ 20, I/O port d040, MMIO at 0x00000000f0400000 (size 0x0000000000400000)
+Oct  7 14:47:50 ubuntu kernel: [    5.713645] RAPL PMU: API unit is 2^-32 Joules, 0 fixed counters, 10737418240 ms ovfl timer
+Oct  7 14:47:50 ubuntu kernel: [    6.933771] audit: type=1400 audit(1665150454.596:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=405 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [    7.150543] audit: type=1400 audit(1665150454.812:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=421 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [    7.157835] audit: type=1400 audit(1665150454.828:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=421 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [    7.169540] snd_intel8x0 0000:00:05.0: allow list rate for 1028:0177 is 48000
+Oct  7 14:47:50 ubuntu kernel: [    7.520766] mtd device must be supplied (device name is empty)
+Oct  7 14:47:50 ubuntu kernel: [    7.637328] audit: type=1400 audit(1665150455.304:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=435 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [    7.642254] audit: type=1400 audit(1665150455.312:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=435 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [    7.643610] audit: type=1400 audit(1665150455.312:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=435 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [    7.647697] audit: type=1400 audit(1665150455.316:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/{,usr/}sbin/dhclient" pid=435 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [   10.876103] audit: type=1400 audit(1665150458.540:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince" pid=469 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [   10.878283] audit: type=1400 audit(1665150458.540:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince//sanitized_helper" pid=469 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [   10.894705] audit: type=1400 audit(1665150458.564:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince-previewer" pid=469 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [   11.933255] kauditd_printk_skb: 10 callbacks suppressed
+Oct  7 14:47:50 ubuntu kernel: [   11.933257] audit: type=1400 audit(1665150459.604:22): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cupsd" pid=552 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [   11.934360] audit: type=1400 audit(1665150459.604:23): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/sbin/cupsd//third_party" pid=552 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [   12.445506] audit: type=1400 audit(1665150460.108:24): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/snap/snapd/16292/usr/lib/snapd/snap-confine" pid=563 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [   12.446541] audit: type=1400 audit(1665150460.108:25): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/snap/snapd/16292/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=563 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [   13.347859] audit: type=1400 audit(1665150461.012:26): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap-update-ns.firefox" pid=564 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [   14.314685] audit: type=1400 audit(1665150461.976:27): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap-update-ns.snap-store" pid=565 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [   15.501902] audit: type=1400 audit(1665150463.168:28): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap-update-ns.snapd-desktop-integration" pid=566 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [   17.213146] audit: type=1400 audit(1665150464.884:29): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.firefox.firefox" pid=567 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [   19.014991] audit: type=1400 audit(1665150466.684:30): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.firefox.geckodriver" pid=568 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [   19.234917] audit: type=1400 audit(1665150466.904:31): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.firefox.hook.configure" pid=569 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [   19.485651] audit: type=1400 audit(1665150467.152:32): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.snap-store.hook.configure" pid=570 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [   20.105221] audit: type=1400 audit(1665150467.776:33): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.snap-store.snap-store" pid=571 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [   20.722807] audit: type=1400 audit(1665150468.388:34): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.snap-store.ubuntu-software" pid=572 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [   21.349416] audit: type=1400 audit(1665150469.020:35): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.snap-store.ubuntu-software-local-file" pid=573 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [   21.573804] audit: type=1400 audit(1665150469.244:36): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.snapd-desktop-integration.hook.configure" pid=574 comm="apparmor_parser"
+Oct  7 14:47:50 ubuntu kernel: [   22.187641] audit: type=1400 audit(1665150469.848:37): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.snapd-desktop-integration.snapd-desktop-integration" pid=575 comm="apparmor_parser"
+Oct  7 14:47:51 ubuntu kernel: [   24.027980] audit: type=1400 audit(1665150471.696:38): apparmor="DENIED" operation="capable" profile="/usr/sbin/cupsd" pid=677 comm="cupsd" capability=12  capname="net_admin"
+Oct  7 14:47:52 ubuntu kernel: [   24.715993] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+Oct  7 14:47:52 ubuntu kernel: [   24.743472] IPv6: ADDRCONF(NETDEV_CHANGE): enp0s3: link becomes ready
+Oct  7 14:47:52 ubuntu kernel: [   25.275391] audit: type=1400 audit(1665150472.940:39): apparmor="DENIED" operation="capable" profile="/usr/sbin/cups-browsed" pid=756 comm="cups-browsed" capability=23  capname="sys_nice"
+Oct  7 14:47:53 ubuntu kernel: [   25.432672] loop8: detected capacity change from 0 to 8
+Oct  7 14:48:00 ubuntu kernel: [   32.575832] audit: type=1400 audit(1665150480.244:40): apparmor="DENIED" operation="open" profile="snap-update-ns.firefox" name="/var/lib/" pid=986 comm="6" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+Oct  7 14:48:00 ubuntu kernel: [   32.579744] audit: type=1400 audit(1665150480.244:41): apparmor="DENIED" operation="mkdir" profile="snap-update-ns.firefox" name="/usr/share/libreoffice/help/" pid=986 comm="6" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+Oct  7 14:48:00 ubuntu kernel: [   32.580009] audit: type=1400 audit(1665150480.244:42): apparmor="DENIED" operation="open" profile="snap-update-ns.firefox" name="/var/lib/" pid=986 comm="6" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+Oct  7 14:48:01 ubuntu kernel: [   33.926993] rfkill: input handler disabled
+Oct  7 14:48:17 ubuntu kernel: [   46.405904] rfkill: input handler enabled
+Oct  7 14:48:20 ubuntu kernel: [   49.650724] audit: type=1400 audit(1665150500.289:43): apparmor="DENIED" operation="capable" profile="/usr/lib/snapd/snap-confine" pid=1451 comm="snap-confine" capability=12  capname="net_admin"
+Oct  7 14:48:20 ubuntu kernel: [   49.659280] audit: type=1400 audit(1665150500.297:44): apparmor="DENIED" operation="capable" profile="/usr/lib/snapd/snap-confine" pid=1451 comm="snap-confine" capability=38  capname="perfmon"
+Oct  7 14:48:20 ubuntu kernel: [   49.694541] audit: type=1400 audit(1665150500.321:45): apparmor="DENIED" operation="capable" profile="/usr/lib/snapd/snap-confine" pid=1451 comm="snap-confine" capability=4  capname="fsetid"
+Oct  7 14:48:24 ubuntu kernel: [   54.334522] rfkill: input handler disabled
+Oct  7 14:48:26 ubuntu kernel: [   55.371869] audit: type=1326 audit(1665150506.009:46): auid=1000 uid=1000 gid=1000 ses=3 subj=? pid=1448 comm="snapd-desktop-i" exe="/snap/snapd-desktop-integration/14/bin/snapd-desktop-integration" sig=0 arch=c000003e syscall=314 compat=0 ip=0x7fbd24bd373d code=0x50000
+Oct  7 14:50:58 ubuntu kernel: [  208.017363] Service: Display SVGA X11
+Oct  7 14:50:58 ubuntu kernel: [  208.029859] Running service failed: VERR_NOT_AVAILABLE
+Oct  7 14:50:58 ubuntu kernel: [  208.115109] 13:50:58.751665 main     VBoxService 6.1.38_Ubuntu r153438 (verbosity: 0) linux.amd64 (Sep  7 2022 11:18:57) release log
+Oct  7 14:50:58 ubuntu kernel: [  208.115109] 13:50:
+Oct  7 14:50:58 ubuntu kernel: [  208.122596] 13:50:58.760911 main     OS Product: Linux
+Oct  7 14:50:58 ubuntu kernel: [  208.126310] 13:50:58.765051 main     OS Release: 5.15.0-48-generic
+Oct  7 14:50:58 ubuntu kernel: [  208.131986] 13:50:58.770986 main     OS Version: #54-Ubuntu SMP Fri Aug 26 13:26:29 UTC 2022
+Oct  7 14:50:58 ubuntu kernel: [  208.132750] 13:50:58.771593 main     Executable: /usr/sbin/VBoxService
+Oct  7 14:50:58 ubuntu kernel: [  208.132750] 13:50:58.771595 main     Process ID: 2837
+Oct  7 14:50:58 ubuntu kernel: [  208.132750] 13:50:58.771595 main     P
+Oct  7 14:50:58 ubuntu kernel: [  208.153787] 13:50:58.792783 main     6.1.38_Ubuntu r153438 started. Verbose level = 0
+Oct  7 14:50:58 ubuntu kernel: [  208.175330] 13:50:58.814329 main     vbglR3GuestCtrlDetectPeekGetCancelSupport: Supported (#1)
+Oct  7 14:51:56 ubuntu kernel: [  266.143593] loop8: detected capacity change from 0 to 207864
+Oct  7 14:51:57 ubuntu kernel: [  266.777213] audit: type=1400 audit(1665150717.406:47): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap-update-ns.thunderbird" pid=3113 comm="apparmor_parser"
+Oct  7 14:51:57 ubuntu kernel: [  266.960031] audit: type=1400 audit(1665150717.594:48): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.thunderbird.hook.configure" pid=3114 comm="apparmor_parser"
+Oct  7 14:51:57 ubuntu kernel: [  267.097773] audit: type=1400 audit(1665150717.726:49): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.thunderbird.thunderbird" pid=3115 comm="apparmor_parser"
+Oct  7 14:52:01 ubuntu kernel: [  270.910066] audit: type=1400 audit(1665150721.542:50): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/snap/snapd/16292/usr/lib/snapd/snap-confine" pid=3250 comm="apparmor_parser"
+Oct  7 14:52:01 ubuntu kernel: [  270.910811] audit: type=1400 audit(1665150721.542:51): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/snap/snapd/16292/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=3250 comm="apparmor_parser"
+Oct  7 14:52:03 ubuntu kernel: [  272.697390] audit: type=1400 audit(1665150723.322:52): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap-update-ns.thunderbird" pid=3252 comm="apparmor_parser"
+Oct  7 14:52:03 ubuntu kernel: [  273.035623] audit: type=1400 audit(1665150723.666:53): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.thunderbird.hook.configure" pid=3254 comm="apparmor_parser"
+Oct  7 14:52:04 ubuntu kernel: [  273.909828] audit: type=1400 audit(1665150724.542:54): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.thunderbird.thunderbird" pid=3255 comm="apparmor_parser"
+Oct  7 14:52:19 ubuntu kernel: [  289.129143] audit: type=1326 audit(1665150739.758:55): auid=1000 uid=1000 gid=1000 ses=3 subj=? pid=3283 comm="thunderbird-bin" exe="/snap/thunderbird/259/thunderbird-bin" sig=0 arch=c000003e syscall=314 compat=0 ip=0x7f2ae29aa73d code=0x50000
+Oct  7 14:57:34 ubuntu kernel: [    0.000000] Linux version 5.15.0-48-generic (buildd@lcy02-amd64-080) (gcc (Ubuntu 11.2.0-19ubuntu1) 11.2.0, GNU ld (GNU Binutils for Ubuntu) 2.38) #54-Ubuntu SMP Fri Aug 26 13:26:29 UTC 2022 (Ubuntu 5.15.0-48.54-generic 5.15.53)
+Oct  7 14:57:34 ubuntu kernel: [    0.000000] Command line: BOOT_IMAGE=/boot/vmlinuz-5.15.0-48-generic root=UUID=d2908b80-1631-4e9a-a168-f39b717d0fad ro quiet splash
+Oct  7 14:57:34 ubuntu kernel: [    0.000000] KERNEL supported cpus:
+Oct  7 14:57:34 ubuntu kernel: [    0.000000]   Intel GenuineIntel
+Oct  7 14:57:34 ubuntu kernel: [    0.000000]   AMD AuthenticAMD
+Oct  7 14:57:34 ubuntu kernel: [    0.000000]   Hygon HygonGenuine
+Oct  7 14:57:34 ubuntu kernel: [    0.000000]   Centaur CentaurHauls
+Oct  7 14:57:34 ubuntu kernel: [    0.000000]   zhaoxin   Shanghai  
+Oct  7 14:57:34 ubuntu kernel: [    0.000000] x86/fpu: x87 FPU will use FXSAVE
+Oct  7 14:57:34 ubuntu kernel: [    0.000000] signal: max sigframe size: 1440
+Oct  7 14:57:34 ubuntu kernel: [    0.000000] BIOS-provided physical RAM map:
+Oct  7 14:57:34 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x0000000000000000-0x000000000009fbff] usable
+Oct  7 14:57:34 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x000000000009fc00-0x000000000009ffff] reserved
+Oct  7 14:57:34 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x00000000000f0000-0x00000000000fffff] reserved
+Oct  7 14:57:34 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x0000000000100000-0x00000000dffeffff] usable
+Oct  7 14:57:34 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x00000000dfff0000-0x00000000dfffffff] ACPI data
+Oct  7 14:57:34 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x00000000fec00000-0x00000000fec00fff] reserved
+Oct  7 14:57:34 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x00000000fee00000-0x00000000fee00fff] reserved
+Oct  7 14:57:34 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x00000000fffc0000-0x00000000ffffffff] reserved
+Oct  7 14:57:34 ubuntu kernel: [    0.000000] BIOS-e820: [mem 0x0000000100000000-0x000000011fffffff] usable
+Oct  7 14:57:34 ubuntu kernel: [    0.000000] NX (Execute Disable) protection: active
+Oct  7 14:57:34 ubuntu kernel: [    0.000000] SMBIOS 2.5 present.
+Oct  7 14:57:34 ubuntu kernel: [    0.000000] DMI: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Oct  7 14:57:34 ubuntu kernel: [    0.000000] Hypervisor detected: KVM
+Oct  7 14:57:34 ubuntu kernel: [    0.000000] kvm-clock: Using msrs 4b564d01 and 4b564d00
+Oct  7 14:57:34 ubuntu kernel: [    0.000000] kvm-clock: cpu 0, msr c5a01001, primary cpu clock
+Oct  7 14:57:34 ubuntu kernel: [    0.000002] kvm-clock: using sched offset of 1931210848333 cycles
+Oct  7 14:57:34 ubuntu kernel: [    0.000005] clocksource: kvm-clock: mask: 0xffffffffffffffff max_cycles: 0x1cd42e4dffb, max_idle_ns: 881590591483 ns
+Oct  7 14:57:34 ubuntu kernel: [    0.000008] tsc: Detected 3191.998 MHz processor
+Oct  7 14:57:34 ubuntu kernel: [    0.002567] e820: update [mem 0x00000000-0x00000fff] usable ==> reserved
+Oct  7 14:57:34 ubuntu kernel: [    0.002571] e820: remove [mem 0x000a0000-0x000fffff] usable
+Oct  7 14:57:34 ubuntu kernel: [    0.002576] last_pfn = 0x120000 max_arch_pfn = 0x400000000
+Oct  7 14:57:34 ubuntu kernel: [    0.002639] Disabled
+Oct  7 14:57:34 ubuntu kernel: [    0.002641] x86/PAT: MTRRs disabled, skipping PAT initialization too.
+Oct  7 14:57:34 ubuntu kernel: [    0.002646] CPU MTRRs all blank - virtualized system.
+Oct  7 14:57:34 ubuntu kernel: [    0.002647] x86/PAT: Configuration [0-7]: WB  WT  UC- UC  WB  WT  UC- UC  
+Oct  7 14:57:34 ubuntu kernel: [    0.002649] last_pfn = 0xdfff0 max_arch_pfn = 0x400000000
+Oct  7 14:57:34 ubuntu kernel: [    0.002714] found SMP MP-table at [mem 0x0009fff0-0x0009ffff]
+Oct  7 14:57:34 ubuntu kernel: [    0.002894] RAMDISK: [mem 0x3072f000-0x3438efff]
+Oct  7 14:57:34 ubuntu kernel: [    0.002901] ACPI: Early table checksum verification disabled
+Oct  7 14:57:34 ubuntu kernel: [    0.002904] ACPI: RSDP 0x00000000000E0000 000024 (v02 VBOX  )
+Oct  7 14:57:34 ubuntu kernel: [    0.002909] ACPI: XSDT 0x00000000DFFF0030 00003C (v01 VBOX   VBOXXSDT 00000001 ASL  00000061)
+Oct  7 14:57:34 ubuntu kernel: [    0.002915] ACPI: FACP 0x00000000DFFF00F0 0000F4 (v04 VBOX   VBOXFACP 00000001 ASL  00000061)
+Oct  7 14:57:34 ubuntu kernel: [    0.002921] ACPI: DSDT 0x00000000DFFF0470 002325 (v02 VBOX   VBOXBIOS 00000002 INTL 20100528)
+Oct  7 14:57:34 ubuntu kernel: [    0.002925] ACPI: FACS 0x00000000DFFF0200 000040
+Oct  7 14:57:34 ubuntu kernel: [    0.002928] ACPI: FACS 0x00000000DFFF0200 000040
+Oct  7 14:57:34 ubuntu kernel: [    0.002931] ACPI: APIC 0x00000000DFFF0240 000054 (v02 VBOX   VBOXAPIC 00000001 ASL  00000061)
+Oct  7 14:57:34 ubuntu kernel: [    0.002935] ACPI: SSDT 0x00000000DFFF02A0 0001CC (v01 VBOX   VBOXCPUT 00000002 INTL 20100528)
+Oct  7 14:57:34 ubuntu kernel: [    0.002938] ACPI: Reserving FACP table memory at [mem 0xdfff00f0-0xdfff01e3]
+Oct  7 14:57:34 ubuntu kernel: [    0.002939] ACPI: Reserving DSDT table memory at [mem 0xdfff0470-0xdfff2794]
+Oct  7 14:57:34 ubuntu kernel: [    0.002940] ACPI: Reserving FACS table memory at [mem 0xdfff0200-0xdfff023f]
+Oct  7 14:57:34 ubuntu kernel: [    0.002941] ACPI: Reserving FACS table memory at [mem 0xdfff0200-0xdfff023f]
+Oct  7 14:57:34 ubuntu kernel: [    0.002942] ACPI: Reserving APIC table memory at [mem 0xdfff0240-0xdfff0293]
+Oct  7 14:57:34 ubuntu kernel: [    0.002942] ACPI: Reserving SSDT table memory at [mem 0xdfff02a0-0xdfff046b]
+Oct  7 14:57:34 ubuntu kernel: [    0.004613] No NUMA configuration found
+Oct  7 14:57:34 ubuntu kernel: [    0.004614] Faking a node at [mem 0x0000000000000000-0x000000011fffffff]
+Oct  7 14:57:34 ubuntu kernel: [    0.004623] NODE_DATA(0) allocated [mem 0x11ffd2000-0x11fffbfff]
+Oct  7 14:57:34 ubuntu kernel: [    0.005705] Zone ranges:
+Oct  7 14:57:34 ubuntu kernel: [    0.005706]   DMA      [mem 0x0000000000001000-0x0000000000ffffff]
+Oct  7 14:57:34 ubuntu kernel: [    0.005708]   DMA32    [mem 0x0000000001000000-0x00000000ffffffff]
+Oct  7 14:57:34 ubuntu kernel: [    0.005710]   Normal   [mem 0x0000000100000000-0x000000011fffffff]
+Oct  7 14:57:34 ubuntu kernel: [    0.005711]   Device   empty
+Oct  7 14:57:34 ubuntu kernel: [    0.005712] Movable zone start for each node
+Oct  7 14:57:34 ubuntu kernel: [    0.005714] Early memory node ranges
+Oct  7 14:57:34 ubuntu kernel: [    0.005714]   node   0: [mem 0x0000000000001000-0x000000000009efff]
+Oct  7 14:57:34 ubuntu kernel: [    0.005716]   node   0: [mem 0x0000000000100000-0x00000000dffeffff]
+Oct  7 14:57:34 ubuntu kernel: [    0.005717]   node   0: [mem 0x0000000100000000-0x000000011fffffff]
+Oct  7 14:57:34 ubuntu kernel: [    0.005718] Initmem setup node 0 [mem 0x0000000000001000-0x000000011fffffff]
+Oct  7 14:57:34 ubuntu kernel: [    0.005767] On node 0, zone DMA: 1 pages in unavailable ranges
+Oct  7 14:57:34 ubuntu kernel: [    0.006739] On node 0, zone DMA: 97 pages in unavailable ranges
+Oct  7 14:57:34 ubuntu kernel: [    0.210444] On node 0, zone Normal: 16 pages in unavailable ranges
+Oct  7 14:57:34 ubuntu kernel: [    0.213177] ACPI: PM-Timer IO Port: 0x4008
+Oct  7 14:57:34 ubuntu kernel: [    0.213622] IOAPIC[0]: apic_id 1, version 32, address 0xfec00000, GSI 0-23
+Oct  7 14:57:34 ubuntu kernel: [    0.213627] ACPI: INT_SRC_OVR (bus 0 bus_irq 0 global_irq 2 dfl dfl)
+Oct  7 14:57:34 ubuntu kernel: [    0.213628] ACPI: INT_SRC_OVR (bus 0 bus_irq 9 global_irq 9 low level)
+Oct  7 14:57:34 ubuntu kernel: [    0.213633] ACPI: Using ACPI (MADT) for SMP configuration information
+Oct  7 14:57:34 ubuntu kernel: [    0.213674] smpboot: Allowing 1 CPUs, 0 hotplug CPUs
+Oct  7 14:57:34 ubuntu kernel: [    0.213811] PM: hibernation: Registered nosave memory: [mem 0x00000000-0x00000fff]
+Oct  7 14:57:34 ubuntu kernel: [    0.213814] PM: hibernation: Registered nosave memory: [mem 0x0009f000-0x0009ffff]
+Oct  7 14:57:34 ubuntu kernel: [    0.213815] PM: hibernation: Registered nosave memory: [mem 0x000a0000-0x000effff]
+Oct  7 14:57:34 ubuntu kernel: [    0.213815] PM: hibernation: Registered nosave memory: [mem 0x000f0000-0x000fffff]
+Oct  7 14:57:34 ubuntu kernel: [    0.213816] PM: hibernation: Registered nosave memory: [mem 0xdfff0000-0xdfffffff]
+Oct  7 14:57:34 ubuntu kernel: [    0.213817] PM: hibernation: Registered nosave memory: [mem 0xe0000000-0xfebfffff]
+Oct  7 14:57:34 ubuntu kernel: [    0.213818] PM: hibernation: Registered nosave memory: [mem 0xfec00000-0xfec00fff]
+Oct  7 14:57:34 ubuntu kernel: [    0.213819] PM: hibernation: Registered nosave memory: [mem 0xfec01000-0xfedfffff]
+Oct  7 14:57:34 ubuntu kernel: [    0.213819] PM: hibernation: Registered nosave memory: [mem 0xfee00000-0xfee00fff]
+Oct  7 14:57:34 ubuntu kernel: [    0.213820] PM: hibernation: Registered nosave memory: [mem 0xfee01000-0xfffbffff]
+Oct  7 14:57:34 ubuntu kernel: [    0.213820] PM: hibernation: Registered nosave memory: [mem 0xfffc0000-0xffffffff]
+Oct  7 14:57:34 ubuntu kernel: [    0.213822] [mem 0xe0000000-0xfebfffff] available for PCI devices
+Oct  7 14:57:34 ubuntu kernel: [    0.213823] Booting paravirtualized kernel on KVM
+Oct  7 14:57:34 ubuntu kernel: [    0.213825] clocksource: refined-jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645519600211568 ns
+Oct  7 14:57:34 ubuntu kernel: [    0.213831] setup_percpu: NR_CPUS:8192 nr_cpumask_bits:1 nr_cpu_ids:1 nr_node_ids:1
+Oct  7 14:57:34 ubuntu kernel: [    0.221299] percpu: Embedded 60 pages/cpu s208896 r8192 d28672 u2097152
+Oct  7 14:57:34 ubuntu kernel: [    0.221307] pcpu-alloc: s208896 r8192 d28672 u2097152 alloc=1*2097152
+Oct  7 14:57:34 ubuntu kernel: [    0.221309] pcpu-alloc: [0] 0 
+Oct  7 14:57:34 ubuntu kernel: [    0.221411] kvm-guest: PV spinlocks disabled, single CPU
+Oct  7 14:57:34 ubuntu kernel: [    0.221420] Built 1 zonelists, mobility grouping on.  Total pages: 1031920
+Oct  7 14:57:34 ubuntu kernel: [    0.221421] Policy zone: Normal
+Oct  7 14:57:34 ubuntu kernel: [    0.221422] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-5.15.0-48-generic root=UUID=d2908b80-1631-4e9a-a168-f39b717d0fad ro quiet splash
+Oct  7 14:57:34 ubuntu kernel: [    0.221480] Unknown kernel command line parameters "splash BOOT_IMAGE=/boot/vmlinuz-5.15.0-48-generic", will be passed to user space.
+Oct  7 14:57:34 ubuntu kernel: [    0.223477] Dentry cache hash table entries: 524288 (order: 10, 4194304 bytes, linear)
+Oct  7 14:57:34 ubuntu kernel: [    0.230498] Inode-cache hash table entries: 262144 (order: 9, 2097152 bytes, linear)
+Oct  7 14:57:34 ubuntu kernel: [    0.230537] mem auto-init: stack:off, heap alloc:on, heap free:off
+Oct  7 14:57:34 ubuntu kernel: [    0.347905] Memory: 3947548K/4193848K available (16393K kernel code, 4377K rwdata, 10804K rodata, 3224K init, 6580K bss, 246040K reserved, 0K cma-reserved)
+Oct  7 14:57:34 ubuntu kernel: [    0.348431] SLUB: HWalign=64, Order=0-3, MinObjects=0, CPUs=1, Nodes=1
+Oct  7 14:57:34 ubuntu kernel: [    0.348503] Kernel/User page tables isolation: enabled
+Oct  7 14:57:34 ubuntu kernel: [    0.348518] ftrace: allocating 50485 entries in 198 pages
+Oct  7 14:57:34 ubuntu kernel: [    0.372217] ftrace: allocated 198 pages with 4 groups
+Oct  7 14:57:34 ubuntu kernel: [    0.373532] rcu: Hierarchical RCU implementation.
+Oct  7 14:57:34 ubuntu kernel: [    0.373534] rcu: 	RCU restricting CPUs from NR_CPUS=8192 to nr_cpu_ids=1.
+Oct  7 14:57:34 ubuntu kernel: [    0.373535] 	Rude variant of Tasks RCU enabled.
+Oct  7 14:57:34 ubuntu kernel: [    0.373536] 	Tracing variant of Tasks RCU enabled.
+Oct  7 14:57:34 ubuntu kernel: [    0.373537] rcu: RCU calculated value of scheduler-enlistment delay is 25 jiffies.
+Oct  7 14:57:34 ubuntu kernel: [    0.373538] rcu: Adjusting geometry for rcu_fanout_leaf=16, nr_cpu_ids=1
+Oct  7 14:57:34 ubuntu kernel: [    0.379282] NR_IRQS: 524544, nr_irqs: 256, preallocated irqs: 16
+Oct  7 14:57:34 ubuntu kernel: [    0.451757] Console: colour VGA+ 80x25
+Oct  7 14:57:34 ubuntu kernel: [    0.451768] printk: console [tty0] enabled
+Oct  7 14:57:34 ubuntu kernel: [    0.451821] ACPI: Core revision 20210730
+Oct  7 14:57:34 ubuntu kernel: [    0.452113] APIC: Switch to symmetric I/O mode setup
+Oct  7 14:57:34 ubuntu kernel: [    0.475228] ..TIMER: vector=0x30 apic1=0 pin1=2 apic2=-1 pin2=-1
+Oct  7 14:57:34 ubuntu kernel: [    0.475622] clocksource: tsc-early: mask: 0xffffffffffffffff max_cycles: 0x2e02c314322, max_idle_ns: 440795292111 ns
+Oct  7 14:57:34 ubuntu kernel: [    0.475630] Calibrating delay loop (skipped) preset value.. 6383.99 BogoMIPS (lpj=12767992)
+Oct  7 14:57:34 ubuntu kernel: [    0.475633] pid_max: default: 32768 minimum: 301
+Oct  7 14:57:34 ubuntu kernel: [    0.475679] LSM: Security Framework initializing
+Oct  7 14:57:34 ubuntu kernel: [    0.475690] landlock: Up and running.
+Oct  7 14:57:34 ubuntu kernel: [    0.475690] Yama: becoming mindful.
+Oct  7 14:57:34 ubuntu kernel: [    0.475835] AppArmor: AppArmor initialized
+Oct  7 14:57:34 ubuntu kernel: [    0.475882] Mount-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+Oct  7 14:57:34 ubuntu kernel: [    0.476117] Mountpoint-cache hash table entries: 8192 (order: 4, 65536 bytes, linear)
+Oct  7 14:57:34 ubuntu kernel: [    0.481285] Last level iTLB entries: 4KB 128, 2MB 8, 4MB 8
+Oct  7 14:57:34 ubuntu kernel: [    0.481287] Last level dTLB entries: 4KB 64, 2MB 0, 4MB 0, 1GB 4
+Oct  7 14:57:34 ubuntu kernel: [    0.481291] Spectre V1 : Mitigation: usercopy/swapgs barriers and __user pointer sanitization
+Oct  7 14:57:34 ubuntu kernel: [    0.481293] Spectre V2 : Mitigation: Retpolines
+Oct  7 14:57:34 ubuntu kernel: [    0.481294] Spectre V2 : Spectre v2 / SpectreRSB mitigation: Filling RSB on context switch
+Oct  7 14:57:34 ubuntu kernel: [    0.481294] RETBleed: WARNING: Spectre v2 mitigation leaves CPU vulnerable to RETBleed attacks, data leaks possible!
+Oct  7 14:57:34 ubuntu kernel: [    0.483629] RETBleed: Vulnerable
+Oct  7 14:57:34 ubuntu kernel: [    0.483630] Speculative Store Bypass: Vulnerable
+Oct  7 14:57:34 ubuntu kernel: [    0.483636] MDS: Mitigation: Clear CPU buffers
+Oct  7 14:57:34 ubuntu kernel: [    0.483636] MMIO Stale Data: Mitigation: Clear CPU buffers
+Oct  7 14:57:34 ubuntu kernel: [    0.499627] Freeing SMP alternatives memory: 40K
+Oct  7 14:57:34 ubuntu kernel: [    0.599627] smpboot: CPU0: Intel(R) Core(TM) i5-6500 CPU @ 3.20GHz (family: 0x6, model: 0x5e, stepping: 0x3)
+Oct  7 14:57:34 ubuntu kernel: [    0.599627] Performance Events: unsupported p6 CPU model 94 no PMU driver, software events only.
+Oct  7 14:57:34 ubuntu kernel: [    0.599627] rcu: Hierarchical SRCU implementation.
+Oct  7 14:57:34 ubuntu kernel: [    0.599627] NMI watchdog: Perf NMI watchdog permanently disabled
+Oct  7 14:57:34 ubuntu kernel: [    0.599627] smp: Bringing up secondary CPUs ...
+Oct  7 14:57:34 ubuntu kernel: [    0.599627] smp: Brought up 1 node, 1 CPU
+Oct  7 14:57:34 ubuntu kernel: [    0.599627] smpboot: Max logical packages: 1
+Oct  7 14:57:34 ubuntu kernel: [    0.599627] smpboot: Total of 1 processors activated (6383.99 BogoMIPS)
+Oct  7 14:57:34 ubuntu kernel: [    0.599627] devtmpfs: initialized
+Oct  7 14:57:34 ubuntu kernel: [    0.599627] x86/mm: Memory block size: 128MB
+Oct  7 14:57:34 ubuntu kernel: [    0.599627] clocksource: jiffies: mask: 0xffffffff max_cycles: 0xffffffff, max_idle_ns: 7645041785100000 ns
+Oct  7 14:57:34 ubuntu kernel: [    0.599627] futex hash table entries: 256 (order: 2, 16384 bytes, linear)
+Oct  7 14:57:34 ubuntu kernel: [    0.599627] pinctrl core: initialized pinctrl subsystem
+Oct  7 14:57:34 ubuntu kernel: [    0.599630] PM: RTC time: 13:57:24, date: 2022-10-07
+Oct  7 14:57:34 ubuntu kernel: [    0.600022] NET: Registered PF_NETLINK/PF_ROUTE protocol family
+Oct  7 14:57:34 ubuntu kernel: [    0.602434] DMA: preallocated 512 KiB GFP_KERNEL pool for atomic allocations
+Oct  7 14:57:34 ubuntu kernel: [    0.602493] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA pool for atomic allocations
+Oct  7 14:57:34 ubuntu kernel: [    0.602534] DMA: preallocated 512 KiB GFP_KERNEL|GFP_DMA32 pool for atomic allocations
+Oct  7 14:57:34 ubuntu kernel: [    0.602546] audit: initializing netlink subsys (disabled)
+Oct  7 14:57:34 ubuntu kernel: [    0.602983] thermal_sys: Registered thermal governor 'fair_share'
+Oct  7 14:57:34 ubuntu kernel: [    0.602984] thermal_sys: Registered thermal governor 'bang_bang'
+Oct  7 14:57:34 ubuntu kernel: [    0.602984] thermal_sys: Registered thermal governor 'step_wise'
+Oct  7 14:57:34 ubuntu kernel: [    0.602985] thermal_sys: Registered thermal governor 'user_space'
+Oct  7 14:57:34 ubuntu kernel: [    0.602985] thermal_sys: Registered thermal governor 'power_allocator'
+Oct  7 14:57:34 ubuntu kernel: [    0.602990] EISA bus registered
+Oct  7 14:57:34 ubuntu kernel: [    0.602992] cpuidle: using governor ladder
+Oct  7 14:57:34 ubuntu kernel: [    0.602992] cpuidle: using governor menu
+Oct  7 14:57:34 ubuntu kernel: [    0.603071] ACPI: bus type PCI registered
+Oct  7 14:57:34 ubuntu kernel: [    0.603073] acpiphp: ACPI Hot Plug PCI Controller Driver version: 0.5
+Oct  7 14:57:34 ubuntu kernel: [    0.603842] PCI: Using configuration type 1 for base access
+Oct  7 14:57:34 ubuntu kernel: [    0.605872] Kprobes globally optimized
+Oct  7 14:57:34 ubuntu kernel: [    0.605948] audit: type=2000 audit(1665152976.271:1): state=initialized audit_enabled=0 res=1
+Oct  7 14:57:34 ubuntu kernel: [    0.606189] HugeTLB registered 2.00 MiB page size, pre-allocated 0 pages
+Oct  7 14:57:34 ubuntu kernel: [    0.607627] ACPI: Added _OSI(Module Device)
+Oct  7 14:57:34 ubuntu kernel: [    0.607627] ACPI: Added _OSI(Processor Device)
+Oct  7 14:57:34 ubuntu kernel: [    0.607627] ACPI: Added _OSI(3.0 _SCP Extensions)
+Oct  7 14:57:34 ubuntu kernel: [    0.607627] ACPI: Added _OSI(Processor Aggregator Device)
+Oct  7 14:57:34 ubuntu kernel: [    0.607627] ACPI: Added _OSI(Linux-Dell-Video)
+Oct  7 14:57:34 ubuntu kernel: [    0.607627] ACPI: Added _OSI(Linux-Lenovo-NV-HDMI-Audio)
+Oct  7 14:57:34 ubuntu kernel: [    0.607627] ACPI: Added _OSI(Linux-HPI-Hybrid-Graphics)
+Oct  7 14:57:34 ubuntu kernel: [    0.608235] ACPI: 2 ACPI AML tables successfully acquired and loaded
+Oct  7 14:57:34 ubuntu kernel: [    0.614049] ACPI: Interpreter enabled
+Oct  7 14:57:34 ubuntu kernel: [    0.614057] ACPI: PM: (supports S0 S5)
+Oct  7 14:57:34 ubuntu kernel: [    0.614058] ACPI: Using IOAPIC for interrupt routing
+Oct  7 14:57:34 ubuntu kernel: [    0.614570] PCI: Using host bridge windows from ACPI; if necessary, use "pci=nocrs" and report a bug
+Oct  7 14:57:34 ubuntu kernel: [    0.614572] PCI: Using E820 reservations for host bridge windows
+Oct  7 14:57:34 ubuntu kernel: [    0.614717] ACPI: Enabled 2 GPEs in block 00 to 07
+Oct  7 14:57:34 ubuntu kernel: [    0.624885] ACPI: PCI Root Bridge [PCI0] (domain 0000 [bus 00-ff])
+Oct  7 14:57:34 ubuntu kernel: [    0.624904] acpi PNP0A03:00: _OSC: OS supports [ASPM ClockPM Segments MSI EDR HPX-Type3]
+Oct  7 14:57:34 ubuntu kernel: [    0.625901] acpi PNP0A03:00: _OSC: not requesting OS control; OS requires [ExtendedConfig ASPM ClockPM MSI]
+Oct  7 14:57:34 ubuntu kernel: [    0.625908] acpi PNP0A03:00: fail to add MMCONFIG information, can't access extended PCI configuration space under this bridge.
+Oct  7 14:57:34 ubuntu kernel: [    0.626725] PCI host bridge to bus 0000:00
+Oct  7 14:57:34 ubuntu kernel: [    0.626728] pci_bus 0000:00: root bus resource [bus 00-ff]
+Oct  7 14:57:34 ubuntu kernel: [    0.626729] pci_bus 0000:00: root bus resource [io  0x0000-0x0cf7 window]
+Oct  7 14:57:34 ubuntu kernel: [    0.626731] pci_bus 0000:00: root bus resource [io  0x0d00-0xffff window]
+Oct  7 14:57:34 ubuntu kernel: [    0.626732] pci_bus 0000:00: root bus resource [mem 0x000a0000-0x000bffff window]
+Oct  7 14:57:34 ubuntu kernel: [    0.626733] pci_bus 0000:00: root bus resource [mem 0xe0000000-0xfdffffff window]
+Oct  7 14:57:34 ubuntu kernel: [    0.627812] pci 0000:00:00.0: [8086:1237] type 00 class 0x060000
+Oct  7 14:57:34 ubuntu kernel: [    0.636063] pci 0000:00:01.0: [8086:7000] type 00 class 0x060100
+Oct  7 14:57:34 ubuntu kernel: [    0.639408] pci 0000:00:01.1: [8086:7111] type 00 class 0x01018a
+Oct  7 14:57:34 ubuntu kernel: [    0.641147] pci 0000:00:01.1: reg 0x20: [io  0xd000-0xd00f]
+Oct  7 14:57:34 ubuntu kernel: [    0.641874] pci 0000:00:01.1: legacy IDE quirk: reg 0x10: [io  0x01f0-0x01f7]
+Oct  7 14:57:34 ubuntu kernel: [    0.641876] pci 0000:00:01.1: legacy IDE quirk: reg 0x14: [io  0x03f6]
+Oct  7 14:57:34 ubuntu kernel: [    0.641877] pci 0000:00:01.1: legacy IDE quirk: reg 0x18: [io  0x0170-0x0177]
+Oct  7 14:57:34 ubuntu kernel: [    0.641878] pci 0000:00:01.1: legacy IDE quirk: reg 0x1c: [io  0x0376]
+Oct  7 14:57:34 ubuntu kernel: [    0.649272] pci 0000:00:02.0: [15ad:0405] type 00 class 0x030000
+Oct  7 14:57:34 ubuntu kernel: [    0.650714] pci 0000:00:02.0: reg 0x10: [io  0xd010-0xd01f]
+Oct  7 14:57:34 ubuntu kernel: [    0.651819] pci 0000:00:02.0: reg 0x14: [mem 0xe0000000-0xe0ffffff pref]
+Oct  7 14:57:34 ubuntu kernel: [    0.652945] pci 0000:00:02.0: reg 0x18: [mem 0xf0000000-0xf01fffff]
+Oct  7 14:57:34 ubuntu kernel: [    0.657211] pci 0000:00:02.0: Video device with shadowed ROM at [mem 0x000c0000-0x000dffff]
+Oct  7 14:57:34 ubuntu kernel: [    0.665000] pci 0000:00:03.0: [8086:100e] type 00 class 0x020000
+Oct  7 14:57:34 ubuntu kernel: [    0.665570] pci 0000:00:03.0: reg 0x10: [mem 0xf0200000-0xf021ffff]
+Oct  7 14:57:34 ubuntu kernel: [    0.666242] pci 0000:00:03.0: reg 0x18: [io  0xd020-0xd027]
+Oct  7 14:57:34 ubuntu kernel: [    0.674748] pci 0000:00:04.0: [80ee:cafe] type 00 class 0x088000
+Oct  7 14:57:34 ubuntu kernel: [    0.675937] pci 0000:00:04.0: reg 0x10: [io  0xd040-0xd05f]
+Oct  7 14:57:34 ubuntu kernel: [    0.676518] pci 0000:00:04.0: reg 0x14: [mem 0xf0400000-0xf07fffff]
+Oct  7 14:57:34 ubuntu kernel: [    0.677095] pci 0000:00:04.0: reg 0x18: [mem 0xf0800000-0xf0803fff pref]
+Oct  7 14:57:34 ubuntu kernel: [    0.685649] pci 0000:00:05.0: [8086:2415] type 00 class 0x040100
+Oct  7 14:57:34 ubuntu kernel: [    0.686187] pci 0000:00:05.0: reg 0x10: [io  0xd100-0xd1ff]
+Oct  7 14:57:34 ubuntu kernel: [    0.686523] pci 0000:00:05.0: reg 0x14: [io  0xd200-0xd23f]
+Oct  7 14:57:34 ubuntu kernel: [    0.694295] pci 0000:00:06.0: [106b:003f] type 00 class 0x0c0310
+Oct  7 14:57:34 ubuntu kernel: [    0.694887] pci 0000:00:06.0: reg 0x10: [mem 0xf0804000-0xf0804fff]
+Oct  7 14:57:34 ubuntu kernel: [    0.703631] pci 0000:00:07.0: [8086:7113] type 00 class 0x068000
+Oct  7 14:57:34 ubuntu kernel: [    0.705430] pci 0000:00:07.0: quirk: [io  0x4000-0x403f] claimed by PIIX4 ACPI
+Oct  7 14:57:34 ubuntu kernel: [    0.705471] pci 0000:00:07.0: quirk: [io  0x4100-0x410f] claimed by PIIX4 SMB
+Oct  7 14:57:34 ubuntu kernel: [    0.738571] pci 0000:00:0d.0: [8086:2829] type 00 class 0x010601
+Oct  7 14:57:34 ubuntu kernel: [    0.739280] pci 0000:00:0d.0: reg 0x10: [io  0xd240-0xd247]
+Oct  7 14:57:34 ubuntu kernel: [    0.739578] pci 0000:00:0d.0: reg 0x14: [io  0xd248-0xd24b]
+Oct  7 14:57:34 ubuntu kernel: [    0.739827] pci 0000:00:0d.0: reg 0x18: [io  0xd250-0xd257]
+Oct  7 14:57:34 ubuntu kernel: [    0.740122] pci 0000:00:0d.0: reg 0x1c: [io  0xd258-0xd25b]
+Oct  7 14:57:34 ubuntu kernel: [    0.740417] pci 0000:00:0d.0: reg 0x20: [io  0xd260-0xd26f]
+Oct  7 14:57:34 ubuntu kernel: [    0.740842] pci 0000:00:0d.0: reg 0x24: [mem 0xf0806000-0xf0807fff]
+Oct  7 14:57:34 ubuntu kernel: [    0.849397] ACPI: PCI: Interrupt link LNKA configured for IRQ 11
+Oct  7 14:57:34 ubuntu kernel: [    0.850059] ACPI: PCI: Interrupt link LNKB configured for IRQ 10
+Oct  7 14:57:34 ubuntu kernel: [    0.850293] ACPI: PCI: Interrupt link LNKC configured for IRQ 9
+Oct  7 14:57:34 ubuntu kernel: [    0.850526] ACPI: PCI: Interrupt link LNKD configured for IRQ 11
+Oct  7 14:57:34 ubuntu kernel: [    0.850976] iommu: Default domain type: Translated 
+Oct  7 14:57:34 ubuntu kernel: [    0.850978] iommu: DMA domain TLB invalidation policy: lazy mode 
+Oct  7 14:57:34 ubuntu kernel: [    0.851314] SCSI subsystem initialized
+Oct  7 14:57:34 ubuntu kernel: [    0.851420] libata version 3.00 loaded.
+Oct  7 14:57:34 ubuntu kernel: [    0.851508] pci 0000:00:02.0: vgaarb: setting as boot VGA device
+Oct  7 14:57:34 ubuntu kernel: [    0.851510] pci 0000:00:02.0: vgaarb: VGA device added: decodes=io+mem,owns=io+mem,locks=none
+Oct  7 14:57:34 ubuntu kernel: [    0.851512] pci 0000:00:02.0: vgaarb: bridge control possible
+Oct  7 14:57:34 ubuntu kernel: [    0.851513] vgaarb: loaded
+Oct  7 14:57:34 ubuntu kernel: [    0.851565] ACPI: bus type USB registered
+Oct  7 14:57:34 ubuntu kernel: [    0.851595] usbcore: registered new interface driver usbfs
+Oct  7 14:57:34 ubuntu kernel: [    0.851602] usbcore: registered new interface driver hub
+Oct  7 14:57:34 ubuntu kernel: [    0.851606] usbcore: registered new device driver usb
+Oct  7 14:57:34 ubuntu kernel: [    0.851627] pps_core: LinuxPPS API ver. 1 registered
+Oct  7 14:57:34 ubuntu kernel: [    0.851627] pps_core: Software ver. 5.3.6 - Copyright 2005-2007 Rodolfo Giometti <giometti@linux.it>
+Oct  7 14:57:34 ubuntu kernel: [    0.851627] PTP clock support registered
+Oct  7 14:57:34 ubuntu kernel: [    0.851627] EDAC MC: Ver: 3.0.0
+Oct  7 14:57:34 ubuntu kernel: [    0.853050] NetLabel: Initializing
+Oct  7 14:57:34 ubuntu kernel: [    0.853052] NetLabel:  domain hash size = 128
+Oct  7 14:57:34 ubuntu kernel: [    0.853052] NetLabel:  protocols = UNLABELED CIPSOv4 CALIPSO
+Oct  7 14:57:34 ubuntu kernel: [    0.853069] NetLabel:  unlabeled traffic allowed by default
+Oct  7 14:57:34 ubuntu kernel: [    0.853114] PCI: Using ACPI for IRQ routing
+Oct  7 14:57:34 ubuntu kernel: [    0.853115] PCI: pci_cache_line_size set to 64 bytes
+Oct  7 14:57:34 ubuntu kernel: [    0.853936] e820: reserve RAM buffer [mem 0x0009fc00-0x0009ffff]
+Oct  7 14:57:34 ubuntu kernel: [    0.853938] e820: reserve RAM buffer [mem 0xdfff0000-0xdfffffff]
+Oct  7 14:57:34 ubuntu kernel: [    0.855425] clocksource: Switched to clocksource kvm-clock
+Oct  7 14:57:34 ubuntu kernel: [    0.909280] VFS: Disk quotas dquot_6.6.0
+Oct  7 14:57:34 ubuntu kernel: [    0.909280] VFS: Dquot-cache hash table entries: 512 (order 0, 4096 bytes)
+Oct  7 14:57:34 ubuntu kernel: [    0.909280] AppArmor: AppArmor Filesystem Enabled
+Oct  7 14:57:34 ubuntu kernel: [    0.909280] pnp: PnP ACPI init
+Oct  7 14:57:34 ubuntu kernel: [    0.921304] pnp: PnP ACPI: found 2 devices
+Oct  7 14:57:34 ubuntu kernel: [    0.929814] clocksource: acpi_pm: mask: 0xffffff max_cycles: 0xffffff, max_idle_ns: 2085701024 ns
+Oct  7 14:57:34 ubuntu kernel: [    0.929894] NET: Registered PF_INET protocol family
+Oct  7 14:57:34 ubuntu kernel: [    0.931795] IP idents hash table entries: 65536 (order: 7, 524288 bytes, linear)
+Oct  7 14:57:34 ubuntu kernel: [    0.950188] tcp_listen_portaddr_hash hash table entries: 2048 (order: 3, 32768 bytes, linear)
+Oct  7 14:57:34 ubuntu kernel: [    0.951095] Table-perturb hash table entries: 65536 (order: 6, 262144 bytes, linear)
+Oct  7 14:57:34 ubuntu kernel: [    0.951829] TCP established hash table entries: 32768 (order: 6, 262144 bytes, linear)
+Oct  7 14:57:34 ubuntu kernel: [    0.952224] TCP bind hash table entries: 32768 (order: 7, 524288 bytes, linear)
+Oct  7 14:57:34 ubuntu kernel: [    0.952224] TCP: Hash tables configured (established 32768 bind 32768)
+Oct  7 14:57:34 ubuntu kernel: [    0.952224] MPTCP token hash table entries: 4096 (order: 4, 98304 bytes, linear)
+Oct  7 14:57:34 ubuntu kernel: [    0.952224] UDP hash table entries: 2048 (order: 4, 65536 bytes, linear)
+Oct  7 14:57:34 ubuntu kernel: [    0.952224] UDP-Lite hash table entries: 2048 (order: 4, 65536 bytes, linear)
+Oct  7 14:57:34 ubuntu kernel: [    0.952224] NET: Registered PF_UNIX/PF_LOCAL protocol family
+Oct  7 14:57:34 ubuntu kernel: [    0.952224] NET: Registered PF_XDP protocol family
+Oct  7 14:57:34 ubuntu kernel: [    0.952224] pci_bus 0000:00: resource 4 [io  0x0000-0x0cf7 window]
+Oct  7 14:57:34 ubuntu kernel: [    0.952224] pci_bus 0000:00: resource 5 [io  0x0d00-0xffff window]
+Oct  7 14:57:34 ubuntu kernel: [    0.952224] pci_bus 0000:00: resource 6 [mem 0x000a0000-0x000bffff window]
+Oct  7 14:57:34 ubuntu kernel: [    0.952224] pci_bus 0000:00: resource 7 [mem 0xe0000000-0xfdffffff window]
+Oct  7 14:57:34 ubuntu kernel: [    0.955397] pci 0000:00:00.0: Limiting direct PCI/PCI transfers
+Oct  7 14:57:34 ubuntu kernel: [    0.955440] pci 0000:00:01.0: Activating ISA DMA hang workarounds
+Oct  7 14:57:34 ubuntu kernel: [    0.958585] PCI: CLS 0 bytes, default 64
+Oct  7 14:57:34 ubuntu kernel: [    0.958640] Trying to unpack rootfs image as initramfs...
+Oct  7 14:57:34 ubuntu kernel: [    0.969777] PCI-DMA: Using software bounce buffering for IO (SWIOTLB)
+Oct  7 14:57:34 ubuntu kernel: [    0.969780] software IO TLB: mapped [mem 0x00000000dbff0000-0x00000000dfff0000] (64MB)
+Oct  7 14:57:34 ubuntu kernel: [    0.969939] clocksource: tsc: mask: 0xffffffffffffffff max_cycles: 0x2e02c314322, max_idle_ns: 440795292111 ns
+Oct  7 14:57:34 ubuntu kernel: [    0.969965] clocksource: Switched to clocksource tsc
+Oct  7 14:57:34 ubuntu kernel: [    0.969999] platform rtc_cmos: registered platform RTC device (no PNP device found)
+Oct  7 14:57:34 ubuntu kernel: [    0.970835] Initialise system trusted keyrings
+Oct  7 14:57:34 ubuntu kernel: [    0.970894] Key type blacklist registered
+Oct  7 14:57:34 ubuntu kernel: [    0.971089] workingset: timestamp_bits=36 max_order=20 bucket_order=0
+Oct  7 14:57:34 ubuntu kernel: [    0.973716] zbud: loaded
+Oct  7 14:57:34 ubuntu kernel: [    0.973716] squashfs: version 4.0 (2009/01/31) Phillip Lougher
+Oct  7 14:57:34 ubuntu kernel: [    0.973716] fuse: init (API version 7.34)
+Oct  7 14:57:34 ubuntu kernel: [    0.973716] integrity: Platform Keyring initialized
+Oct  7 14:57:34 ubuntu kernel: [    0.991341] Key type asymmetric registered
+Oct  7 14:57:34 ubuntu kernel: [    0.991343] Asymmetric key parser 'x509' registered
+Oct  7 14:57:34 ubuntu kernel: [    0.991364] Block layer SCSI generic (bsg) driver version 0.4 loaded (major 243)
+Oct  7 14:57:34 ubuntu kernel: [    0.991459] io scheduler mq-deadline registered
+Oct  7 14:57:34 ubuntu kernel: [    0.991810] shpchp: Standard Hot Plug PCI Controller Driver version: 0.4
+Oct  7 14:57:34 ubuntu kernel: [    0.992342] ACPI: AC: AC Adapter [AC] (on-line)
+Oct  7 14:57:34 ubuntu kernel: [    0.992400] input: Power Button as /devices/LNXSYSTM:00/LNXPWRBN:00/input/input0
+Oct  7 14:57:34 ubuntu kernel: [    0.992444] ACPI: button: Power Button [PWRF]
+Oct  7 14:57:34 ubuntu kernel: [    0.992633] input: Sleep Button as /devices/LNXSYSTM:00/LNXSLPBN:00/input/input1
+Oct  7 14:57:34 ubuntu kernel: [    0.992684] ACPI: button: Sleep Button [SLPF]
+Oct  7 14:57:34 ubuntu kernel: [    0.993228] Serial: 8250/16550 driver, 32 ports, IRQ sharing enabled
+Oct  7 14:57:34 ubuntu kernel: [    0.996112] Linux agpgart interface v0.103
+Oct  7 14:57:34 ubuntu kernel: [    1.005826] loop: module loaded
+Oct  7 14:57:34 ubuntu kernel: [    1.013124] ata_piix 0000:00:01.1: version 2.13
+Oct  7 14:57:34 ubuntu kernel: [    1.015269] scsi host0: ata_piix
+Oct  7 14:57:34 ubuntu kernel: [    1.023852] scsi host1: ata_piix
+Oct  7 14:57:34 ubuntu kernel: [    1.023944] ata1: PATA max UDMA/33 cmd 0x1f0 ctl 0x3f6 bmdma 0xd000 irq 14
+Oct  7 14:57:34 ubuntu kernel: [    1.023946] ata2: PATA max UDMA/33 cmd 0x170 ctl 0x376 bmdma 0xd008 irq 15
+Oct  7 14:57:34 ubuntu kernel: [    1.024157] tun: Universal TUN/TAP device driver, 1.6
+Oct  7 14:57:34 ubuntu kernel: [    1.025497] PPP generic driver version 2.4.2
+Oct  7 14:57:34 ubuntu kernel: [    1.025600] VFIO - User Level meta-driver version: 0.3
+Oct  7 14:57:34 ubuntu kernel: [    1.026899] ehci_hcd: USB 2.0 'Enhanced' Host Controller (EHCI) Driver
+Oct  7 14:57:34 ubuntu kernel: [    1.026937] ehci-pci: EHCI PCI platform driver
+Oct  7 14:57:34 ubuntu kernel: [    1.026945] ehci-platform: EHCI generic platform driver
+Oct  7 14:57:34 ubuntu kernel: [    1.026949] ohci_hcd: USB 1.1 'Open' Host Controller (OHCI) Driver
+Oct  7 14:57:34 ubuntu kernel: [    1.026951] ohci-pci: OHCI PCI platform driver
+Oct  7 14:57:34 ubuntu kernel: [    1.028755] ohci-pci 0000:00:06.0: OHCI PCI host controller
+Oct  7 14:57:34 ubuntu kernel: [    1.028760] ohci-pci 0000:00:06.0: new USB bus registered, assigned bus number 1
+Oct  7 14:57:34 ubuntu kernel: [    1.029348] ohci-pci 0000:00:06.0: irq 22, io mem 0xf0804000
+Oct  7 14:57:34 ubuntu kernel: [    1.090689] usb usb1: New USB device found, idVendor=1d6b, idProduct=0001, bcdDevice= 5.15
+Oct  7 14:57:34 ubuntu kernel: [    1.090694] usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Oct  7 14:57:34 ubuntu kernel: [    1.090710] usb usb1: Product: OHCI PCI host controller
+Oct  7 14:57:34 ubuntu kernel: [    1.090711] usb usb1: Manufacturer: Linux 5.15.0-48-generic ohci_hcd
+Oct  7 14:57:34 ubuntu kernel: [    1.090712] usb usb1: SerialNumber: 0000:00:06.0
+Oct  7 14:57:34 ubuntu kernel: [    1.090887] hub 1-0:1.0: USB hub found
+Oct  7 14:57:34 ubuntu kernel: [    1.090984] hub 1-0:1.0: 12 ports detected
+Oct  7 14:57:34 ubuntu kernel: [    1.099884] ohci-platform: OHCI generic platform driver
+Oct  7 14:57:34 ubuntu kernel: [    1.099917] uhci_hcd: USB Universal Host Controller Interface driver
+Oct  7 14:57:34 ubuntu kernel: [    1.100096] i8042: PNP: PS/2 Controller [PNP0303:PS2K,PNP0f03:PS2M] at 0x60,0x64 irq 1,12
+Oct  7 14:57:34 ubuntu kernel: [    1.104079] serio: i8042 KBD port at 0x60,0x64 irq 1
+Oct  7 14:57:34 ubuntu kernel: [    1.104085] serio: i8042 AUX port at 0x60,0x64 irq 12
+Oct  7 14:57:34 ubuntu kernel: [    1.104265] mousedev: PS/2 mouse device common for all mice
+Oct  7 14:57:34 ubuntu kernel: [    1.106141] input: AT Translated Set 2 keyboard as /devices/platform/i8042/serio0/input/input2
+Oct  7 14:57:34 ubuntu kernel: [    1.120353] rtc_cmos rtc_cmos: registered as rtc0
+Oct  7 14:57:34 ubuntu kernel: [    1.120788] rtc_cmos rtc_cmos: setting system clock to 2022-10-07T13:57:25 UTC (1665151045)
+Oct  7 14:57:34 ubuntu kernel: [    1.120823] rtc_cmos rtc_cmos: alarms up to one day, 114 bytes nvram
+Oct  7 14:57:34 ubuntu kernel: [    1.120831] i2c_dev: i2c /dev entries driver
+Oct  7 14:57:34 ubuntu kernel: [    1.120848] device-mapper: core: CONFIG_IMA_DISABLE_HTABLE is disabled. Duplicate IMA measurements will not be recorded in the IMA log.
+Oct  7 14:57:34 ubuntu kernel: [    1.120963] device-mapper: uevent: version 1.0.3
+Oct  7 14:57:34 ubuntu kernel: [    1.121071] device-mapper: ioctl: 4.45.0-ioctl (2021-03-22) initialised: dm-devel@redhat.com
+Oct  7 14:57:34 ubuntu kernel: [    1.121088] platform eisa.0: Probing EISA bus 0
+Oct  7 14:57:34 ubuntu kernel: [    1.121089] platform eisa.0: EISA: Cannot allocate resource for mainboard
+Oct  7 14:57:34 ubuntu kernel: [    1.121090] platform eisa.0: Cannot allocate resource for EISA slot 1
+Oct  7 14:57:34 ubuntu kernel: [    1.121091] platform eisa.0: Cannot allocate resource for EISA slot 2
+Oct  7 14:57:34 ubuntu kernel: [    1.121092] platform eisa.0: Cannot allocate resource for EISA slot 3
+Oct  7 14:57:34 ubuntu kernel: [    1.121093] platform eisa.0: Cannot allocate resource for EISA slot 4
+Oct  7 14:57:34 ubuntu kernel: [    1.121094] platform eisa.0: Cannot allocate resource for EISA slot 5
+Oct  7 14:57:34 ubuntu kernel: [    1.121094] platform eisa.0: Cannot allocate resource for EISA slot 6
+Oct  7 14:57:34 ubuntu kernel: [    1.121095] platform eisa.0: Cannot allocate resource for EISA slot 7
+Oct  7 14:57:34 ubuntu kernel: [    1.121096] platform eisa.0: Cannot allocate resource for EISA slot 8
+Oct  7 14:57:34 ubuntu kernel: [    1.121097] platform eisa.0: EISA: Detected 0 cards
+Oct  7 14:57:34 ubuntu kernel: [    1.121099] intel_pstate: CPU model not supported
+Oct  7 14:57:34 ubuntu kernel: [    1.121106] ledtrig-cpu: registered to indicate activity on CPUs
+Oct  7 14:57:34 ubuntu kernel: [    1.121293] intel_pmc_core intel_pmc_core.0:  initialized
+Oct  7 14:57:34 ubuntu kernel: [    1.121381] drop_monitor: Initializing network drop monitor service
+Oct  7 14:57:34 ubuntu kernel: [    1.121615] NET: Registered PF_INET6 protocol family
+Oct  7 14:57:34 ubuntu kernel: [    1.220520] ata2.00: ATAPI: VBOX CD-ROM, 1.0, max UDMA/133
+Oct  7 14:57:34 ubuntu kernel: [    1.228839] scsi 1:0:0:0: CD-ROM            VBOX     CD-ROM           1.0  PQ: 0 ANSI: 5
+Oct  7 14:57:34 ubuntu kernel: [    1.262259] sr 1:0:0:0: [sr0] scsi3-mmc drive: 32x/32x xa/form2 tray
+Oct  7 14:57:34 ubuntu kernel: [    1.262263] cdrom: Uniform CD-ROM driver Revision: 3.20
+Oct  7 14:57:34 ubuntu kernel: [    1.305044] sr 1:0:0:0: Attached scsi CD-ROM sr0
+Oct  7 14:57:34 ubuntu kernel: [    1.305409] sr 1:0:0:0: Attached scsi generic sg0 type 5
+Oct  7 14:57:34 ubuntu kernel: [    1.328408] Freeing initrd memory: 61824K
+Oct  7 14:57:34 ubuntu kernel: [    2.216583] Segment Routing with IPv6
+Oct  7 14:57:34 ubuntu kernel: [    2.216598] In-situ OAM (IOAM) with IPv6
+Oct  7 14:57:34 ubuntu kernel: [    2.216620] NET: Registered PF_PACKET protocol family
+Oct  7 14:57:34 ubuntu kernel: [    2.216664] Key type dns_resolver registered
+Oct  7 14:57:34 ubuntu kernel: [    2.225602] IPI shorthand broadcast: enabled
+Oct  7 14:57:34 ubuntu kernel: [    2.225655] sched_clock: Marking stable (2137276863, 87880788)->(2259776999, -34619348)
+Oct  7 14:57:34 ubuntu kernel: [    2.225856] registered taskstats version 1
+Oct  7 14:57:34 ubuntu kernel: [    2.225874] Loading compiled-in X.509 certificates
+Oct  7 14:57:34 ubuntu kernel: [    2.226379] Loaded X.509 cert 'Build time autogenerated kernel key: 812a45ce66042b92679f0afa96ba2ce919aefad9'
+Oct  7 14:57:34 ubuntu kernel: [    2.226835] Loaded X.509 cert 'Canonical Ltd. Live Patch Signing: 14df34d1a87cf37625abec039ef2bf521249b969'
+Oct  7 14:57:34 ubuntu kernel: [    2.227241] Loaded X.509 cert 'Canonical Ltd. Kernel Module Signing: 88f752e560a1e0737e31163a466ad7b70a850c19'
+Oct  7 14:57:34 ubuntu kernel: [    2.227242] blacklist: Loading compiled-in revocation X.509 certificates
+Oct  7 14:57:34 ubuntu kernel: [    2.227260] Loaded X.509 cert 'Canonical Ltd. Secure Boot Signing: 61482aa2830d0ab2ad5af10b7250da9033ddcef0'
+Oct  7 14:57:34 ubuntu kernel: [    2.227359] zswap: loaded using pool lzo/zbud
+Oct  7 14:57:34 ubuntu kernel: [    2.227529] Key type ._fscrypt registered
+Oct  7 14:57:34 ubuntu kernel: [    2.227530] Key type .fscrypt registered
+Oct  7 14:57:34 ubuntu kernel: [    2.227531] Key type fscrypt-provisioning registered
+Oct  7 14:57:34 ubuntu kernel: [    2.233173] Key type encrypted registered
+Oct  7 14:57:34 ubuntu kernel: [    2.233176] AppArmor: AppArmor sha1 policy hashing enabled
+Oct  7 14:57:34 ubuntu kernel: [    2.233182] ima: No TPM chip found, activating TPM-bypass!
+Oct  7 14:57:34 ubuntu kernel: [    2.233187] Loading compiled-in module X.509 certificates
+Oct  7 14:57:34 ubuntu kernel: [    2.233661] Loaded X.509 cert 'Build time autogenerated kernel key: 812a45ce66042b92679f0afa96ba2ce919aefad9'
+Oct  7 14:57:34 ubuntu kernel: [    2.233663] ima: Allocated hash algorithm: sha1
+Oct  7 14:57:34 ubuntu kernel: [    2.233681] ima: No architecture policies found
+Oct  7 14:57:34 ubuntu kernel: [    2.233688] evm: Initialising EVM extended attributes:
+Oct  7 14:57:34 ubuntu kernel: [    2.233689] evm: security.selinux
+Oct  7 14:57:34 ubuntu kernel: [    2.233689] evm: security.SMACK64
+Oct  7 14:57:34 ubuntu kernel: [    2.233690] evm: security.SMACK64EXEC
+Oct  7 14:57:34 ubuntu kernel: [    2.233690] evm: security.SMACK64TRANSMUTE
+Oct  7 14:57:34 ubuntu kernel: [    2.233691] evm: security.SMACK64MMAP
+Oct  7 14:57:34 ubuntu kernel: [    2.233691] evm: security.apparmor
+Oct  7 14:57:34 ubuntu kernel: [    2.233692] evm: security.ima
+Oct  7 14:57:34 ubuntu kernel: [    2.233692] evm: security.capability
+Oct  7 14:57:34 ubuntu kernel: [    2.233693] evm: HMAC attrs: 0x1
+Oct  7 14:57:34 ubuntu kernel: [    2.233947] PM:   Magic number: 10:371:988
+Oct  7 14:57:34 ubuntu kernel: [    2.234124] RAS: Correctable Errors collector initialized.
+Oct  7 14:57:34 ubuntu kernel: [    2.235290] Freeing unused decrypted memory: 2036K
+Oct  7 14:57:34 ubuntu kernel: [    2.235698] Freeing unused kernel image (initmem) memory: 3224K
+Oct  7 14:57:34 ubuntu kernel: [    2.240694] Write protecting the kernel read-only data: 30720k
+Oct  7 14:57:34 ubuntu kernel: [    2.240954] Freeing unused kernel image (text/rodata gap) memory: 2036K
+Oct  7 14:57:34 ubuntu kernel: [    2.241089] Freeing unused kernel image (rodata/data gap) memory: 1484K
+Oct  7 14:57:34 ubuntu kernel: [    2.290968] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Oct  7 14:57:34 ubuntu kernel: [    2.290972] x86/mm: Checking user space page tables
+Oct  7 14:57:34 ubuntu kernel: [    2.337612] x86/mm: Checked W+X mappings: passed, no W+X pages found.
+Oct  7 14:57:34 ubuntu kernel: [    2.337632] Run /init as init process
+Oct  7 14:57:34 ubuntu kernel: [    2.337634]   with arguments:
+Oct  7 14:57:34 ubuntu kernel: [    2.337635]     /init
+Oct  7 14:57:34 ubuntu kernel: [    2.337635]     splash
+Oct  7 14:57:34 ubuntu kernel: [    2.337636]   with environment:
+Oct  7 14:57:34 ubuntu kernel: [    2.337637]     HOME=/
+Oct  7 14:57:34 ubuntu kernel: [    2.337637]     TERM=linux
+Oct  7 14:57:34 ubuntu kernel: [    2.337638]     BOOT_IMAGE=/boot/vmlinuz-5.15.0-48-generic
+Oct  7 14:57:34 ubuntu kernel: [    2.348043] usb 1-1: new full-speed USB device number 2 using ohci-pci
+Oct  7 14:57:34 ubuntu kernel: [    2.617326] e1000: Intel(R) PRO/1000 Network Driver
+Oct  7 14:57:34 ubuntu kernel: [    2.617329] e1000: Copyright (c) 1999-2006 Intel Corporation.
+Oct  7 14:57:34 ubuntu kernel: [    2.617882] piix4_smbus 0000:00:07.0: SMBus Host Controller at 0x4100, revision 0
+Oct  7 14:57:34 ubuntu kernel: [    2.619330] ahci 0000:00:0d.0: version 3.0
+Oct  7 14:57:34 ubuntu kernel: [    2.632829] ahci 0000:00:0d.0: SSS flag set, parallel bus scan disabled
+Oct  7 14:57:34 ubuntu kernel: [    2.633685] ahci 0000:00:0d.0: AHCI 0001.0100 32 slots 1 ports 3 Gbps 0x1 impl SATA mode
+Oct  7 14:57:34 ubuntu kernel: [    2.633688] ahci 0000:00:0d.0: flags: 64bit ncq stag only ccc 
+Oct  7 14:57:34 ubuntu kernel: [    2.655882] scsi host2: ahci
+Oct  7 14:57:34 ubuntu kernel: [    2.655969] ata3: SATA max UDMA/133 abar m8192@0xf0806000 port 0xf0806100 irq 21
+Oct  7 14:57:34 ubuntu kernel: [    2.715016] ACPI: video: Video Device [GFX0] (multi-head: yes  rom: no  post: no)
+Oct  7 14:57:34 ubuntu kernel: [    2.715120] input: Video Bus as /devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A03:00/LNXVIDEO:00/input/input5
+Oct  7 14:57:34 ubuntu kernel: [    2.716829] usb 1-1: New USB device found, idVendor=80ee, idProduct=0021, bcdDevice= 1.00
+Oct  7 14:57:34 ubuntu kernel: [    2.716832] usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+Oct  7 14:57:34 ubuntu kernel: [    2.716833] usb 1-1: Product: USB Tablet
+Oct  7 14:57:34 ubuntu kernel: [    2.716834] usb 1-1: Manufacturer: VirtualBox
+Oct  7 14:57:34 ubuntu kernel: [    2.740064] hid: raw HID events driver (C) Jiri Kosina
+Oct  7 14:57:34 ubuntu kernel: [    2.893435] input: ImExPS/2 Generic Explorer Mouse as /devices/platform/i8042/serio1/input/input4
+Oct  7 14:57:34 ubuntu kernel: [    2.982281] ata3: SATA link up 3.0 Gbps (SStatus 123 SControl 300)
+Oct  7 14:57:34 ubuntu kernel: [    2.983056] ata3.00: ATA-6: VBOX HARDDISK, 1.0, max UDMA/133
+Oct  7 14:57:34 ubuntu kernel: [    2.983059] ata3.00: 27262976 sectors, multi 128: LBA48 NCQ (depth 32)
+Oct  7 14:57:34 ubuntu kernel: [    2.984179] ata3.00: configured for UDMA/133
+Oct  7 14:57:34 ubuntu kernel: [    2.984264] scsi 2:0:0:0: Direct-Access     ATA      VBOX HARDDISK    1.0  PQ: 0 ANSI: 5
+Oct  7 14:57:34 ubuntu kernel: [    2.984442] sd 2:0:0:0: [sda] 27262976 512-byte logical blocks: (14.0 GB/13.0 GiB)
+Oct  7 14:57:34 ubuntu kernel: [    2.984447] sd 2:0:0:0: [sda] Write Protect is off
+Oct  7 14:57:34 ubuntu kernel: [    2.984449] sd 2:0:0:0: [sda] Mode Sense: 00 3a 00 00
+Oct  7 14:57:34 ubuntu kernel: [    2.984456] sd 2:0:0:0: [sda] Write cache: enabled, read cache: enabled, doesn't support DPO or FUA
+Oct  7 14:57:34 ubuntu kernel: [    2.984813] sd 2:0:0:0: Attached scsi generic sg1 type 0
+Oct  7 14:57:34 ubuntu kernel: [    3.064916]  sda: sda1 sda2 sda3
+Oct  7 14:57:34 ubuntu kernel: [    3.092606] sd 2:0:0:0: [sda] Attached SCSI disk
+Oct  7 14:57:34 ubuntu kernel: [    3.116386] usbcore: registered new interface driver usbhid
+Oct  7 14:57:34 ubuntu kernel: [    3.116389] usbhid: USB HID core driver
+Oct  7 14:57:34 ubuntu kernel: [    3.132892] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0001/input/input6
+Oct  7 14:57:34 ubuntu kernel: [    3.133676] hid-generic 0003:80EE:0021.0001: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+Oct  7 14:57:34 ubuntu kernel: [    3.602600] e1000 0000:00:03.0 eth0: (PCI:33MHz:32-bit) 08:00:27:d0:83:b7
+Oct  7 14:57:34 ubuntu kernel: [    3.602607] e1000 0000:00:03.0 eth0: Intel(R) PRO/1000 Network Connection
+Oct  7 14:57:34 ubuntu kernel: [    3.604920] e1000 0000:00:03.0 enp0s3: renamed from eth0
+Oct  7 14:57:34 ubuntu kernel: [    4.241339] EXT4-fs (sda3): mounted filesystem with ordered data mode. Opts: (null). Quota mode: none.
+Oct  7 14:57:34 ubuntu kernel: [    5.043454] random: systemd: uninitialized urandom read (16 bytes read)
+Oct  7 14:57:34 ubuntu kernel: [    5.044949] random: systemd: uninitialized urandom read (16 bytes read)
+Oct  7 14:57:34 ubuntu kernel: [    5.045190] random: systemd: uninitialized urandom read (16 bytes read)
+Oct  7 14:57:34 ubuntu kernel: [    5.279280] mtd device must be supplied (device name is empty)
+Oct  7 14:57:34 ubuntu kernel: [    5.347522] EXT4-fs (sda3): re-mounted. Opts: errors=remount-ro. Quota mode: none.
+Oct  7 14:57:34 ubuntu kernel: [    5.427118] lp: driver loaded but no devices found
+Oct  7 14:57:34 ubuntu kernel: [    5.458968] Adding 1423356k swap on /swapfile.  Priority:-2 extents:5 across:1456124k FS
+Oct  7 14:57:34 ubuntu kernel: [    5.463654] ppdev: user-space parallel port driver
+Oct  7 14:57:34 ubuntu kernel: [    5.494081] IPMI message handler: version 39.2
+Oct  7 14:57:34 ubuntu kernel: [    5.507182] ipmi device interface
+Oct  7 14:57:34 ubuntu kernel: [    5.741504] vmwgfx 0000:00:02.0: vgaarb: deactivate vga console
+Oct  7 14:57:34 ubuntu kernel: [    5.742283] Console: switching to colour dummy device 80x25
+Oct  7 14:57:34 ubuntu kernel: [    5.750078] [TTM] Zone  kernel: Available graphics memory: 2009226 KiB
+Oct  7 14:57:34 ubuntu kernel: [    5.750289] vmwgfx 0000:00:02.0: [drm] FIFO at 0x00000000f0000000 size is 2048 kiB
+Oct  7 14:57:34 ubuntu kernel: [    5.750299] vmwgfx 0000:00:02.0: [drm] VRAM at 0x00000000e0000000 size is 16384 kiB
+Oct  7 14:57:34 ubuntu kernel: [    5.750382] vmwgfx 0000:00:02.0: [drm] Running on SVGA version 2.
+Oct  7 14:57:34 ubuntu kernel: [    5.750424] vmwgfx 0000:00:02.0: [drm] DMA map mode: Caching DMA mappings.
+Oct  7 14:57:34 ubuntu kernel: [    5.750817] vmwgfx 0000:00:02.0: [drm] Legacy memory limits: VRAM = 16384 kB, FIFO = 2048 kB, surface = 507904 kB
+Oct  7 14:57:34 ubuntu kernel: [    5.750819] vmwgfx 0000:00:02.0: [drm] MOB limits: max mob size = 0 kB, max mob pages = 0
+Oct  7 14:57:34 ubuntu kernel: [    5.750821] vmwgfx 0000:00:02.0: [drm] Capabilities: cursor, cursor bypass 2, alpha cursor, 3D, extended fifo, pitchlock, irq mask, gmr, traces, gmr2, screen object 2, 
+Oct  7 14:57:34 ubuntu kernel: [    5.750823] vmwgfx 0000:00:02.0: [drm] Max GMR ids is 8192
+Oct  7 14:57:34 ubuntu kernel: [    5.750824] vmwgfx 0000:00:02.0: [drm] Max number of GMR pages is 1048576
+Oct  7 14:57:34 ubuntu kernel: [    5.750825] vmwgfx 0000:00:02.0: [drm] Maximum display memory size is 16384 kiB
+Oct  7 14:57:34 ubuntu kernel: [    5.782126] vmwgfx 0000:00:02.0: [drm] Screen Object display unit initialized
+Oct  7 14:57:34 ubuntu kernel: [    5.782622] vmwgfx 0000:00:02.0: [drm] Fifo max 0x00200000 min 0x00001000 cap 0x00000355
+Oct  7 14:57:34 ubuntu kernel: [    5.782632] vmwgfx 0000:00:02.0: [drm] Available shader model: Legacy.
+Oct  7 14:57:34 ubuntu kernel: [    5.782656] [drm:vmw_host_printf [vmwgfx]] *ERROR* Failed to send host log message.
+Oct  7 14:57:34 ubuntu kernel: [    5.785247] fbcon: svgadrmfb (fb0) is primary device
+Oct  7 14:57:34 ubuntu kernel: [    5.829486] Console: switching to colour frame buffer device 100x37
+Oct  7 14:57:34 ubuntu kernel: [    5.832785] [drm] Initialized vmwgfx 2.19.0 20210722 for 0000:00:02.0 on minor 0
+Oct  7 14:57:34 ubuntu kernel: [    5.835641] loop0: detected capacity change from 0 to 126896
+Oct  7 14:57:34 ubuntu kernel: [    5.837686] loop1: detected capacity change from 0 to 334424
+Oct  7 14:57:34 ubuntu kernel: [    5.849061] loop2: detected capacity change from 0 to 8
+Oct  7 14:57:34 ubuntu kernel: [    5.851292] loop3: detected capacity change from 0 to 93928
+Oct  7 14:57:34 ubuntu kernel: [    5.853509] loop4: detected capacity change from 0 to 820832
+Oct  7 14:57:34 ubuntu kernel: [    5.867732] loop5: detected capacity change from 0 to 96176
+Oct  7 14:57:34 ubuntu kernel: [    5.876072] loop6: detected capacity change from 0 to 187776
+Oct  7 14:57:34 ubuntu kernel: [    5.881538] loop7: detected capacity change from 0 to 568
+Oct  7 14:57:34 ubuntu kernel: [    5.924154] loop8: detected capacity change from 0 to 207864
+Oct  7 14:57:34 ubuntu kernel: [    6.114392] random: systemd: uninitialized urandom read (16 bytes read)
+Oct  7 14:57:34 ubuntu kernel: [    6.116295] random: systemd-journal: uninitialized urandom read (16 bytes read)
+Oct  7 14:57:34 ubuntu kernel: [    6.134114] random: systemd-journal: uninitialized urandom read (16 bytes read)
+Oct  7 14:57:34 ubuntu kernel: [    6.672735] random: crng init done
+Oct  7 14:57:34 ubuntu kernel: [    6.672737] random: 108 urandom warning(s) missed due to ratelimiting
+Oct  7 14:57:34 ubuntu kernel: [    6.845804] vboxguest: host-version: 6.1.38r153438 0x8000000f
+Oct  7 14:57:34 ubuntu kernel: [    6.910694] vbg_heartbeat_init: Setting up heartbeat to trigger every 2000 milliseconds
+Oct  7 14:57:34 ubuntu kernel: [    6.910813] input: VirtualBox mouse integration as /devices/pci0000:00/0000:00:04.0/input/input7
+Oct  7 14:57:34 ubuntu kernel: [    7.012501] vboxguest: misc device minor 123, IRQ 20, I/O port d040, MMIO at 0x00000000f0400000 (size 0x0000000000400000)
+Oct  7 14:57:34 ubuntu kernel: [    7.040514] RAPL PMU: API unit is 2^-32 Joules, 0 fixed counters, 10737418240 ms ovfl timer
+Oct  7 14:57:34 ubuntu kernel: [    8.202299] audit: type=1400 audit(1665151052.580:2): apparmor="STATUS" operation="profile_load" profile="unconfined" name="lsb_release" pid=421 comm="apparmor_parser"
+Oct  7 14:57:34 ubuntu kernel: [    8.212758] audit: type=1400 audit(1665151052.584:3): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe" pid=422 comm="apparmor_parser"
+Oct  7 14:57:34 ubuntu kernel: [    8.212763] audit: type=1400 audit(1665151052.584:4): apparmor="STATUS" operation="profile_load" profile="unconfined" name="nvidia_modprobe//kmod" pid=422 comm="apparmor_parser"
+Oct  7 14:57:34 ubuntu kernel: [    8.300488] audit: type=1400 audit(1665151052.672:5): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-client.action" pid=427 comm="apparmor_parser"
+Oct  7 14:57:34 ubuntu kernel: [    8.300492] audit: type=1400 audit(1665151052.672:6): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/NetworkManager/nm-dhcp-helper" pid=427 comm="apparmor_parser"
+Oct  7 14:57:34 ubuntu kernel: [    8.300494] audit: type=1400 audit(1665151052.672:7): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/lib/connman/scripts/dhclient-script" pid=427 comm="apparmor_parser"
+Oct  7 14:57:34 ubuntu kernel: [    8.300496] audit: type=1400 audit(1665151052.672:8): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/{,usr/}sbin/dhclient" pid=427 comm="apparmor_parser"
+Oct  7 14:57:34 ubuntu kernel: [    8.538849] audit: type=1400 audit(1665151052.912:9): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince" pid=429 comm="apparmor_parser"
+Oct  7 14:57:34 ubuntu kernel: [    8.538854] audit: type=1400 audit(1665151052.912:10): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince//sanitized_helper" pid=429 comm="apparmor_parser"
+Oct  7 14:57:34 ubuntu kernel: [    8.538856] audit: type=1400 audit(1665151052.912:11): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/usr/bin/evince-previewer" pid=429 comm="apparmor_parser"
+Oct  7 14:57:34 ubuntu kernel: [    8.869920] snd_intel8x0 0000:00:05.0: allow list rate for 1028:0177 is 48000
+Oct  7 14:57:34 ubuntu kernel: [    9.342476] mtd device must be supplied (device name is empty)
+Oct  7 14:57:36 ubuntu kernel: [   11.855129] Service: Display SVGA X11
+Oct  7 14:57:36 ubuntu kernel: [   11.878427] Running service failed: VERR_NOT_AVAILABLE
+Oct  7 14:57:36 ubuntu kernel: [   12.039554] 13:57:36.415866 main     VBoxService 6.1.38_Ubuntu r153438 (verbosity: 0) linux.amd64 (Sep  7 2022 11:18:57) release log
+Oct  7 14:57:36 ubuntu kernel: [   12.039554] 13:57:
+Oct  7 14:57:36 ubuntu kernel: [   12.077071] 13:57:36.455305 main     OS Product: Linux
+Oct  7 14:57:36 ubuntu kernel: [   12.093112] 13:57:36.471748 main     OS Release: 5.15.0-48-generic
+Oct  7 14:57:36 ubuntu kernel: [   12.097813] 13:57:36.476688 main     OS Version: #54-Ubuntu SMP Fri Aug 26 13:26:29 UTC 2022
+Oct  7 14:57:36 ubuntu kernel: [   12.098421] 13:57:36.477188 main     Executable: /usr/sbin/VBoxService
+Oct  7 14:57:36 ubuntu kernel: [   12.098421] 13:57:36.477189 main     Process ID: 708
+Oct  7 14:57:36 ubuntu kernel: [   12.098421] 13:57:36.477190 main     Pa
+Oct  7 14:57:36 ubuntu kernel: [   12.141621] 13:57:36.520545 main     6.1.38_Ubuntu r153438 started. Verbose level = 0
+Oct  7 14:57:36 ubuntu kernel: [   12.150332] 13:57:36.529262 main     vbglR3GuestCtrlDetectPeekGetCancelSupport: Supported (#1)
+Oct  7 14:57:37 ubuntu kernel: [   12.657820] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+Oct  7 14:57:37 ubuntu kernel: [   12.696566] IPv6: ADDRCONF(NETDEV_CHANGE): enp0s3: link becomes ready
+Oct  7 14:57:37 ubuntu kernel: [   13.054313] loop9: detected capacity change from 0 to 8
+Oct  7 14:57:37 ubuntu kernel: [   13.337929] kauditd_printk_skb: 30 callbacks suppressed
+Oct  7 14:57:37 ubuntu kernel: [   13.337931] audit: type=1400 audit(1665151057.708:42): apparmor="DENIED" operation="capable" profile="/usr/sbin/cups-browsed" pid=808 comm="cups-browsed" capability=23  capname="sys_nice"
+Oct  7 14:57:38 ubuntu kernel: [   14.466508] audit: type=1400 audit(1665151058.844:43): apparmor="DENIED" operation="capable" profile="/usr/lib/snapd/snap-confine" pid=843 comm="snap-confine" capability=12  capname="net_admin"
+Oct  7 14:57:38 ubuntu kernel: [   14.474879] audit: type=1400 audit(1665151058.852:44): apparmor="DENIED" operation="capable" profile="/usr/lib/snapd/snap-confine" pid=843 comm="snap-confine" capability=38  capname="perfmon"
+Oct  7 14:57:38 ubuntu kernel: [   14.592692] audit: type=1400 audit(1665151058.964:45): apparmor="DENIED" operation="capable" profile="/usr/lib/snapd/snap-confine" pid=843 comm="snap-confine" capability=4  capname="fsetid"
+Oct  7 14:57:45 ubuntu kernel: [   20.907876] rfkill: input handler disabled
+Oct  7 14:58:36 ubuntu kernel: [   71.882193] rfkill: input handler enabled
+Oct  7 14:58:41 ubuntu kernel: [   77.523243] audit: type=1326 audit(1665151121.679:46): auid=1000 uid=1000 gid=1000 ses=3 subj=? pid=1551 comm="snapd-desktop-i" exe="/snap/snapd-desktop-integration/14/bin/snapd-desktop-integration" sig=0 arch=c000003e syscall=314 compat=0 ip=0x7fb5bc20573d code=0x50000
+Oct  7 14:58:43 ubuntu kernel: [   79.591898] rfkill: input handler disabled
+Oct  7 14:59:37 ubuntu kernel: [  132.941808] loop9: detected capacity change from 0 to 113792
+Oct  7 14:59:40 ubuntu kernel: [  136.717483] loop10: detected capacity change from 0 to 43944
+Oct  7 14:59:41 ubuntu kernel: [  136.975827] audit: type=1400 audit(1665151181.124:47): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap-update-ns.irssi" pid=2284 comm="apparmor_parser"
+Oct  7 14:59:41 ubuntu kernel: [  137.152652] audit: type=1400 audit(1665151181.308:48): apparmor="STATUS" operation="profile_load" profile="unconfined" name="snap.irssi.irssi" pid=2285 comm="apparmor_parser"
+Oct  7 14:59:41 ubuntu kernel: [  137.590374] audit: type=1400 audit(1665151181.740:49): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/snap/snapd/16292/usr/lib/snapd/snap-confine" pid=2294 comm="apparmor_parser"
+Oct  7 14:59:41 ubuntu kernel: [  137.590379] audit: type=1400 audit(1665151181.740:50): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/snap/snapd/16292/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=2294 comm="apparmor_parser"
+Oct  7 14:59:41 ubuntu kernel: [  137.819686] audit: type=1400 audit(1665151181.976:51): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.irssi.irssi" pid=2296 comm="apparmor_parser"
+Oct  7 14:59:41 ubuntu kernel: [  137.828028] audit: type=1400 audit(1665151181.984:52): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.irssi" pid=2298 comm="apparmor_parser"
+Oct  7 15:00:33 ubuntu kernel: [  189.396806] Service: Shared Clipboard
+Oct  7 15:00:34 ubuntu kernel: [  190.125999] Worker loop running
+Oct  7 15:17:31 ubuntu kernel: [ 1207.601947] usb 1-1: USB disconnect, device number 2
+Oct  7 15:17:32 ubuntu kernel: [ 1208.347453] usb 1-1: new full-speed USB device number 3 using ohci-pci
+Oct  7 15:17:32 ubuntu kernel: [ 1208.806815] usb 1-1: New USB device found, idVendor=80ee, idProduct=0021, bcdDevice= 1.00
+Oct  7 15:17:32 ubuntu kernel: [ 1208.806820] usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+Oct  7 15:17:32 ubuntu kernel: [ 1208.806821] usb 1-1: Product: USB Tablet
+Oct  7 15:17:32 ubuntu kernel: [ 1208.806839] usb 1-1: Manufacturer: VirtualBox
+Oct  7 15:17:32 ubuntu kernel: [ 1208.828869] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0002/input/input8
+Oct  7 15:17:33 ubuntu kernel: [ 1208.901187] hid-generic 0003:80EE:0021.0002: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+Oct  7 15:22:28 ubuntu kernel: [ 1503.816080] audit: type=1400 audit(1665152548.111:53): apparmor="DENIED" operation="open" profile="snap-update-ns.firefox" name="/var/lib/" pid=2818 comm="5" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+Oct  7 15:22:28 ubuntu kernel: [ 1503.819287] audit: type=1400 audit(1665152548.111:54): apparmor="DENIED" operation="mkdir" profile="snap-update-ns.firefox" name="/usr/share/libreoffice/help/" pid=2818 comm="5" requested_mask="c" denied_mask="c" fsuid=0 ouid=0
+Oct  7 15:22:28 ubuntu kernel: [ 1503.819902] audit: type=1400 audit(1665152548.111:55): apparmor="DENIED" operation="open" profile="snap-update-ns.firefox" name="/var/lib/" pid=2818 comm="5" requested_mask="r" denied_mask="r" fsuid=0 ouid=0
+Oct  7 15:22:34 ubuntu kernel: [ 1510.278092] audit: type=1326 audit(1665152554.575:56): auid=1000 uid=1000 gid=1000 ses=3 subj=? pid=2800 comm="firefox" exe="/snap/firefox/1635/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=314 compat=0 ip=0x7f95c7a7e73d code=0x50000
+Oct  7 15:23:11 ubuntu kernel: [ 1547.378824] audit: type=1400 audit(1665152591.693:57): apparmor="DENIED" operation="open" profile="snap.firefox.firefox" name="/etc/fstab" pid=2800 comm="firefox" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+Oct  7 15:23:11 ubuntu kernel: [ 1547.385866] audit: type=1400 audit(1665152591.701:58): apparmor="DENIED" operation="open" profile="snap.firefox.firefox" name="/run/mount/utab" pid=2800 comm="firefox" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+Oct  7 15:23:11 ubuntu kernel: [ 1547.575801] audit: type=1400 audit(1665152591.885:59): apparmor="DENIED" operation="open" profile="snap.firefox.firefox" name="/run/mount/utab" pid=2800 comm="firefox" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+Oct  7 15:23:12 ubuntu kernel: [ 1547.833237] audit: type=1107 audit(1665152592.145:60): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.131" pid=2800 label="snap.firefox.firefox" peer_pid=3662 peer_label="unconfined"
+Oct  7 15:23:12 ubuntu kernel: [ 1547.833237]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  7 15:23:12 ubuntu kernel: [ 1547.833242] audit: type=1420 audit(1665152592.145:61): subj_apparmor=unconfined
+Oct  7 15:23:12 ubuntu kernel: [ 1547.836439] audit: type=1107 audit(1665152592.153:62): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.131" pid=2800 label="snap.firefox.firefox" peer_pid=3662 peer_label="unconfined"
+Oct  7 15:23:12 ubuntu kernel: [ 1547.836439]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  7 15:23:12 ubuntu kernel: [ 1547.836444] audit: type=1420 audit(1665152592.153:63): subj_apparmor=unconfined
+Oct  7 15:23:39 ubuntu kernel: [ 1575.369493] audit: type=1400 audit(1665152619.699:64): apparmor="DENIED" operation="open" profile="snap.firefox.firefox" name="/run/mount/utab" pid=2800 comm="firefox" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+Oct  7 15:23:39 ubuntu kernel: [ 1575.373328] audit: type=1107 audit(1665152619.699:65): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.131" pid=2800 label="snap.firefox.firefox" peer_pid=3662 peer_label="unconfined"
+Oct  7 15:23:39 ubuntu kernel: [ 1575.373328]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  7 15:23:39 ubuntu kernel: [ 1575.373333] audit: type=1420 audit(1665152619.699:66): subj_apparmor=unconfined
+Oct  7 15:24:12 ubuntu kernel: [ 1608.641089] audit: type=1400 audit(1665152652.987:67): apparmor="DENIED" operation="open" profile="snap.firefox.firefox" name="/run/mount/utab" pid=2800 comm="firefox" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+Oct  7 15:24:13 ubuntu kernel: [ 1608.900747] audit: type=1107 audit(1665152653.247:68): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.133" pid=2800 label="snap.firefox.firefox" peer_pid=3759 peer_label="unconfined"
+Oct  7 15:24:13 ubuntu kernel: [ 1608.900747]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  7 15:24:13 ubuntu kernel: [ 1608.900752] audit: type=1420 audit(1665152653.247:69): subj_apparmor=unconfined
+Oct  7 15:24:13 ubuntu kernel: [ 1608.901861] audit: type=1107 audit(1665152653.247:70): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.133" pid=2800 label="snap.firefox.firefox" peer_pid=3759 peer_label="unconfined"
+Oct  7 15:24:13 ubuntu kernel: [ 1608.901861]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  7 15:24:13 ubuntu kernel: [ 1608.901865] audit: type=1420 audit(1665152653.247:71): subj_apparmor=unconfined
+Oct  7 15:24:13 ubuntu kernel: [ 1608.902654] audit: type=1107 audit(1665152653.247:72): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.133" pid=2800 label="snap.firefox.firefox" peer_pid=3759 peer_label="unconfined"
+Oct  7 15:24:13 ubuntu kernel: [ 1608.902654]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  7 15:24:13 ubuntu kernel: [ 1608.902659] audit: type=1420 audit(1665152653.247:73): subj_apparmor=unconfined
+Oct  7 15:24:13 ubuntu kernel: [ 1608.908298] audit: type=1107 audit(1665152653.259:74): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.133" pid=2800 label="snap.firefox.firefox" peer_pid=3759 peer_label="unconfined"
+Oct  7 15:24:13 ubuntu kernel: [ 1608.908298]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  7 15:24:13 ubuntu kernel: [ 1608.908303] audit: type=1420 audit(1665152653.259:75): subj_apparmor=unconfined
+Oct  7 15:27:02 ubuntu kernel: [ 1778.095946] usb 1-2: new full-speed USB device number 4 using ohci-pci
+Oct  7 15:27:03 ubuntu kernel: [ 1778.607990] usb 1-2: config 1 interface 0 altsetting 0 endpoint 0x1 has invalid maxpacket 512, setting to 64
+Oct  7 15:27:03 ubuntu kernel: [ 1778.607994] usb 1-2: config 1 interface 0 altsetting 0 endpoint 0x82 has invalid maxpacket 512, setting to 64
+Oct  7 15:27:03 ubuntu kernel: [ 1778.628751] usb 1-2: New USB device found, idVendor=126f, idProduct=0161, bcdDevice= 1.00
+Oct  7 15:27:03 ubuntu kernel: [ 1778.628756] usb 1-2: New USB device strings: Mfr=0, Product=2, SerialNumber=3
+Oct  7 15:27:03 ubuntu kernel: [ 1778.628757] usb 1-2: Product: USB Mass Storage Device
+Oct  7 15:27:03 ubuntu kernel: [ 1778.628759] usb 1-2: SerialNumber: 14c0f244af16f6
+Oct  7 15:27:03 ubuntu kernel: [ 1778.695790] usb-storage 1-2:1.0: USB Mass Storage device detected
+Oct  7 15:27:03 ubuntu kernel: [ 1778.702064] scsi host3: usb-storage 1-2:1.0
+Oct  7 15:27:03 ubuntu kernel: [ 1778.702833] usbcore: registered new interface driver usb-storage
+Oct  7 15:27:03 ubuntu kernel: [ 1778.718098] usbcore: registered new interface driver uas
+Oct  7 15:27:04 ubuntu kernel: [ 1779.748938] scsi 3:0:0:0: Direct-Access     USB2.0   Mobile Disk      1.00 PQ: 0 ANSI: 2
+Oct  7 15:27:04 ubuntu kernel: [ 1779.752990] sd 3:0:0:0: Attached scsi generic sg2 type 0
+Oct  7 15:27:04 ubuntu kernel: [ 1779.780322] sd 3:0:0:0: [sdb] 2007040 512-byte logical blocks: (1.03 GB/980 MiB)
+Oct  7 15:27:04 ubuntu kernel: [ 1779.797221] sd 3:0:0:0: [sdb] Write Protect is off
+Oct  7 15:27:04 ubuntu kernel: [ 1779.797227] sd 3:0:0:0: [sdb] Mode Sense: 00 00 00 00
+Oct  7 15:27:04 ubuntu kernel: [ 1779.813957] sd 3:0:0:0: [sdb] Asking for cache data failed
+Oct  7 15:27:04 ubuntu kernel: [ 1779.813965] sd 3:0:0:0: [sdb] Assuming drive cache: write through
+Oct  7 15:27:04 ubuntu kernel: [ 1780.006635]  sdb: sdb1
+Oct  7 15:27:04 ubuntu kernel: [ 1780.092658] sd 3:0:0:0: [sdb] Attached SCSI removable disk
+Oct  7 15:27:07 ubuntu kernel: [ 1782.879002] FAT-fs (sdb1): Volume was not properly unmounted. Some data may be corrupt. Please run fsck.
+Oct  7 15:28:18 ubuntu kernel: [ 1853.879620] sdb: detected capacity change from 2007040 to 0
+Oct  7 15:28:22 ubuntu kernel: [ 1857.548482] usb 1-2: USB disconnect, device number 4
+Oct  7 15:28:43 ubuntu kernel: [ 1878.941540] usb 1-1: USB disconnect, device number 3
+Oct  7 15:28:44 ubuntu kernel: [ 1879.622511] usb 1-1: new full-speed USB device number 5 using ohci-pci
+Oct  7 15:28:44 ubuntu kernel: [ 1879.979474] usb 1-1: New USB device found, idVendor=80ee, idProduct=0021, bcdDevice= 1.00
+Oct  7 15:28:44 ubuntu kernel: [ 1879.979478] usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+Oct  7 15:28:44 ubuntu kernel: [ 1879.979480] usb 1-1: Product: USB Tablet
+Oct  7 15:28:44 ubuntu kernel: [ 1879.979481] usb 1-1: Manufacturer: VirtualBox
+Oct  7 15:28:44 ubuntu kernel: [ 1880.006613] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0003/input/input9
+Oct  7 15:28:44 ubuntu kernel: [ 1880.072704] hid-generic 0003:80EE:0021.0003: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+Oct  7 15:28:47 ubuntu kernel: [ 1882.908633] audit: type=1326 audit(1665152927.382:76): auid=1000 uid=1000 gid=1000 ses=3 subj=? pid=3969 comm="firefox" exe="/snap/firefox/1635/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=314 compat=0 ip=0x7fc8563ab73d code=0x50000
+Oct  7 15:29:52 ubuntu kernel: [ 1948.199453] audit: type=1400 audit(1665152992.710:77): apparmor="DENIED" operation="open" profile="snap.firefox.firefox" name="/etc/fstab" pid=3969 comm="firefox" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+Oct  7 15:29:52 ubuntu kernel: [ 1948.203317] audit: type=1400 audit(1665152992.718:78): apparmor="DENIED" operation="open" profile="snap.firefox.firefox" name="/run/mount/utab" pid=3969 comm="firefox" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+Oct  7 15:29:52 ubuntu kernel: [ 1948.408833] audit: type=1400 audit(1665152992.922:79): apparmor="DENIED" operation="open" profile="snap.firefox.firefox" name="/run/mount/utab" pid=3969 comm="firefox" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+Oct  7 15:29:53 ubuntu kernel: [ 1948.706243] audit: type=1107 audit(1665152993.223:80): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.162" pid=3969 label="snap.firefox.firefox" peer_pid=4945 peer_label="unconfined"
+Oct  7 15:29:53 ubuntu kernel: [ 1948.706243]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  7 15:29:53 ubuntu kernel: [ 1948.706247] audit: type=1420 audit(1665152993.223:81): subj_apparmor=unconfined
+Oct  7 15:29:53 ubuntu kernel: [ 1948.707551] audit: type=1107 audit(1665152993.223:82): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.162" pid=3969 label="snap.firefox.firefox" peer_pid=4945 peer_label="unconfined"
+Oct  7 15:29:53 ubuntu kernel: [ 1948.707551]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  7 15:29:53 ubuntu kernel: [ 1948.707554] audit: type=1420 audit(1665152993.223:83): subj_apparmor=unconfined
+Oct  7 15:30:15 ubuntu kernel: [ 1970.757931] audit: type=1326 audit(1665153015.281:84): auid=1000 uid=1000 gid=1000 ses=3 subj=? pid=4963 comm="firefox" exe="/snap/firefox/1635/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=314 compat=0 ip=0x7f8164d4873d code=0x50000
+Oct  7 15:33:52 ubuntu kernel: [ 2158.500284] audit: type=1400 audit(1665153232.732:85): apparmor="DENIED" operation="open" profile="snap.firefox.firefox" name="/etc/fstab" pid=4963 comm="firefox" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+Oct  7 15:33:52 ubuntu kernel: [ 2158.502744] audit: type=1400 audit(1665153232.732:86): apparmor="DENIED" operation="open" profile="snap.firefox.firefox" name="/run/mount/utab" pid=4963 comm="firefox" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+Oct  7 15:33:52 ubuntu kernel: [ 2158.586874] audit: type=1400 audit(1665153232.820:87): apparmor="DENIED" operation="open" profile="snap.firefox.firefox" name="/run/mount/utab" pid=4963 comm="firefox" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+Oct  7 15:33:53 ubuntu kernel: [ 2158.770823] audit: type=1107 audit(1665153233.004:88): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.182" pid=4963 label="snap.firefox.firefox" peer_pid=6435 peer_label="unconfined"
+Oct  7 15:33:53 ubuntu kernel: [ 2158.770823]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  7 15:33:53 ubuntu kernel: [ 2158.770828] audit: type=1420 audit(1665153233.004:89): subj_apparmor=unconfined
+Oct  7 15:33:53 ubuntu kernel: [ 2158.774170] audit: type=1107 audit(1665153233.012:90): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.182" pid=4963 label="snap.firefox.firefox" peer_pid=6435 peer_label="unconfined"
+Oct  7 15:33:53 ubuntu kernel: [ 2158.774170]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  7 15:33:53 ubuntu kernel: [ 2158.774174] audit: type=1420 audit(1665153233.012:91): subj_apparmor=unconfined
+Oct  7 15:39:41 ubuntu kernel: [ 2506.979289] audit: type=1400 audit(1665153581.216:92): apparmor="DENIED" operation="open" profile="/usr/bin/evince-thumbnailer" name="/tmp/Corrupted.pdf_dec" pid=8115 comm="evince-thumbnai" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+Oct  7 15:39:41 ubuntu kernel: [ 2506.982674] audit: type=1400 audit(1665153581.224:93): apparmor="DENIED" operation="open" profile="/usr/bin/evince-thumbnailer" name="/tmp/Corrupted.pdf_dec" pid=8115 comm="evince-thumbnai" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+Oct  7 15:40:57 ubuntu kernel: [ 2583.518294] audit: type=1400 audit(1665153657.752:94): apparmor="DENIED" operation="open" profile="snap.firefox.firefox" name="/run/mount/utab" pid=4963 comm="firefox" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+Oct  7 15:40:58 ubuntu kernel: [ 2583.852629] audit: type=1107 audit(1665153658.092:95): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.190" pid=4963 label="snap.firefox.firefox" peer_pid=8432 peer_label="unconfined"
+Oct  7 15:40:58 ubuntu kernel: [ 2583.852629]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  7 15:40:58 ubuntu kernel: [ 2583.852634] audit: type=1420 audit(1665153658.092:96): subj_apparmor=unconfined
+Oct  7 15:40:58 ubuntu kernel: [ 2583.855814] audit: type=1107 audit(1665153658.096:97): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.190" pid=4963 label="snap.firefox.firefox" peer_pid=8432 peer_label="unconfined"
+Oct  7 15:40:58 ubuntu kernel: [ 2583.855814]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  7 15:40:58 ubuntu kernel: [ 2583.855840] audit: type=1420 audit(1665153658.096:98): subj_apparmor=unconfined
+Oct  7 15:40:58 ubuntu kernel: [ 2583.856883] audit: type=1107 audit(1665153658.096:99): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.190" pid=4963 label="snap.firefox.firefox" peer_pid=8432 peer_label="unconfined"
+Oct  7 15:40:58 ubuntu kernel: [ 2583.856883]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  7 15:40:58 ubuntu kernel: [ 2583.856886] audit: type=1420 audit(1665153658.096:100): subj_apparmor=unconfined
+Oct  7 15:42:45 ubuntu kernel: [ 2691.618978] usb 1-1: USB disconnect, device number 5
+Oct  7 15:42:46 ubuntu kernel: [ 2692.083331] usb 1-1: new full-speed USB device number 6 using ohci-pci
+Oct  7 15:42:46 ubuntu kernel: [ 2692.406639] usb 1-1: New USB device found, idVendor=80ee, idProduct=0021, bcdDevice= 1.00
+Oct  7 15:42:46 ubuntu kernel: [ 2692.406645] usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+Oct  7 15:42:46 ubuntu kernel: [ 2692.406646] usb 1-1: Product: USB Tablet
+Oct  7 15:42:46 ubuntu kernel: [ 2692.406674] usb 1-1: Manufacturer: VirtualBox
+Oct  7 15:42:46 ubuntu kernel: [ 2692.433490] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0004/input/input10
+Oct  7 15:42:46 ubuntu kernel: [ 2692.558150] hid-generic 0003:80EE:0021.0004: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+Oct  7 15:55:41 ubuntu kernel: [ 3453.010627] usb 1-1: USB disconnect, device number 6
+Oct  7 15:55:41 ubuntu kernel: [ 3453.513549] usb 1-1: new full-speed USB device number 7 using ohci-pci
+Oct  7 15:55:41 ubuntu kernel: [ 3453.840036] usb 1-1: New USB device found, idVendor=80ee, idProduct=0021, bcdDevice= 1.00
+Oct  7 15:55:41 ubuntu kernel: [ 3453.840041] usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+Oct  7 15:55:41 ubuntu kernel: [ 3453.840043] usb 1-1: Product: USB Tablet
+Oct  7 15:55:41 ubuntu kernel: [ 3453.840069] usb 1-1: Manufacturer: VirtualBox
+Oct  7 15:55:42 ubuntu kernel: [ 3453.868892] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0005/input/input11
+Oct  7 15:55:42 ubuntu kernel: [ 3453.932110] hid-generic 0003:80EE:0021.0005: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+Oct  7 16:01:04 ubuntu kernel: [ 3758.738093] e1000: enp0s3 NIC Link is Down
+Oct  7 16:01:06 ubuntu kernel: [ 3760.754940] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+Oct  7 16:04:17 ubuntu kernel: [ 3950.999525] usb 1-1: USB disconnect, device number 7
+Oct  7 16:04:18 ubuntu kernel: [ 3951.896029] usb 1-1: new full-speed USB device number 8 using ohci-pci
+Oct  7 16:04:18 ubuntu kernel: [ 3952.263572] usb 1-1: New USB device found, idVendor=80ee, idProduct=0021, bcdDevice= 1.00
+Oct  7 16:04:18 ubuntu kernel: [ 3952.263579] usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+Oct  7 16:04:18 ubuntu kernel: [ 3952.263580] usb 1-1: Product: USB Tablet
+Oct  7 16:04:18 ubuntu kernel: [ 3952.263582] usb 1-1: Manufacturer: VirtualBox
+Oct  7 16:04:18 ubuntu kernel: [ 3952.295400] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0006/input/input12
+Oct  7 16:04:18 ubuntu kernel: [ 3952.362752] hid-generic 0003:80EE:0021.0006: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+Oct  7 16:24:40 ubuntu kernel: [ 5145.811212] 15:24:40.291464 control  Session 0 is about to close ...
+Oct  7 16:24:40 ubuntu kernel: [ 5145.864765] e1000: enp0s3 NIC Link is Down
+Oct  7 16:24:40 ubuntu kernel: [ 5145.879379] usb 1-1: USB disconnect, device number 8
+Oct  7 16:24:40 ubuntu kernel: [ 5145.956559] 15:24:40.437876 control  Stopping all guest processes ...
+Oct  7 16:24:40 ubuntu kernel: [ 5145.957916] 15:24:40.439243 control  Closing all guest files ...
+Oct  7 16:24:40 ubuntu kernel: [ 5145.981866] 15:24:40.462569 control  vbglR3GuestCtrlDetectPeekGetCancelSupport: Supported (#1)
+Oct  7 16:24:41 ubuntu kernel: [ 5146.974940] usb 1-1: new full-speed USB device number 9 using ohci-pci
+Oct  7 16:24:42 ubuntu kernel: [ 5147.870661] usb 1-1: New USB device found, idVendor=80ee, idProduct=0021, bcdDevice= 1.00
+Oct  7 16:24:42 ubuntu kernel: [ 5147.870667] usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+Oct  7 16:24:42 ubuntu kernel: [ 5147.870668] usb 1-1: Product: USB Tablet
+Oct  7 16:24:42 ubuntu kernel: [ 5147.870695] usb 1-1: Manufacturer: VirtualBox
+Oct  7 16:24:42 ubuntu kernel: [ 5148.097075] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0007/input/input13
+Oct  7 16:24:42 ubuntu kernel: [ 5148.160824] hid-generic 0003:80EE:0021.0007: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+Oct  7 16:24:44 ubuntu kernel: [ 5149.900941] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+Oct  7 23:36:27 ubuntu kernel: [ 5152.123709] 22:36:17.800420 timesync vgsvcTimeSyncWorker: Radical host time change: 25 901 140 000 000ns (HostNow=1 665 182 177 779 000 000
+Oct  7 23:37:33 ubuntu kernel: [ 5162.424931] 22:36:27.810019 timesync vgsvcTimeSyncWorker: Radical guest time change: 25 901 227 977 000ns (GuestNow=1 665 182 187 809 987 0
+Oct  7 23:37:33 ubuntu kernel: [ 5227.919674] firefox: Corrupted page table at address 927adc011d0
+Oct  7 23:37:33 ubuntu kernel: [ 5227.919743] PGD 800000002b7d0067 P4D 800000002b7d0067 PUD 776f3067 PMD 130e067 PTE fffff4a786887867
+Oct  7 23:37:33 ubuntu kernel: [ 5227.919779] Bad pagetable: 000d [#1] SMP PTI
+Oct  7 23:37:33 ubuntu kernel: [ 5227.919810] CPU: 0 PID: 4963 Comm: firefox Not tainted 5.15.0-48-generic #54-Ubuntu
+Oct  7 23:37:33 ubuntu kernel: [ 5227.919842] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Oct  7 23:37:33 ubuntu kernel: [ 5227.919845] RIP: 0033:0x7f815c21afe3
+Oct  7 23:37:33 ubuntu kernel: [ 5227.919980] Code: fe 48 83 fa 08 72 35 4c 89 f8 48 25 00 00 f0 ff 48 83 38 00 75 26 4c 89 f9 48 c1 e9 03 4c 89 fa 48 c1 ea 06 81 e2 f8 3f 00 00 <48> 8b 94 02 28 ff ff ff 48 0f a3 ca 0f 83 87 00 00 00 31 c0 48 83
+Oct  7 23:37:33 ubuntu kernel: [ 5227.919982] RSP: 002b:00007ffc074e8060 EFLAGS: 00010202
+Oct  7 23:37:33 ubuntu kernel: [ 5227.919983] RAX: 00000927adc00000 RBX: 0000249bbe5feb28 RCX: 00000124f5b8956f
+Oct  7 23:37:33 ubuntu kernel: [ 5227.920014] RDX: 00000000000012a8 RSI: 00001f22e1db0290 RDI: 00007ffc074e8140
+Oct  7 23:37:33 ubuntu kernel: [ 5227.920015] RBP: 00000927adc4ab78 R08: 0000249bbe5feb28 R09: 00007ffc074e8140
+Oct  7 23:37:33 ubuntu kernel: [ 5227.920016] R10: 00007f8126901508 R11: 00007f8126900da0 R12: 00001f22e1db0290
+Oct  7 23:37:33 ubuntu kernel: [ 5227.920018] R13: fffe249bbe5feb28 R14: 00007ffc074e8140 R15: 00000927adc4ab78
+Oct  7 23:37:33 ubuntu kernel: [ 5227.920035] FS:  00007f8164c2f140 GS:  0000000000000000
+Oct  7 23:37:33 ubuntu kernel: [ 5227.920052] Modules linked in: uas usb_storage vboxsf snd_intel8x0 snd_ac97_codec ac97_bus snd_pcm nls_iso8859_1 snd_seq_midi snd_seq_midi_event snd_rawmidi snd_seq snd_seq_device snd_timer intel_rapl_msr joydev snd intel_rapl_common rapl input_leds serio_raw soundcore vboxguest mac_hid sch_fq_codel vmwgfx ttm drm_kms_helper cec rc_core fb_sys_fops syscopyarea sysfillrect sysimgblt ipmi_devintf ipmi_msghandler msr parport_pc ppdev lp parport ramoops reed_solomon mtd pstore_blk pstore_zone drm efi_pstore ip_tables x_tables autofs4 hid_generic usbhid hid ahci psmouse libahci i2c_piix4 e1000 pata_acpi video
+Oct  7 23:37:33 ubuntu kernel: [ 5227.921288] ---[ end trace 7e9af90764281b68 ]---
+Oct  7 23:37:33 ubuntu kernel: [ 5227.921290] RIP: 0033:0x7f815c21afe3
+Oct  7 23:37:33 ubuntu kernel: [ 5227.921293] RSP: 002b:00007ffc074e8060 EFLAGS: 00010202
+Oct  7 23:37:33 ubuntu kernel: [ 5227.921295] RAX: 00000927adc00000 RBX: 0000249bbe5feb28 RCX: 00000124f5b8956f
+Oct  7 23:37:33 ubuntu kernel: [ 5227.921297] RDX: 00000000000012a8 RSI: 00001f22e1db0290 RDI: 00007ffc074e8140
+Oct  7 23:37:33 ubuntu kernel: [ 5227.921298] RBP: 00000927adc4ab78 R08: 0000249bbe5feb28 R09: 00007ffc074e8140
+Oct  7 23:37:33 ubuntu kernel: [ 5227.921299] R10: 00007f8126901508 R11: 00007f8126900da0 R12: 00001f22e1db0290
+Oct  7 23:37:33 ubuntu kernel: [ 5227.921300] R13: fffe249bbe5feb28 R14: 00007ffc074e8140 R15: 00000927adc4ab78
+Oct  7 23:37:33 ubuntu kernel: [ 5227.921302] FS:  00007f8164c2f140(0000) GS:ffff8e71dbc00000(0000) knlGS:0000000000000000
+Oct  7 23:37:33 ubuntu kernel: [ 5227.921303] CS:  0033 DS: 0000 ES: 0000 CR0: 0000000080050033
+Oct  7 23:37:33 ubuntu kernel: [ 5227.921305] CR2: 00000927adc011d0 CR3: 000000002f98c004 CR4: 00000000000306f0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.879992] BUG: Bad page map in process SwComposite  pte:fffff4a786887867 pmd:0130e067
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880014] addr:00000927adc01000 vm_flags:08100073 anon_vma:ffff8e713744a580 mapping:0000000000000000 index:927adc01
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880017] file:(null) fault:0x0 mmap:0x0 readpage:0x0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880036] CPU: 0 PID: 5288 Comm: SwComposite Tainted: G      D           5.15.0-48-generic #54-Ubuntu
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880055] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880057] Call Trace:
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880102]  <TASK>
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880148]  show_stack+0x52/0x5c
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880309]  dump_stack_lvl+0x4a/0x63
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880413]  dump_stack+0x10/0x16
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880416]  print_bad_pte.cold+0x72/0xe9
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880459]  vm_normal_page+0xd1/0xf0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880563]  zap_pte_range+0x103/0x8b0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880566]  zap_pmd_range.isra.0+0x1cf/0x2c0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880568]  unmap_page_range+0x248/0x3e0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880571]  unmap_single_vma+0x81/0xf0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880605]  unmap_vmas+0x77/0xf0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880609]  exit_mmap+0xa2/0x200
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880611]  mmput+0x63/0x150
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880689]  exit_mm+0x154/0x1d0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880722]  do_exit+0x1ab/0x3c0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880724]  do_group_exit+0x3b/0xb0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880726]  get_signal+0x150/0x900
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880745]  arch_do_signal_or_restart+0xde/0x100
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880792]  ? do_futex+0x149/0x1f0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880826]  ? __x64_sys_futex+0x78/0x1e0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880828]  exit_to_user_mode_loop+0xc4/0x160
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880861]  exit_to_user_mode_prepare+0xa0/0xb0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880864]  syscall_exit_to_user_mode+0x27/0x50
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880926]  do_syscall_64+0x69/0xc0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880927]  entry_SYSCALL_64_after_hwframe+0x61/0xcb
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880947] RIP: 0033:0x7f8165185376
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880965] Code: Unable to access opcode bytes at RIP 0x7f816518534c.
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880966] RSP: 002b:00007f8148219c20 EFLAGS: 00000282 ORIG_RAX: 00000000000000ca
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880984] RAX: fffffffffffffe00 RBX: 0000000000000000 RCX: 00007f8165185376
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880985] RDX: 0000000000000000 RSI: 0000000000000080 RDI: 00007f813fa1ef9c
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880987] RBP: 00007f813fa1ef70 R08: 0000000000000000 R09: 0000000000000004
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880988] R10: 0000000000000000 R11: 0000000000000282 R12: 00007f813fa1ef94
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880989] R13: 00007f813fa1ef10 R14: 00007f8148219c60 R15: 00007f813fa1ef9c
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880991]  </TASK>
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880993] BUG: Bad page map in process SwComposite  pte:fffff4a77ce92867 pmd:0130e067
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880994] addr:00000927adc03000 vm_flags:08100073 anon_vma:ffff8e713744a580 mapping:0000000000000000 index:927adc03
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880996] file:(null) fault:0x0 mmap:0x0 readpage:0x0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.880998] CPU: 0 PID: 5288 Comm: SwComposite Tainted: G    B D           5.15.0-48-generic #54-Ubuntu
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881000] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881001] Call Trace:
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881002]  <TASK>
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881003]  show_stack+0x52/0x5c
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881005]  dump_stack_lvl+0x4a/0x63
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881008]  dump_stack+0x10/0x16
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881010]  print_bad_pte.cold+0x72/0xe9
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881012]  vm_normal_page+0xd1/0xf0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881014]  zap_pte_range+0x103/0x8b0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881017]  zap_pmd_range.isra.0+0x1cf/0x2c0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881019]  unmap_page_range+0x248/0x3e0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881021]  unmap_single_vma+0x81/0xf0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881023]  unmap_vmas+0x77/0xf0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881025]  exit_mmap+0xa2/0x200
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881027]  mmput+0x63/0x150
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881030]  exit_mm+0x154/0x1d0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881032]  do_exit+0x1ab/0x3c0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881034]  do_group_exit+0x3b/0xb0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881037]  get_signal+0x150/0x900
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881038]  arch_do_signal_or_restart+0xde/0x100
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881040]  ? do_futex+0x149/0x1f0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881042]  ? __x64_sys_futex+0x78/0x1e0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881044]  exit_to_user_mode_loop+0xc4/0x160
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881046]  exit_to_user_mode_prepare+0xa0/0xb0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881049]  syscall_exit_to_user_mode+0x27/0x50
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881051]  do_syscall_64+0x69/0xc0
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881052]  entry_SYSCALL_64_after_hwframe+0x61/0xcb
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881055] RIP: 0033:0x7f8165185376
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881056] Code: Unable to access opcode bytes at RIP 0x7f816518534c.
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881057] RSP: 002b:00007f8148219c20 EFLAGS: 00000282 ORIG_RAX: 00000000000000ca
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881059] RAX: fffffffffffffe00 RBX: 0000000000000000 RCX: 00007f8165185376
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881060] RDX: 0000000000000000 RSI: 0000000000000080 RDI: 00007f813fa1ef9c
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881061] RBP: 00007f813fa1ef70 R08: 0000000000000000 R09: 0000000000000004
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881062] R10: 0000000000000000 R11: 0000000000000282 R12: 00007f813fa1ef94
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881063] R13: 00007f813fa1ef10 R14: 00007f8148219c60 R15: 00007f813fa1ef9c
+Oct  7 23:37:52 ubuntu kernel: [ 5246.881065]  </TASK>
+Oct  7 23:37:52 ubuntu kernel: [ 5247.106397] BUG: Bad rss-counter state mm:000000003df58731 type:MM_ANONPAGES val:2
+Oct  7 23:38:18 ubuntu kernel: [ 5273.600786] audit: type=1326 audit(1665182298.900:101): auid=1000 uid=1000 gid=1000 ses=3 subj=? pid=10582 comm="firefox" exe="/snap/firefox/1635/usr/lib/firefox/firefox" sig=0 arch=c000003e syscall=314 compat=0 ip=0x7f9dbbdb373d code=0x50000
+Oct  7 23:39:23 ubuntu kernel: [ 5338.498529] usb 1-1: USB disconnect, device number 9
+Oct  7 23:39:23 ubuntu kernel: [ 5338.525553] 22:39:23.828135 control  Session 0 is about to close ...
+Oct  7 23:39:23 ubuntu kernel: [ 5338.541091] 22:39:23.843783 control  Stopping all guest processes ...
+Oct  7 23:39:23 ubuntu kernel: [ 5338.560240] 22:39:23.863062 control  Closing all guest files ...
+Oct  7 23:39:23 ubuntu kernel: [ 5338.564360] 22:39:23.866603 control  vbglR3GuestCtrlDetectPeekGetCancelSupport: Supported (#1)
+Oct  7 23:39:24 ubuntu kernel: [ 5339.203541] usb 1-1: new full-speed USB device number 10 using ohci-pci
+Oct  7 23:39:25 ubuntu kernel: [ 5339.784145] e1000: enp0s3 NIC Link is Down
+Oct  7 23:39:25 ubuntu kernel: [ 5339.794638] e1000 0000:00:03.0 enp0s3: Reset adapter
+Oct  7 23:39:25 ubuntu kernel: [ 5339.822190] usb 1-1: New USB device found, idVendor=80ee, idProduct=0021, bcdDevice= 1.00
+Oct  7 23:39:25 ubuntu kernel: [ 5339.822199] usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+Oct  7 23:39:25 ubuntu kernel: [ 5339.822214] usb 1-1: Product: USB Tablet
+Oct  7 23:39:25 ubuntu kernel: [ 5339.822239] usb 1-1: Manufacturer: VirtualBox
+Oct  7 23:39:25 ubuntu kernel: [ 5339.844562] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0008/input/input14
+Oct  7 23:39:25 ubuntu kernel: [ 5339.927967] hid-generic 0003:80EE:0021.0008: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+Oct  7 23:39:27 ubuntu kernel: [ 5342.178394] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+Oct  8 01:25:03 ubuntu kernel: [ 5342.542511] 00:24:53.783475 timesync vgsvcTimeSyncWorker: Radical host time change: 6 335 564 000 000ns (HostNow=1 665 188 693 783 000 000 
+Oct  8 01:26:13 ubuntu kernel: [ 5352.550630] 00:25:03.785112 timesync vgsvcTimeSyncWorker: Radical guest time change: 6 335 939 305 000ns (GuestNow=1 665 188 703 785 105 00
+Oct  8 01:26:13 ubuntu kernel: [ 5422.178664] loop11: detected capacity change from 0 to 98272
+Oct  8 01:26:15 ubuntu kernel: [ 5424.265893] audit: type=1400 audit(1665188775.080:102): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/snap/snapd/17029/usr/lib/snapd/snap-confine" pid=12000 comm="apparmor_parser"
+Oct  8 01:26:15 ubuntu kernel: [ 5424.267388] audit: type=1400 audit(1665188775.080:103): apparmor="STATUS" operation="profile_load" profile="unconfined" name="/snap/snapd/17029/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=12000 comm="apparmor_parser"
+Oct  8 01:26:17 ubuntu kernel: [ 5426.546107] audit: type=1400 audit(1665188777.368:104): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.firefox" pid=12022 comm="apparmor_parser"
+Oct  8 01:26:21 ubuntu kernel: [ 5430.226815] audit: type=1400 audit(1665188781.048:105): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.snap-store" pid=12148 comm="apparmor_parser"
+Oct  8 01:26:24 ubuntu kernel: [ 5433.333113] audit: type=1400 audit(1665188784.156:106): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.snapd-desktop-integration" pid=12289 comm="apparmor_parser"
+Oct  8 01:26:26 ubuntu kernel: [ 5435.426533] audit: type=1400 audit(1665188786.240:107): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.thunderbird" pid=12305 comm="apparmor_parser"
+Oct  8 01:26:26 ubuntu kernel: [ 5435.588833] audit: type=1400 audit(1665188786.412:108): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.firefox.firefox" pid=12307 comm="apparmor_parser"
+Oct  8 01:26:26 ubuntu kernel: [ 5435.642699] audit: type=1400 audit(1665188786.464:109): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.firefox.geckodriver" pid=12308 comm="apparmor_parser"
+Oct  8 01:26:26 ubuntu kernel: [ 5435.663969] audit: type=1400 audit(1665188786.484:110): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.firefox.hook.configure" pid=12309 comm="apparmor_parser"
+Oct  8 01:26:26 ubuntu kernel: [ 5435.666694] audit: type=1400 audit(1665188786.484:111): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.irssi" pid=12310 comm="apparmor_parser"
+Oct  8 01:26:26 ubuntu kernel: [ 5435.684142] audit: type=1400 audit(1665188786.496:112): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.irssi.irssi" pid=12311 comm="apparmor_parser"
+Oct  8 01:26:26 ubuntu kernel: [ 5435.728324] audit: type=1400 audit(1665188786.548:113): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.snap-store.hook.configure" pid=12312 comm="apparmor_parser"
+Oct  8 01:26:26 ubuntu kernel: [ 5435.769319] audit: type=1400 audit(1665188786.588:114): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.snap-store.snap-store" pid=12313 comm="apparmor_parser"
+Oct  8 01:26:26 ubuntu kernel: [ 5435.804394] audit: type=1400 audit(1665188786.624:115): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.snap-store.ubuntu-software" pid=12314 comm="apparmor_parser"
+Oct  8 01:26:26 ubuntu kernel: [ 5435.846613] audit: type=1400 audit(1665188786.668:116): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap.snap-store.ubuntu-software-local-file" pid=12315 comm="apparmor_parser"
+Oct  8 01:26:32 ubuntu kernel: [ 5441.523543] loop12: detected capacity change from 0 to 8
+Oct  8 01:26:34 ubuntu kernel: [ 5443.537545] kauditd_printk_skb: 4 callbacks suppressed
+Oct  8 01:26:34 ubuntu kernel: [ 5443.537548] audit: type=1400 audit(1665188794.361:121): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/snap/snapd/17029/usr/lib/snapd/snap-confine" pid=12487 comm="apparmor_parser"
+Oct  8 01:26:34 ubuntu kernel: [ 5443.538017] audit: type=1400 audit(1665188794.361:122): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="/snap/snapd/17029/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=12487 comm="apparmor_parser"
+Oct  8 01:26:38 ubuntu kernel: [ 5447.318278] audit: type=1400 audit(1665188798.129:123): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.snapd-desktop-integration" pid=12490 comm="apparmor_parser"
+Oct  8 01:26:38 ubuntu kernel: [ 5447.964036] audit: type=1400 audit(1665188798.785:124): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.snapd-desktop-integration.hook.configure" pid=12494 comm="apparmor_parser"
+Oct  8 01:26:39 ubuntu kernel: [ 5449.074906] audit: type=1400 audit(1665188799.897:125): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.snapd-desktop-integration.snapd-desktop-integration" pid=12495 comm="apparmor_parser"
+Oct  8 01:26:42 ubuntu kernel: [ 5451.555238] audit: type=1400 audit(1665188802.377:126): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap-update-ns.firefox" pid=12496 comm="apparmor_parser"
+Oct  8 01:26:49 ubuntu kernel: [ 5458.932339] audit: type=1400 audit(1665188809.753:127): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.firefox.firefox" pid=12497 comm="apparmor_parser"
+Oct  8 01:26:55 ubuntu kernel: [ 5464.654805] audit: type=1400 audit(1665188815.473:128): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.firefox.geckodriver" pid=12527 comm="apparmor_parser"
+Oct  8 01:26:56 ubuntu kernel: [ 5465.661146] audit: type=1400 audit(1665188816.477:129): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.firefox.hook.configure" pid=12568 comm="apparmor_parser"
+Oct  8 01:26:59 ubuntu kernel: [ 5469.134002] audit: type=1400 audit(1665188819.956:130): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.snap-store" pid=12578 comm="apparmor_parser"
+Oct  8 01:27:00 ubuntu kernel: [ 5469.875055] audit: type=1400 audit(1665188820.696:131): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.snap-store.hook.configure" pid=12597 comm="apparmor_parser"
+Oct  8 01:27:02 ubuntu kernel: [ 5471.732046] audit: type=1400 audit(1665188822.544:132): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.snap-store.snap-store" pid=12598 comm="apparmor_parser"
+Oct  8 01:27:04 ubuntu kernel: [ 5473.603102] audit: type=1400 audit(1665188824.424:133): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.snap-store.ubuntu-software" pid=12599 comm="apparmor_parser"
+Oct  8 01:27:07 ubuntu kernel: [ 5476.470246] audit: type=1400 audit(1665188827.288:134): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.snap-store.ubuntu-software-local-file" pid=12600 comm="apparmor_parser"
+Oct  8 01:27:11 ubuntu kernel: [ 5480.338707] audit: type=1400 audit(1665188831.156:135): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.thunderbird" pid=12611 comm="apparmor_parser"
+Oct  8 01:27:11 ubuntu kernel: [ 5480.972144] audit: type=1400 audit(1665188831.780:136): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.thunderbird.hook.configure" pid=12630 comm="apparmor_parser"
+Oct  8 01:27:13 ubuntu kernel: [ 5483.068269] audit: type=1400 audit(1665188833.888:137): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.thunderbird.thunderbird" pid=12631 comm="apparmor_parser"
+Oct  8 01:27:14 ubuntu kernel: [ 5483.576556] audit: type=1400 audit(1665188834.396:138): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.irssi.irssi" pid=12633 comm="apparmor_parser"
+Oct  8 01:27:14 ubuntu kernel: [ 5483.621829] audit: type=1400 audit(1665188834.440:139): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="snap-update-ns.irssi" pid=12635 comm="apparmor_parser"
+Oct  8 01:27:24 ubuntu kernel: [ 5493.211015] loop12: detected capacity change from 0 to 129480
+Oct  8 01:27:42 ubuntu kernel: [ 5511.616520] loop13: detected capacity change from 0 to 94056
+Oct  8 01:27:45 ubuntu kernel: [ 5514.370737] audit: type=1400 audit(1665188865.188:140): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/snap/snapd/17029/usr/lib/snapd/snap-confine" pid=12804 comm="apparmor_parser"
+Oct  8 01:27:45 ubuntu kernel: [ 5514.370761] audit: type=1400 audit(1665188865.188:141): apparmor="STATUS" operation="profile_replace" info="same as current profile, skipping" profile="unconfined" name="/snap/snapd/17029/usr/lib/snapd/snap-confine//mount-namespace-capture-helper" pid=12804 comm="apparmor_parser"
+Oct  8 01:27:46 ubuntu kernel: [ 5515.397595] BUG: kernel NULL pointer dereference, address: 0000000000000008
+Oct  8 01:27:46 ubuntu kernel: [ 5515.397601] #PF: supervisor write access in kernel mode
+Oct  8 01:27:46 ubuntu kernel: [ 5515.397602] #PF: error_code(0x0002) - not-present page
+Oct  8 01:27:46 ubuntu kernel: [ 5515.397604] PGD 0 P4D 0 
+Oct  8 01:27:46 ubuntu kernel: [ 5515.397622] Oops: 0002 [#2] SMP PTI
+Oct  8 01:27:46 ubuntu kernel: [ 5515.397654] CPU: 0 PID: 84 Comm: kswapd0 Tainted: G    B D           5.15.0-48-generic #54-Ubuntu
+Oct  8 01:27:46 ubuntu kernel: [ 5515.397687] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Oct  8 01:27:46 ubuntu kernel: [ 5515.397689] RIP: 0010:down_read_trylock+0x1c/0x60
+Oct  8 01:27:46 ubuntu kernel: [ 5515.397865] Code: 00 c3 cc cc cc cc 0f 1f 84 00 00 00 00 00 0f 1f 44 00 00 48 b9 07 00 00 00 00 00 00 80 55 31 c0 48 89 e5 48 8d 90 00 01 00 00 <3e> 48 0f b1 17 75 26 48 8b 47 08 5d 65 48 8b 14 25 c0 fb 01 00 83
+Oct  8 01:27:46 ubuntu kernel: [ 5515.397867] RSP: 0000:ffffb9004056b978 EFLAGS: 00010246
+Oct  8 01:27:46 ubuntu kernel: [ 5515.397869] RAX: 0000000000000000 RBX: ffff8e713744a581 RCX: 8000000000000007
+Oct  8 01:27:46 ubuntu kernel: [ 5515.397870] RDX: 0000000000000100 RSI: ffffb9004056ba38 RDI: 0000000000000008
+Oct  8 01:27:46 ubuntu kernel: [ 5515.397872] RBP: ffffb9004056b978 R08: 0000000000000000 R09: 0000000000000001
+Oct  8 01:27:46 ubuntu kernel: [ 5515.397873] R10: 0000000000000001 R11: 0000000000000003 R12: ffffe1a6c21a21c0
+Oct  8 01:27:46 ubuntu kernel: [ 5515.397874] R13: ffff8e713744a580 R14: 0000000000000008 R15: ffffe1a6c21a21c0
+Oct  8 01:27:46 ubuntu kernel: [ 5515.397875] FS:  0000000000000000(0000) GS:ffff8e71dbc00000(0000) knlGS:0000000000000000
+Oct  8 01:27:46 ubuntu kernel: [ 5515.397877] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+Oct  8 01:27:46 ubuntu kernel: [ 5515.397878] CR2: 0000000000000008 CR3: 00000001022e8005 CR4: 00000000000306f0
+Oct  8 01:27:46 ubuntu kernel: [ 5515.397881] Call Trace:
+Oct  8 01:27:46 ubuntu kernel: [ 5515.397941]  <TASK>
+Oct  8 01:27:46 ubuntu kernel: [ 5515.398032]  page_lock_anon_vma_read+0x58/0xf0
+Oct  8 01:27:46 ubuntu kernel: [ 5515.398096]  rmap_walk_anon+0x1e4/0x280
+Oct  8 01:27:46 ubuntu kernel: [ 5515.398100]  rmap_walk+0x41/0x60
+Oct  8 01:27:46 ubuntu kernel: [ 5515.398116]  page_referenced+0x10a/0x180
+Oct  8 01:27:46 ubuntu kernel: [ 5515.398118]  ? page_mlock_one+0xd0/0xd0
+Oct  8 01:27:46 ubuntu kernel: [ 5515.398120]  ? page_get_anon_vma+0x90/0x90
+Oct  8 01:27:46 ubuntu kernel: [ 5515.398123]  shrink_page_list+0x8e3/0xf00
+Oct  8 01:27:46 ubuntu kernel: [ 5515.398226]  shrink_inactive_list+0x171/0x4c0
+Oct  8 01:27:46 ubuntu kernel: [ 5515.398229]  shrink_lruvec+0x2bc/0x400
+Oct  8 01:27:46 ubuntu kernel: [ 5515.398232]  ? shrink_slab+0x10a/0x120
+Oct  8 01:27:46 ubuntu kernel: [ 5515.398271]  ? shrink_slab+0x10a/0x120
+Oct  8 01:27:46 ubuntu kernel: [ 5515.398273]  shrink_node_memcgs+0x172/0x1d0
+Oct  8 01:27:46 ubuntu kernel: [ 5515.398276]  shrink_node+0x15d/0x5c0
+Oct  8 01:27:46 ubuntu kernel: [ 5515.398326]  balance_pgdat+0x36e/0x800
+Oct  8 01:27:46 ubuntu kernel: [ 5515.398329]  ? finish_task_switch.isra.0+0x7e/0x280
+Oct  8 01:27:46 ubuntu kernel: [ 5515.398377]  kswapd+0x10c/0x1c0
+Oct  8 01:27:46 ubuntu kernel: [ 5515.398379]  ? balance_pgdat+0x800/0x800
+Oct  8 01:27:46 ubuntu kernel: [ 5515.398382]  kthread+0x12a/0x150
+Oct  8 01:27:46 ubuntu kernel: [ 5515.398443]  ? set_kthread_struct+0x50/0x50
+Oct  8 01:27:46 ubuntu kernel: [ 5515.398446]  ret_from_fork+0x22/0x30
+Oct  8 01:27:46 ubuntu kernel: [ 5515.398494]  </TASK>
+Oct  8 01:27:46 ubuntu kernel: [ 5515.398510] Modules linked in: uas usb_storage vboxsf snd_intel8x0 snd_ac97_codec ac97_bus snd_pcm nls_iso8859_1 snd_seq_midi snd_seq_midi_event snd_rawmidi snd_seq snd_seq_device snd_timer intel_rapl_msr joydev snd intel_rapl_common rapl input_leds serio_raw soundcore vboxguest mac_hid sch_fq_codel vmwgfx ttm drm_kms_helper cec rc_core fb_sys_fops syscopyarea sysfillrect sysimgblt ipmi_devintf ipmi_msghandler msr parport_pc ppdev lp parport ramoops reed_solomon mtd pstore_blk pstore_zone drm efi_pstore ip_tables x_tables autofs4 hid_generic usbhid hid ahci psmouse libahci i2c_piix4 e1000 pata_acpi video
+Oct  8 01:27:46 ubuntu kernel: [ 5515.399480] CR2: 0000000000000008
+Oct  8 01:27:46 ubuntu kernel: [ 5515.399526] ---[ end trace 7e9af90764281b69 ]---
+Oct  8 01:27:46 ubuntu kernel: [ 5515.399528] RIP: 0033:0x7f815c21afe3
+Oct  8 01:27:46 ubuntu kernel: [ 5515.399561] RSP: 002b:00007ffc074e8060 EFLAGS: 00010202
+Oct  8 01:27:46 ubuntu kernel: [ 5515.399577] RAX: 00000927adc00000 RBX: 0000249bbe5feb28 RCX: 00000124f5b8956f
+Oct  8 01:27:46 ubuntu kernel: [ 5515.399578] RDX: 00000000000012a8 RSI: 00001f22e1db0290 RDI: 00007ffc074e8140
+Oct  8 01:27:46 ubuntu kernel: [ 5515.399580] RBP: 00000927adc4ab78 R08: 0000249bbe5feb28 R09: 00007ffc074e8140
+Oct  8 01:27:46 ubuntu kernel: [ 5515.399581] R10: 00007f8126901508 R11: 00007f8126900da0 R12: 00001f22e1db0290
+Oct  8 01:27:46 ubuntu kernel: [ 5515.399582] R13: fffe249bbe5feb28 R14: 00007ffc074e8140 R15: 00000927adc4ab78
+Oct  8 01:27:46 ubuntu kernel: [ 5515.399583] FS:  0000000000000000(0000) GS:ffff8e71dbc00000(0000) knlGS:0000000000000000
+Oct  8 01:27:46 ubuntu kernel: [ 5515.399585] CS:  0033 DS: 0000 ES: 0000 CR0: 0000000080050033
+Oct  8 01:27:46 ubuntu kernel: [ 5515.399586] CR2: 0000000000000008 CR3: 00000001022e8005 CR4: 00000000000306f0
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107590] BUG: kernel NULL pointer dereference, address: 0000000000000008
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107598] #PF: supervisor write access in kernel mode
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107600] #PF: error_code(0x0002) - not-present page
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107602] PGD 0 P4D 0 
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107605] Oops: 0002 [#3] SMP PTI
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107608] CPU: 0 PID: 12650 Comm: snapd Tainted: G    B D           5.15.0-48-generic #54-Ubuntu
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107610] Hardware name: innotek GmbH VirtualBox/VirtualBox, BIOS VirtualBox 12/01/2006
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107611] RIP: 0010:down_read_trylock+0x1c/0x60
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107617] Code: 00 c3 cc cc cc cc 0f 1f 84 00 00 00 00 00 0f 1f 44 00 00 48 b9 07 00 00 00 00 00 00 80 55 31 c0 48 89 e5 48 8d 90 00 01 00 00 <3e> 48 0f b1 17 75 26 48 8b 47 08 5d 65 48 8b 14 25 c0 fb 01 00 83
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107619] RSP: 0018:ffffb90042517448 EFLAGS: 00010246
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107621] RAX: 0000000000000000 RBX: ffff8e713744a581 RCX: 8000000000000007
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107622] RDX: 0000000000000100 RSI: ffffb90042517508 RDI: 0000000000000008
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107623] RBP: ffffb90042517448 R08: 0000000000000000 R09: 0000000000000000
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107625] R10: 0000000000000001 R11: 0000000000000003 R12: ffffe1a6c1f3a480
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107626] R13: ffff8e713744a580 R14: 0000000000000008 R15: ffffe1a6c1f3a480
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107627] FS:  00007f20167fc640(0000) GS:ffff8e71dbc00000(0000) knlGS:0000000000000000
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107629] CS:  0010 DS: 0000 ES: 0000 CR0: 0000000080050033
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107630] CR2: 0000000000000008 CR3: 00000001074a6005 CR4: 00000000000306f0
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107633] Call Trace:
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107635]  <TASK>
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107637]  page_lock_anon_vma_read+0x58/0xf0
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107640]  rmap_walk_anon+0x1e4/0x280
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107644]  rmap_walk+0x41/0x60
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107646]  page_referenced+0x10a/0x180
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107649]  ? page_mlock_one+0xd0/0xd0
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107667]  ? page_get_anon_vma+0x90/0x90
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107700]  shrink_page_list+0x8e3/0xf00
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107704]  shrink_inactive_list+0x171/0x4c0
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107707]  shrink_lruvec+0x2bc/0x400
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107710]  shrink_node_memcgs+0x172/0x1d0
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107712]  shrink_node+0x15d/0x5c0
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107715]  do_try_to_free_pages+0xd7/0x4d0
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107718]  try_to_free_pages+0xde/0x1d0
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107721]  __alloc_pages_slowpath.constprop.0+0x371/0xa40
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107741]  __alloc_pages+0x311/0x330
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107743]  alloc_pages+0x9e/0x1e0
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107763]  __page_cache_alloc+0x7e/0x90
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107783]  pagecache_get_page+0x152/0x590
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107785]  ? ext4_dirty_inode+0x70/0x80
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107893]  grab_cache_page_write_begin+0x21/0x40
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107896]  ext4_da_write_begin+0xec/0x2c0
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107899]  generic_perform_write+0xc1/0x1f0
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107901]  ext4_buffered_write_iter+0xac/0x180
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107903]  ext4_file_write_iter+0x43/0x60
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107904]  new_sync_write+0x117/0x1b0
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107955]  vfs_write+0x1d5/0x270
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107957]  ksys_write+0x67/0xf0
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107958]  __x64_sys_write+0x19/0x20
+Oct  8 01:27:46 ubuntu kernel: [ 5516.107960]  do_syscall_64+0x5c/0xc0
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108067]  ? exit_to_user_mode_prepare+0x37/0xb0
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108117]  ? syscall_exit_to_user_mode+0x27/0x50
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108120]  ? __x64_sys_write+0x19/0x20
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108121]  ? do_syscall_64+0x69/0xc0
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108123]  ? switch_fpu_return+0x4e/0xc0
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108216]  ? exit_to_user_mode_prepare+0x96/0xb0
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108218]  ? irqentry_exit_to_user_mode+0x9/0x20
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108221]  ? irqentry_exit+0x1d/0x30
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108223]  ? sysvec_apic_timer_interrupt+0x4e/0x90
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108225]  entry_SYSCALL_64_after_hwframe+0x61/0xcb
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108245] RIP: 0033:0x55bd73080ef0
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108249] Code: 8b 7c 24 10 48 8b 74 24 18 48 8b 54 24 20 49 c7 c2 00 00 00 00 49 c7 c0 00 00 00 00 49 c7 c1 00 00 00 00 48 8b 44 24 08 0f 05 <48> 3d 01 f0 ff ff 76 20 48 c7 44 24 28 ff ff ff ff 48 c7 44 24 30
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108250] RSP: 002b:000000c000735108 EFLAGS: 00000216 ORIG_RAX: 0000000000000001
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108252] RAX: ffffffffffffffda RBX: 000000c00003e000 RCX: 000055bd73080ef0
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108254] RDX: 0000000000003fc0 RSI: 000000c000998000 RDI: 000000000000000e
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108255] RBP: 000000c000735158 R08: 0000000000000000 R09: 0000000000000000
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108256] R10: 0000000000000000 R11: 0000000000000216 R12: 0000000000003fc0
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108257] R13: 0000000000000017 R14: 99a9ae331f6cd431 R15: 0000000000000003
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108259]  </TASK>
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108260] Modules linked in: uas usb_storage vboxsf snd_intel8x0 snd_ac97_codec ac97_bus snd_pcm nls_iso8859_1 snd_seq_midi snd_seq_midi_event snd_rawmidi snd_seq snd_seq_device snd_timer intel_rapl_msr joydev snd intel_rapl_common rapl input_leds serio_raw soundcore vboxguest mac_hid sch_fq_codel vmwgfx ttm drm_kms_helper cec rc_core fb_sys_fops syscopyarea sysfillrect sysimgblt ipmi_devintf ipmi_msghandler msr parport_pc ppdev lp parport ramoops reed_solomon mtd pstore_blk pstore_zone drm efi_pstore ip_tables x_tables autofs4 hid_generic usbhid hid ahci psmouse libahci i2c_piix4 e1000 pata_acpi video
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108340] CR2: 0000000000000008
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108342] ---[ end trace 7e9af90764281b6a ]---
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108344] RIP: 0033:0x7f815c21afe3
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108389] RSP: 002b:00007ffc074e8060 EFLAGS: 00010202
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108391] RAX: 00000927adc00000 RBX: 0000249bbe5feb28 RCX: 00000124f5b8956f
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108393] RDX: 00000000000012a8 RSI: 00001f22e1db0290 RDI: 00007ffc074e8140
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108394] RBP: 00000927adc4ab78 R08: 0000249bbe5feb28 R09: 00007ffc074e8140
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108395] R10: 00007f8126901508 R11: 00007f8126900da0 R12: 00001f22e1db0290
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108396] R13: fffe249bbe5feb28 R14: 00007ffc074e8140 R15: 00000927adc4ab78
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108397] FS:  00007f20167fc640(0000) GS:ffff8e71dbc00000(0000) knlGS:0000000000000000
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108399] CS:  0033 DS: 0000 ES: 0000 CR0: 0000000080050033
+Oct  8 01:27:46 ubuntu kernel: [ 5516.108400] CR2: 0000000000000008 CR3: 00000001074a6005 CR4: 00000000000306f0
+Oct  8 01:27:49 ubuntu kernel: [ 5518.826052] audit: type=1400 audit(1665188869.644:142): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap-update-ns.snap-store" pid=12806 comm="apparmor_parser"
+Oct  8 01:27:50 ubuntu kernel: [ 5519.380750] audit: type=1400 audit(1665188870.192:143): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.snap-store.hook.configure" pid=12817 comm="apparmor_parser"
+Oct  8 01:27:51 ubuntu kernel: [ 5520.939597] audit: type=1400 audit(1665188871.760:144): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.snap-store.snap-store" pid=12818 comm="apparmor_parser"
+Oct  8 01:27:53 ubuntu kernel: [ 5522.335689] audit: type=1400 audit(1665188873.156:145): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.snap-store.ubuntu-software" pid=12819 comm="apparmor_parser"
+Oct  8 01:27:55 ubuntu kernel: [ 5524.312153] audit: type=1400 audit(1665188875.136:146): apparmor="STATUS" operation="profile_replace" profile="unconfined" name="snap.snap-store.ubuntu-software-local-file" pid=12825 comm="apparmor_parser"
+Oct  8 01:29:04 ubuntu kernel: [ 5593.293290] audit: type=1400 audit(1665188944.109:147): apparmor="DENIED" operation="open" profile="snap.firefox.firefox" name="/etc/fstab" pid=10582 comm="firefox" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+Oct  8 01:29:04 ubuntu kernel: [ 5593.297732] audit: type=1400 audit(1665188944.117:148): apparmor="DENIED" operation="open" profile="snap.firefox.firefox" name="/run/mount/utab" pid=10582 comm="firefox" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+Oct  8 01:29:04 ubuntu kernel: [ 5593.410372] audit: type=1400 audit(1665188944.225:149): apparmor="DENIED" operation="open" profile="snap.firefox.firefox" name="/run/mount/utab" pid=10582 comm="firefox" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+Oct  8 01:29:04 ubuntu kernel: [ 5593.634829] audit: type=1107 audit(1665188944.453:150): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.244" pid=10582 label="snap.firefox.firefox" peer_pid=12971 peer_label="unconfined"
+Oct  8 01:29:04 ubuntu kernel: [ 5593.634829]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  8 01:29:04 ubuntu kernel: [ 5593.634837] audit: type=1420 audit(1665188944.453:151): subj_apparmor=unconfined
+Oct  8 01:29:04 ubuntu kernel: [ 5593.636472] audit: type=1107 audit(1665188944.453:152): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.244" pid=10582 label="snap.firefox.firefox" peer_pid=12971 peer_label="unconfined"
+Oct  8 01:29:04 ubuntu kernel: [ 5593.636472]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  8 01:29:04 ubuntu kernel: [ 5593.636477] audit: type=1420 audit(1665188944.453:153): subj_apparmor=unconfined
+Oct  8 01:31:10 ubuntu kernel: [ 5719.895532] usb 1-1: USB disconnect, device number 10
+Oct  8 01:31:11 ubuntu kernel: [ 5720.382078] usb 1-1: new full-speed USB device number 11 using ohci-pci
+Oct  8 01:31:11 ubuntu kernel: [ 5720.723488] usb 1-1: New USB device found, idVendor=80ee, idProduct=0021, bcdDevice= 1.00
+Oct  8 01:31:11 ubuntu kernel: [ 5720.723495] usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+Oct  8 01:31:11 ubuntu kernel: [ 5720.723497] usb 1-1: Product: USB Tablet
+Oct  8 01:31:11 ubuntu kernel: [ 5720.723517] usb 1-1: Manufacturer: VirtualBox
+Oct  8 01:31:11 ubuntu kernel: [ 5720.744692] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.0009/input/input15
+Oct  8 01:31:11 ubuntu kernel: [ 5720.807966] hid-generic 0003:80EE:0021.0009: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+Oct  8 01:33:45 ubuntu kernel: [ 5856.823527] audit: type=1400 audit(1665189225.557:154): apparmor="DENIED" operation="open" profile="/usr/bin/evince-thumbnailer" name="/tmp/header" pid=13344 comm="evince-thumbnai" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+Oct  8 01:33:45 ubuntu kernel: [ 5856.824253] audit: type=1400 audit(1665189225.557:155): apparmor="DENIED" operation="open" profile="/usr/bin/evince-thumbnailer" name="/tmp/header" pid=13344 comm="evince-thumbnai" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+Oct  8 01:40:47 ubuntu kernel: [ 6279.003014] audit: type=1400 audit(1665189647.730:156): apparmor="DENIED" operation="open" profile="snap.firefox.firefox" name="/run/mount/utab" pid=10582 comm="firefox" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+Oct  8 01:40:47 ubuntu kernel: [ 6279.209406] audit: type=1107 audit(1665189647.938:157): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.250" pid=10582 label="snap.firefox.firefox" peer_pid=13783 peer_label="unconfined"
+Oct  8 01:40:47 ubuntu kernel: [ 6279.209406]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  8 01:40:47 ubuntu kernel: [ 6279.209413] audit: type=1420 audit(1665189647.938:158): subj_apparmor=unconfined
+Oct  8 01:40:47 ubuntu kernel: [ 6279.209911] audit: type=1107 audit(1665189647.938:159): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.250" pid=10582 label="snap.firefox.firefox" peer_pid=13783 peer_label="unconfined"
+Oct  8 01:40:47 ubuntu kernel: [ 6279.209911]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  8 01:40:47 ubuntu kernel: [ 6279.209915] audit: type=1420 audit(1665189647.938:160): subj_apparmor=unconfined
+Oct  8 01:40:47 ubuntu kernel: [ 6279.213514] audit: type=1107 audit(1665189647.942:161): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.250" pid=10582 label="snap.firefox.firefox" peer_pid=13783 peer_label="unconfined"
+Oct  8 01:40:47 ubuntu kernel: [ 6279.213514]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  8 01:40:47 ubuntu kernel: [ 6279.213519] audit: type=1420 audit(1665189647.942:162): subj_apparmor=unconfined
+Oct  8 01:41:41 ubuntu kernel: [ 6332.951181] audit: type=1400 audit(1665189701.678:163): apparmor="DENIED" operation="open" profile="snap.firefox.firefox" name="/run/mount/utab" pid=10582 comm="firefox" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+Oct  8 01:41:41 ubuntu kernel: [ 6333.253143] audit: type=1107 audit(1665189701.978:164): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.252" pid=10582 label="snap.firefox.firefox" peer_pid=13900 peer_label="unconfined"
+Oct  8 01:41:41 ubuntu kernel: [ 6333.253143]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  8 01:41:41 ubuntu kernel: [ 6333.253149] audit: type=1420 audit(1665189701.978:165): subj_apparmor=unconfined
+Oct  8 01:41:41 ubuntu kernel: [ 6333.253524] audit: type=1107 audit(1665189701.978:166): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.252" pid=10582 label="snap.firefox.firefox" peer_pid=13900 peer_label="unconfined"
+Oct  8 01:41:41 ubuntu kernel: [ 6333.253524]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  8 01:41:41 ubuntu kernel: [ 6333.253527] audit: type=1420 audit(1665189701.978:167): subj_apparmor=unconfined
+Oct  8 01:41:41 ubuntu kernel: [ 6333.253840] audit: type=1107 audit(1665189701.978:168): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.252" pid=10582 label="snap.firefox.firefox" peer_pid=13900 peer_label="unconfined"
+Oct  8 01:41:41 ubuntu kernel: [ 6333.253840]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  8 01:41:41 ubuntu kernel: [ 6333.253843] audit: type=1420 audit(1665189701.978:169): subj_apparmor=unconfined
+Oct  8 01:41:41 ubuntu kernel: [ 6333.254404] audit: type=1107 audit(1665189701.978:170): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.252" pid=10582 label="snap.firefox.firefox" peer_pid=13900 peer_label="unconfined"
+Oct  8 01:41:41 ubuntu kernel: [ 6333.254404]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  8 01:41:41 ubuntu kernel: [ 6333.254408] audit: type=1420 audit(1665189701.978:171): subj_apparmor=unconfined
+Oct  8 01:41:57 ubuntu kernel: [ 6348.797456] audit: type=1400 audit(1665189717.527:172): apparmor="DENIED" operation="open" profile="/usr/bin/evince-thumbnailer" name="/tmp/top_secret" pid=13967 comm="evince-thumbnai" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+Oct  8 01:41:57 ubuntu kernel: [ 6348.797850] audit: type=1400 audit(1665189717.527:173): apparmor="DENIED" operation="open" profile="/usr/bin/evince-thumbnailer" name="/tmp/top_secret" pid=13967 comm="evince-thumbnai" requested_mask="r" denied_mask="r" fsuid=1000 ouid=1000
+Oct  8 01:50:52 ubuntu kernel: [ 6883.489208] usb 1-1: USB disconnect, device number 11
+Oct  8 01:50:52 ubuntu kernel: [ 6883.950980] usb 1-1: new full-speed USB device number 12 using ohci-pci
+Oct  8 01:50:53 ubuntu kernel: [ 6884.276260] usb 1-1: New USB device found, idVendor=80ee, idProduct=0021, bcdDevice= 1.00
+Oct  8 01:50:53 ubuntu kernel: [ 6884.276267] usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+Oct  8 01:50:53 ubuntu kernel: [ 6884.276270] usb 1-1: Product: USB Tablet
+Oct  8 01:50:53 ubuntu kernel: [ 6884.276271] usb 1-1: Manufacturer: VirtualBox
+Oct  8 01:50:53 ubuntu kernel: [ 6884.300394] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.000A/input/input16
+Oct  8 01:50:53 ubuntu kernel: [ 6884.369341] hid-generic 0003:80EE:0021.000A: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+Oct  8 02:11:19 ubuntu kernel: [ 8094.191247] audit: type=1107 audit(1665191479.926:174): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.292" pid=10582 label="snap.firefox.firefox" peer_pid=18518 peer_label="unconfined"
+Oct  8 02:11:19 ubuntu kernel: [ 8094.191247]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  8 02:11:19 ubuntu kernel: [ 8094.191256] audit: type=1420 audit(1665191479.926:175): subj_apparmor=unconfined
+Oct  8 02:11:19 ubuntu kernel: [ 8094.192688] audit: type=1107 audit(1665191479.926:176): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.292" pid=10582 label="snap.firefox.firefox" peer_pid=18518 peer_label="unconfined"
+Oct  8 02:11:19 ubuntu kernel: [ 8094.192688]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  8 02:11:19 ubuntu kernel: [ 8094.192692] audit: type=1420 audit(1665191479.926:177): subj_apparmor=unconfined
+Oct  8 02:11:19 ubuntu kernel: [ 8094.193021] audit: type=1107 audit(1665191479.926:178): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.292" pid=10582 label="snap.firefox.firefox" peer_pid=18518 peer_label="unconfined"
+Oct  8 02:11:19 ubuntu kernel: [ 8094.193021]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  8 02:11:19 ubuntu kernel: [ 8094.193025] audit: type=1420 audit(1665191479.926:179): subj_apparmor=unconfined
+Oct  8 02:11:44 ubuntu kernel: [ 8118.847050] 01:11:44.583808 control  Session 0 is about to close ...
+Oct  8 02:11:44 ubuntu kernel: [ 8118.861585] usb 1-1: USB disconnect, device number 12
+Oct  8 02:11:44 ubuntu kernel: [ 8118.900035] 01:11:44.636117 control  Stopping all guest processes ...
+Oct  8 02:11:44 ubuntu kernel: [ 8118.922783] 01:11:44.653824 control  Closing all guest files ...
+Oct  8 02:11:44 ubuntu kernel: [ 8119.001491] 01:11:44.732591 control  vbglR3GuestCtrlDetectPeekGetCancelSupport: Supported (#1)
+Oct  8 02:11:45 ubuntu kernel: [ 8119.275858] e1000: enp0s3 NIC Link is Down
+Oct  8 02:11:45 ubuntu kernel: [ 8119.926530] usb 1-1: new full-speed USB device number 13 using ohci-pci
+Oct  8 02:11:46 ubuntu kernel: [ 8120.634427] usb 1-1: New USB device found, idVendor=80ee, idProduct=0021, bcdDevice= 1.00
+Oct  8 02:11:46 ubuntu kernel: [ 8120.634435] usb 1-1: New USB device strings: Mfr=1, Product=3, SerialNumber=0
+Oct  8 02:11:46 ubuntu kernel: [ 8120.634437] usb 1-1: Product: USB Tablet
+Oct  8 02:11:46 ubuntu kernel: [ 8120.634457] usb 1-1: Manufacturer: VirtualBox
+Oct  8 02:11:46 ubuntu kernel: [ 8120.857652] input: VirtualBox USB Tablet as /devices/pci0000:00/0000:00:06.0/usb1/1-1/1-1:1.0/0003:80EE:0021.000B/input/input17
+Oct  8 02:11:46 ubuntu kernel: [ 8120.939522] hid-generic 0003:80EE:0021.000B: input,hidraw0: USB HID v1.10 Mouse [VirtualBox USB Tablet] on usb-0000:00:06.0-1/input0
+Oct  8 02:14:37 ubuntu kernel: [ 8123.300080] e1000: enp0s3 NIC Link is Up 1000 Mbps Full Duplex, Flow Control: RX
+Oct  8 02:15:24 ubuntu kernel: [ 8169.754207] vboxsf: Unknown parameter 'tag'
+Oct  8 02:15:24 ubuntu kernel: [ 8169.799813] 01:15:24.376194 automount vbsvcAutomounterMountIt: Running outdated vboxsf module without support for the 'tag' option?
+Oct  8 02:15:24 ubuntu kernel: [ 8169.800732] 01:15:24.377264 automount vbsvcAutomounterMountIt: Successfully mounted 'Images' on '/media/sf_Images'
+Oct  8 02:15:24 ubuntu kernel: [ 8169.832903] audit: type=1400 audit(1665191724.408:180): apparmor="DENIED" operation="open" profile="snap.firefox.firefox" name="/etc/fstab" pid=10582 comm="firefox" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+Oct  8 02:15:24 ubuntu kernel: [ 8169.861124] audit: type=1400 audit(1665191724.428:181): apparmor="DENIED" operation="open" profile="snap.firefox.firefox" name="/run/mount/utab" pid=10582 comm="firefox" requested_mask="r" denied_mask="r" fsuid=1000 ouid=0
+Oct  8 02:15:26 ubuntu kernel: [ 8172.207795] audit: type=1107 audit(1665191726.777:182): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.299" pid=10582 label="snap.firefox.firefox" peer_pid=18590 peer_label="unconfined"
+Oct  8 02:15:26 ubuntu kernel: [ 8172.207795]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  8 02:15:26 ubuntu kernel: [ 8172.207802] audit: type=1420 audit(1665191726.777:183): subj_apparmor=unconfined
+Oct  8 02:15:26 ubuntu kernel: [ 8172.210831] audit: type=1107 audit(1665191726.777:184): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.299" pid=10582 label="snap.firefox.firefox" peer_pid=18590 peer_label="unconfined"
+Oct  8 02:15:26 ubuntu kernel: [ 8172.210831]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  8 02:15:26 ubuntu kernel: [ 8172.210837] audit: type=1420 audit(1665191726.777:185): subj_apparmor=unconfined
+Oct  8 02:15:26 ubuntu kernel: [ 8172.211647] audit: type=1107 audit(1665191726.777:186): pid=550 uid=102 auid=4294967295 ses=4294967295 subj=? msg='apparmor="DENIED" operation="dbus_method_call"  bus="system" path="/org/freedesktop/hostname1" interface="org.freedesktop.DBus.Properties" member="GetAll" mask="send" name=":1.299" pid=10582 label="snap.firefox.firefox" peer_pid=18590 peer_label="unconfined"
+Oct  8 02:15:26 ubuntu kernel: [ 8172.211647]  exe="/usr/bin/dbus-daemon" sauid=102 hostname=? addr=? terminal=?'
+Oct  8 02:15:26 ubuntu kernel: [ 8172.211652] audit: type=1420 audit(1665191726.777:187): subj_apparmor=unconfined
