@@ -1,0 +1,74 @@
+<Schema name="airports_dw">
+  <Cube name="Flights" visible="true" cache="true" enabled="true">
+    <Table name="fact_flight">
+    </Table>
+    <Dimension type="StandardDimension" visible="true" foreignKey="from_airport" highCardinality="false" name="Airport_Origin">
+      <Hierarchy name="Airport Origin Hierarchy" visible="true" hasAll="true" allMemberName="All Origin Airports" primaryKey="airport_id">
+        <Table name="dim_airport_origin">
+        </Table>
+        <Level name="Origin Airport Name" visible="true" column="airport_name" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Origin Airport City" visible="true" column="city" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Origin Airport Country" visible="true" column="country" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="to_airport" highCardinality="false" name="Airport_Destination">
+      <Hierarchy name="Airport Destination Hierarchy" visible="true" hasAll="true" allMemberName="All Destination Airports" primaryKey="airport_id">
+        <Table name="dim_airport_destination">
+        </Table>
+        <Level name="Destination Airport Name" visible="true" column="airport_name" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Destination Airport City" visible="true" column="city" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+        <Level name="Destination Airport Country" visible="true" column="country" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="airline_id" highCardinality="false" name="Airline">
+      <Hierarchy name="Airline Hierarchy" visible="true" hasAll="true" allMemberName="All Airlines" primaryKey="airline_id">
+        <Table name="dim_airline">
+        </Table>
+        <Level name="Airline Name" visible="true" column="airline_name" type="String" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="StandardDimension" visible="true" foreignKey="airplane_id" highCardinality="false" name="Airplane">
+      <Hierarchy name="Airplane Hierarchy" visible="true" hasAll="true" allMemberName="All Airplanes" primaryKey="airplane_id">
+        <Table name="dim_airplane">
+        </Table>
+        <Level name="Airplane Type" visible="true" column="type_id" type="Integer" uniqueMembers="false" levelType="Regular" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="TimeDimension" visible="true" foreignKey="departure_id" highCardinality="false" name="Departure_Date">
+      <Hierarchy name="Departure Date Hierarchy" visible="true" hasAll="true" allMemberName="All Dates" primaryKey="departure_id">
+        <Table name="dim_departure_date">
+        </Table>
+        <Level name="Departure Year" visible="true" column="year_id" type="Integer" uniqueMembers="false" levelType="TimeYears" hideMemberIf="Never">
+        </Level>
+        <Level name="Departure Month" visible="true" column="month_name" ordinalColumn="month_id" type="String" uniqueMembers="false" levelType="TimeMonths" hideMemberIf="Never">
+        </Level>
+        <Level name="Departure Day" visible="true" column="departure_day" type="Integer" uniqueMembers="false" levelType="TimeDays" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Dimension type="TimeDimension" visible="true" foreignKey="arrival_id" highCardinality="false" name="Arrival_Date">
+      <Hierarchy name="Arrival Date Hierarchy" visible="true" hasAll="true" allMemberName="All Dates" primaryKey="arrival_id">
+        <Table name="dim_arrival_date">
+        </Table>
+        <Level name="Arrival Year" visible="true" column="year_id" type="Integer" uniqueMembers="false" levelType="TimeYears" hideMemberIf="Never">
+        </Level>
+        <Level name="Arrival Month" visible="true" column="month_name" ordinalColumn="month_id" type="String" uniqueMembers="false" levelType="TimeMonths" hideMemberIf="Never">
+        </Level>
+        <Level name="Arrival Day" visible="true" column="arrival_day" type="Integer" uniqueMembers="false" levelType="TimeDays" hideMemberIf="Never">
+        </Level>
+      </Hierarchy>
+    </Dimension>
+    <Measure name="Total Passangers" column="total_passengers" datatype="Integer" aggregator="sum" visible="true">
+    </Measure>
+    <Measure name="Revenue" column="revenue" datatype="Numeric" formatString="$ #,###.00" aggregator="sum" visible="true">
+    </Measure>
+  </Cube>
+</Schema>
