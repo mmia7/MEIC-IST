@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_1cpcd3z" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.6.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.18.0">
+  <bpmn:collaboration id="Collaboration_0zq6tzd">
+    <bpmn:participant id="Participant_0yboq00" name="AVaaS" processRef="Process_0uzygxg" />
+    <bpmn:participant id="Participant_0j5x783" name="APILOT developer Microservice" processRef="Process_0ikg5ha" />
+    <bpmn:messageFlow id="Flow_0wbtwfd" sourceRef="Participant_0j5x783" targetRef="Activity_0281e14" />
+    <bpmn:messageFlow id="Flow_0yn2f92" sourceRef="Activity_0281e14" targetRef="Participant_0j5x783" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_0uzygxg" isExecutable="true">
+    <bpmn:laneSet id="LaneSet_1spauef">
+      <bpmn:lane id="Lane_1bzztr9" name="AVaas System">
+        <bpmn:flowNodeRef>Activity_0281e14</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_10ib7vy</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_12c5dto" name="APILOT developer">
+        <bpmn:flowNodeRef>Event_1kt40nm</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>RemoveFromCatalogRequest</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="Event_1kt40nm">
+      <bpmn:outgoing>Flow_081lj0z</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:userTask id="RemoveFromCatalogRequest" name="Remove From Catalog Request" camunda:assignee="demo">
+      <bpmn:extensionElements>
+        <camunda:formData>
+          <camunda:formField id="id" label="ID" type="long" defaultValue="0" />
+          <camunda:formField id="developerid" label="Developer ID" type="long" defaultValue="0" />
+        </camunda:formData>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_081lj0z</bpmn:incoming>
+      <bpmn:outgoing>Flow_1l3sgti</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:serviceTask id="Activity_0281e14" name="Send Remove Request">
+      <bpmn:extensionElements>
+        <camunda:connector>
+          <camunda:inputOutput>
+            <camunda:inputParameter name="method">DELETE</camunda:inputParameter>
+            <camunda:inputParameter name="payload">{
+  "id": ${id},
+  "name": "${developerid}"
+}</camunda:inputParameter>
+            <camunda:inputParameter name="url" />
+          </camunda:inputOutput>
+          <camunda:connectorId>http-connector</camunda:connectorId>
+        </camunda:connector>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1l3sgti</bpmn:incoming>
+      <bpmn:outgoing>Flow_023d03q</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:endEvent id="Event_10ib7vy">
+      <bpmn:incoming>Flow_023d03q</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_081lj0z" sourceRef="Event_1kt40nm" targetRef="RemoveFromCatalogRequest" />
+    <bpmn:sequenceFlow id="Flow_1l3sgti" sourceRef="RemoveFromCatalogRequest" targetRef="Activity_0281e14" />
+    <bpmn:sequenceFlow id="Flow_023d03q" sourceRef="Activity_0281e14" targetRef="Event_10ib7vy" />
+  </bpmn:process>
+  <bpmn:process id="Process_0ikg5ha" isExecutable="false" />
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_0zq6tzd">
+      <bpmndi:BPMNShape id="BPMNShape_1lujqwf" bpmnElement="Participant_0yboq00" isHorizontal="true">
+        <dc:Bounds x="160" y="40" width="600" height="410" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_021sdn5" bpmnElement="Lane_1bzztr9" isHorizontal="true">
+        <dc:Bounds x="190" y="205" width="570" height="245" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0k5qyfc" bpmnElement="Lane_12c5dto" isHorizontal="true">
+        <dc:Bounds x="190" y="40" width="570" height="165" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_1brnx42" bpmnElement="Event_1kt40nm">
+        <dc:Bounds x="233" y="102" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_1p8wg7l" bpmnElement="RemoveFromCatalogRequest">
+        <dc:Bounds x="301" y="80" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_07vbafg" bpmnElement="Activity_0281e14">
+        <dc:Bounds x="301" y="270" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0dr09yx" bpmnElement="Event_10ib7vy">
+        <dc:Bounds x="503" y="292" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="BPMNEdge_1yhyl6j" bpmnElement="Flow_081lj0z">
+        <di:waypoint x="269" y="120" />
+        <di:waypoint x="301" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_0stmluo" bpmnElement="Flow_1l3sgti">
+        <di:waypoint x="351" y="160" />
+        <di:waypoint x="351" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_19402qj" bpmnElement="Flow_023d03q">
+        <di:waypoint x="401" y="310" />
+        <di:waypoint x="503" y="310" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="BPMNShape_12l86hi" bpmnElement="Participant_0j5x783" isHorizontal="true">
+        <dc:Bounds x="160" y="500" width="600" height="120" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="BPMNEdge_1gd7tmd" bpmnElement="Flow_0wbtwfd">
+        <di:waypoint x="381" y="500" />
+        <di:waypoint x="381" y="350" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="BPMNEdge_1nkninj" bpmnElement="Flow_0yn2f92">
+        <di:waypoint x="331" y="350" />
+        <di:waypoint x="331" y="500" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

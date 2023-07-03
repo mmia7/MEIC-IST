@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<definitions xmlns="https://www.omg.org/spec/DMN/20191111/MODEL/" xmlns:dmndi="https://www.omg.org/spec/DMN/20191111/DMNDI/" xmlns:dc="http://www.omg.org/spec/DMN/20180521/DC/" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/dmn" id="Definitions_1qg8sba" name="DRD" namespace="http://camunda.org/schema/1.0/dmn" exporter="Camunda Modeler" exporterVersion="5.11.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.18.0">
+  <decision id="ApproveIQEQAQEvent" name="Approve IQ EQ AQ Event">
+    <decisionTable id="DecisionTable_0tcf46c">
+      <input id="Input_1" label="weatherStatus" camunda:inputVariable="weatherStatus">
+        <inputExpression id="InputExpression_1" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_1p0vzzw" label="takeRest" camunda:inputVariable="takeRest">
+        <inputExpression id="LiteralExpression_134xbug" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_12jhubf" label="tractionWheelsLevel" camunda:inputVariable="tractionWheelsLevel">
+        <inputExpression id="LiteralExpression_1hvo0qj" typeRef="integer">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_12g2gu1" label="speed" camunda:inputVariable="speed">
+        <inputExpression id="LiteralExpression_1jkgc8b" typeRef="integer">
+          <text></text>
+        </inputExpression>
+      </input>
+      <input id="InputClause_0tnfemt" label="municipalitySubdivision" camunda:inputVariable="municipalitySubdivision">
+        <inputExpression id="LiteralExpression_096r2t8" typeRef="string">
+          <text></text>
+        </inputExpression>
+      </input>
+      <output id="Output_1" label="Recommendations" name="approved" typeRef="string" />
+      <rule id="DecisionRule_0fi5e54">
+        <inputEntry id="UnaryTests_1le6euh">
+          <text>"Bad"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1sdsd4a">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0lt0rgn">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_11gy6r6">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1msz4pf">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_15jc2wa">
+          <text>"Drive Carefully - Road in Bad Condition"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_11evnfk">
+        <inputEntry id="UnaryTests_1f8dp0q">
+          <text>"Good"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_022b3ea">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_030yv4u">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0o6v5e7">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0v2jw53">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0t2yugq">
+          <text>"Road in Good Condition"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0l31lxl">
+        <inputEntry id="UnaryTests_0wuaeww">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_05ptlf8">
+          <text>"Yes"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_083462t">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1wjx39i">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1fhml4s">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0k7n1lu">
+          <text>"Driver tired - Increased Reaction Time"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_09mc6ta">
+        <inputEntry id="UnaryTests_1qi91vr">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_132srus">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0z411rp">
+          <text>&lt; 20</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1aspcic">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0qvteex">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_0w01bnk">
+          <text>"Low Traction - Increased Reaction Time"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0rbo7m4">
+        <inputEntry id="UnaryTests_1ypmlv3">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0lcyjvq">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0m8hwqm">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ji6ea4">
+          <text>&gt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vdngtw">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1g1jkgo">
+          <text>"High Speed - Increased Reaction Time"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_098lnhf">
+        <inputEntry id="UnaryTests_0hn9ndl">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_08e772d">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0imjeao">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_02sgavp">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0wrdwcq">
+          <text></text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1gz8y4r">
+          <text>"There are no problems"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_02g03ev">
+        <inputEntry id="UnaryTests_19ktcfy">
+          <text>"Bad"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_002salh">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ybx7du">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1na4z33">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0d793yc">
+          <text>"Areeiro"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1bj0ehd">
+          <text>"You should drecrease speed"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_1udj294">
+        <inputEntry id="UnaryTests_0j6krvv">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0my5a5e">
+          <text>"Yes"</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0l80icc">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0ytgffu">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0tdorv6">
+          <text>"Porto Salvo"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1enduy0">
+          <text>"Near Tecnico TagusPark. You can take a coffee break there."</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0g138le">
+        <inputEntry id="UnaryTests_0is5qzm">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_18erkim">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_01unt74">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_0wpoten">
+          <text>&gt; 50</text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1vwgc3e">
+          <text>"União das Freguesias de Santa Iria de Azóia, São João da Talha e Bobadela"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1va1wy3">
+          <text>"Guilty if accident occurs. Dangerous zone"</text>
+        </outputEntry>
+      </rule>
+      <rule id="DecisionRule_0n5vztu">
+        <inputEntry id="UnaryTests_14vz4pd">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1l60szg">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1mfhm79">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_1ffxg40">
+          <text></text>
+        </inputEntry>
+        <inputEntry id="UnaryTests_171qq10">
+          <text>"Areeiro"</text>
+        </inputEntry>
+        <outputEntry id="LiteralExpression_1nx4ouu">
+          <text>"Drive carefully. Many schools around and Tecnico nearby"</text>
+        </outputEntry>
+      </rule>
+    </decisionTable>
+  </decision>
+  <dmndi:DMNDI>
+    <dmndi:DMNDiagram>
+      <dmndi:DMNShape dmnElementRef="ApproveIQEQAQEvent">
+        <dc:Bounds height="80" width="180" x="160" y="100" />
+      </dmndi:DMNShape>
+    </dmndi:DMNDiagram>
+  </dmndi:DMNDI>
+</definitions>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" xmlns:modeler="http://camunda.org/schema/modeler/1.0" id="Definitions_1un67ie" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Modeler" exporterVersion="5.6.0" modeler:executionPlatform="Camunda Platform" modeler:executionPlatformVersion="7.18.0">
+  <bpmn:collaboration id="Collaboration_1ijpxor">
+    <bpmn:participant id="Participant_1yi23bx" name="AVaaS" processRef="Process_0uzygxg" />
+    <bpmn:participant id="Participant_0co7mun" name="APILOT developer Microservice" processRef="Process_01c1fen" />
+    <bpmn:messageFlow id="Flow_02asm9o" sourceRef="Participant_0co7mun" targetRef="Activity_0d1et9m" />
+    <bpmn:messageFlow id="Flow_0mie7pt" sourceRef="Activity_0d1et9m" targetRef="Participant_0co7mun" />
+  </bpmn:collaboration>
+  <bpmn:process id="Process_0uzygxg" isExecutable="true">
+    <bpmn:laneSet id="LaneSet_1spauef">
+      <bpmn:lane id="Lane_16uv2p0" name="APILOT developer">
+        <bpmn:flowNodeRef>StartEvent_1</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>AddToCatalogRequest</bpmn:flowNodeRef>
+      </bpmn:lane>
+      <bpmn:lane id="Lane_1twt9ns" name="AVaas System">
+        <bpmn:flowNodeRef>Activity_0d1et9m</bpmn:flowNodeRef>
+        <bpmn:flowNodeRef>Event_1abj6oa</bpmn:flowNodeRef>
+      </bpmn:lane>
+    </bpmn:laneSet>
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:outgoing>Flow_027kohe</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:userTask id="AddToCatalogRequest" name="Add To Catalog Request" camunda:assignee="demo">
+      <bpmn:extensionElements>
+        <camunda:formData>
+          <camunda:formField id="id" label="ID" type="long" defaultValue="0" />
+          <camunda:formField id="developerid" label="Developer ID" type="long" defaultValue="0" />
+        </camunda:formData>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_027kohe</bpmn:incoming>
+      <bpmn:outgoing>Flow_1a8x0cb</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:serviceTask id="Activity_0d1et9m" name="Send Add Request">
+      <bpmn:extensionElements>
+        <camunda:connector>
+          <camunda:inputOutput>
+            <camunda:inputParameter name="method">POST</camunda:inputParameter>
+            <camunda:inputParameter name="payload">{
+  "id": ${id},
+  "name": "${developerid}"
+}</camunda:inputParameter>
+            <camunda:inputParameter name="url" />
+          </camunda:inputOutput>
+          <camunda:connectorId>http-connector</camunda:connectorId>
+        </camunda:connector>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1a8x0cb</bpmn:incoming>
+      <bpmn:outgoing>Flow_0l4ntra</bpmn:outgoing>
+    </bpmn:serviceTask>
+    <bpmn:endEvent id="Event_1abj6oa">
+      <bpmn:incoming>Flow_0l4ntra</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_027kohe" sourceRef="StartEvent_1" targetRef="AddToCatalogRequest" />
+    <bpmn:sequenceFlow id="Flow_1a8x0cb" sourceRef="AddToCatalogRequest" targetRef="Activity_0d1et9m" />
+    <bpmn:sequenceFlow id="Flow_0l4ntra" sourceRef="Activity_0d1et9m" targetRef="Event_1abj6oa" />
+  </bpmn:process>
+  <bpmn:process id="Process_01c1fen" isExecutable="false" />
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Collaboration_1ijpxor">
+      <bpmndi:BPMNShape id="Participant_1yi23bx_di" bpmnElement="Participant_1yi23bx" isHorizontal="true">
+        <dc:Bounds x="160" y="40" width="600" height="410" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_1twt9ns_di" bpmnElement="Lane_1twt9ns" isHorizontal="true">
+        <dc:Bounds x="190" y="205" width="570" height="245" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Lane_16uv2p0_di" bpmnElement="Lane_16uv2p0" isHorizontal="true">
+        <dc:Bounds x="190" y="40" width="570" height="165" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="BPMNShape_0l45r7o" bpmnElement="StartEvent_1">
+        <dc:Bounds x="233" y="102" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1o0l76g_di" bpmnElement="AddToCatalogRequest">
+        <dc:Bounds x="301" y="80" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0tp18rs_di" bpmnElement="Activity_0d1et9m">
+        <dc:Bounds x="301" y="270" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1abj6oa_di" bpmnElement="Event_1abj6oa">
+        <dc:Bounds x="503" y="292" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_027kohe_di" bpmnElement="Flow_027kohe">
+        <di:waypoint x="269" y="120" />
+        <di:waypoint x="301" y="120" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1a8x0cb_di" bpmnElement="Flow_1a8x0cb">
+        <di:waypoint x="351" y="160" />
+        <di:waypoint x="351" y="270" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0l4ntra_di" bpmnElement="Flow_0l4ntra">
+        <di:waypoint x="401" y="310" />
+        <di:waypoint x="503" y="310" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNShape id="Participant_0co7mun_di" bpmnElement="Participant_0co7mun" isHorizontal="true">
+        <dc:Bounds x="160" y="500" width="600" height="120" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_02asm9o_di" bpmnElement="Flow_02asm9o">
+        <di:waypoint x="381" y="500" />
+        <di:waypoint x="381" y="350" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0mie7pt_di" bpmnElement="Flow_0mie7pt">
+        <di:waypoint x="331" y="350" />
+        <di:waypoint x="331" y="500" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>
