@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Styling for the dashboard -->
+    <link rel="stylesheet" href="style/styles.css" />
+
+    <!-- Load the D3.js library for data visualization -->
+    <script type="text/javascript" src="libs/d3-simple-slider.min.js"></script>
+    <script type="text/javascript" src="libs/d3.min.js"></script>
+
+    <!-- Load JavaScript files for the dashboard -->
+    <script src="scripts/script.js"></script>
+    <script src="scripts/create.js"></script>
+    <script src="scripts/update.js"></script>
+    <script src="scripts/linked.js"></script>
+    
+  </head>
+  <!-- Start the dashboard upon page load -->
+  <body id="body" onload="startDashboard()">
+    <!-- The main grid layout of the dashboard -->
+
+    <div id="dashboard">
+      <div id="Tittle">
+        <p>From I Do to I Don't: What Tears Relationships Apart 🤍</p>
+      </div>
+      
+      <div id="YearWrapper">
+        <div id="yearSlider"></div>
+      </div>
+      
+
+      <!-- World section -->
+      <div id="World">
+        
+        <!-- Cleveland Dot Plot -->
+        <div class="visualization" id="clevelandDotPlot">
+          <p>Divorce Rates in Xalapa VS World</p>
+        </div>
+        <!-- Add content or elements within the "World" section as needed -->
+      </div>
+
+      <!-- Xalapa section -->
+      <div id="Xalapa">
+        <!-- First Row: Age Range, Level of Education, Monthly Income -->
+        <div id="xalapaFilters">
+          <div class="filter-box" id="AgeRange">
+            <div class="filter-title">
+              <p>Age Range</p>
+            </div>
+            <div class="slider-container">
+              <div class="slider-column">
+                <img src="img/female-symbol.svg">
+                <div id="ageSliderWoman"></div>
+              </div>
+              <div class="slider-column">
+                <img src="img/man-symbol.svg">
+                <div id="ageSliderMan"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="filter-box" id="Education Level">
+            <div class="filter-title">
+              <p>Education Level</p>
+            </div>
+            <div class="slider-container">
+              <div class="slider-column">
+                <img src="img/female-symbol.svg">
+                <form> 
+                  <div class="multipleSelection"> 
+                      <div class="selectBox" 
+                          onclick="womanShowCheckboxes()"> 
+                          <select> 
+                              <option>Select Level</option> 
+                          </select> 
+                          <div class="overSelect"></div> 
+                      </div> 
+            
+            
+                    <div class="womanDropdown" id="womanDropdown">
+                    
+                    <label for="no-education">
+                      <input type="checkbox" id="womanNoEducation" checked>
+                      W/ Education</label>
+
+                     
+                    <label for="elementary">
+                      <input type="checkbox" id="womanElementary" checked> 
+                      Basic Sch.</label>
+
+                    
+                    <label for="middle">
+                      <input type="checkbox" id="womanMiddle" checked>
+                      Middle Sch.</label>
+
+                    
+                    <label for="high">
+                      <input type="checkbox" id="womanHigh" checked>
+                      High Sch.</label>
+
+                    
+                    <label for="college">
+                      <input type="checkbox" id="womanCollege" checked>
+                      College</label>
+
+                    
+                    <label for="other">
+                      <input type="checkbox" id="womanOther" checked>
+                      Other</label>
+                  </div>
+
+                  </div> 
+              </form> 
+              </div>
+              <div class="slider-column">
+                
+                <img src="img/man-symbol.svg">
+                  <form> 
+                  <div class="multipleSelection"> 
+                      <div class="selectBox" 
+                          onclick="manShowCheckboxes()"> 
+                          <select> 
+                              <option>Select Level</option> 
+                          </select> 
+                          <div class="overSelect"></div> 
+                      </div> 
+            
+            
+                    <div class="manDropdown" id="manDropdown">
+                    
+                    <label for="no-education">
+                      <input type="checkbox" id="manNoEducation" checked>
+                      W/ Education</label>
+
+                     
+                    <label for="elementary">
+                      <input type="checkbox" id="manElementary" checked> 
+                      Basic Sch.</label>
+
+                    
+                    <label for="middle">
+                      <input type="checkbox" id="manMiddle" checked>
+                      Middle Sch.</label>
+
+                    
+                    <label for="high">
+                      <input type="checkbox" id="manHigh" checked>
+                      High Sch.</label>
+
+                    
+                    <label for="college">
+                      <input type="checkbox" id="manCollege" checked>
+                      College</label>
+
+                    
+                    <label for="other">
+                      <input type="checkbox" id="manOther" checked>
+                      Other</label>
+                  </div>
+
+                  </div> 
+              </form> 
+
+                  
+              </div>
+            </div>
+            
+          </div>
+
+          <div class="filter-box" id="monthlyIncome">
+            <div class="filter-title">
+              <p>Monthly Income (pesos)</p>
+            </div>
+            <div class="slider-container">
+              <div class="slider-column">
+                <img src="img/female-symbol.svg">
+                <div id="incomeSliderWoman"></div>
+              </div>
+              <div class="slider-column">
+                <img src="img/man-symbol.svg">
+                <div id="incomeSliderMan"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Second Row with Two Columns -->
+          <!-- Column 1 -->
+            <!-- First Row: Chord Graph -->
+            <div id="chordWrapper">
+              <div id="chordDiagram" class="visualization">
+                <p>Compatibilities between  Zodiac Signs</p>
+              </div>
+              <div id="filter-buttonschord"></div>
+            </div>  
+            <!-- Second Row: Bar Chart -->
+            <div id="barWrapper">
+              <div id="barChart" class="visualization">
+                <p>Average Marriage Duration by Age Gap</p>
+              </div>
+              <div id="age-buttons"></div>
+            </div>
+          <!-- Column 2: Calendar Heatmap -->
+          <div id="sunburstWrapper">
+            <div id="sunBurst" class="visualization">
+              <p>Most Common Divorce Date</p>
+            </div>
+            </div>
+        </div>
+      </div>
+      
+      <!-- Year Slider section -->
+      
+  </body>
+</html>
+
+
+<script>
+
+var manShow = false;
+var womanShow = true;
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  const manCheckboxes = document.querySelectorAll(".manDropdown input[type='checkbox']");
+
+  manCheckboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', () => {
+      filtersState[checkbox.id] = checkbox.checked;  
+      update(globalData);
+    });
+  });
+
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+
+  const womanCheckboxes = document.querySelectorAll(".womanDropdown input[type='checkbox']");
+
+  womanCheckboxes.forEach(checkbox => {
+    checkbox.addEventListener('change', () => {
+      console.log(checkbox.id);
+      filtersState[checkbox.id] = checkbox.checked;  
+      update(globalData);
+    });
+  });
+
+});
+
+
+function manShowCheckboxes() { 
+    var dropdown =  
+        document.getElementById("manDropdown"); 
+
+    if (manShow) { 
+        dropdown.style.display = "block"; 
+        manShow = false; 
+    } else { 
+        dropdown.style.display = "none"; 
+        manShow = true; 
+    } 
+} 
+
+function womanShowCheckboxes() { 
+    var dropdown =  
+        document.getElementById("womanDropdown"); 
+
+    if (womanShow) { 
+        dropdown.style.display = "block"; 
+        womanShow = false; 
+    } else { 
+        dropdown.style.display = "none"; 
+        womanShow = true; 
+    } 
+} 
+
+
+
+</script>

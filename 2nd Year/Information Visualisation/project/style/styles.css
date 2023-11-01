@@ -1,0 +1,257 @@
+body{
+  background-color: #eef1fb;
+  background-image: url('/img/stars.jpeg');
+  font-family: 'Inter';
+}
+
+h1 {text-align: center;}
+p {text-align: center; font-weight: 600; }
+
+
+/* CSS for the dashboard layout */
+#dashboard {
+  display: grid;
+  grid-template-rows: auto 1fr auto; /* Three rows */
+  grid-template-columns: 0.5fr 1fr; /* Adjusted column sizes */
+  gap: 10px; /* Gap between grid items */
+}
+
+#Tittle {
+  grid-row: 1 / span 1; /* Span two rows */
+  grid-column: 1 / span 1; /* Span one column */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  padding: 10px; /* Padding */
+  background-color: #b5b7f5;
+  color: #2c2c2c;
+  font-family: 'Playfair Display', serif;
+  font-weight: bold; 
+  font-size: 20px;
+}
+
+    
+/* Xalapa section */
+#Xalapa {
+  grid-row: 2 / span 1; /* Span two rows */
+  grid-column: 2 / span 1; /* Span one column */
+  display: grid;
+  grid-template-rows: auto auto auto auto auto; /* Two rows */
+  grid-template-columns: auto auto; /* One column */
+  gap: 10px; /* Gap between grid items */
+  background-color: #ffffff; /* Background color */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  padding: 10px; /* Padding */
+  border-radius: 10px; /* Rounded corners */
+}
+
+#xalapaFilters{
+  grid-row: 3 / span 3; /* Span one row */
+  grid-column: 2 / span 1; /* Span one column */
+  display: grid;
+  grid-template-rows: auto; /* One rows */
+  grid-template-columns: repeat(auto, 3); /* Two columns */
+  gap: 10px;
+}
+
+/* Individual filter items (filter boxes) */
+.filter-box {
+  display: grid;
+  grid-template-rows: auto auto; /* Two rows */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(205, 205, 205);
+}
+
+/* Title within filter box */
+.filter-title {
+  text-align: center; /* Center-align the title */
+}
+
+/* Slider container within filter box */
+.slider-container {
+  display: grid;
+  grid-template-columns: auto auto; /* Two columns for sliders */
+}
+
+.slider-column {
+  width: 10rem;
+  display: flex;
+  align-items: center; /* Vertically center content */
+  height: 10px;
+}
+
+
+/* Xalapa Graphs section */
+#xalapaGraphs {
+  display: grid;
+  grid-template-rows: 1fr 1fr; /* Two rows */
+  grid-template-columns: repeat(2, auto); /* Two columns */
+  gap: 10px; /* Gap between grid items */
+}
+
+
+/* Chord Graph */
+#chordWrapper {
+  grid-row: 1 / span 3; /* Span one row */
+  grid-column: 1 / span 1; /* Span one column */
+  /* Add your chord graph styles here */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(205, 205, 205);
+}
+
+/* Bar Chart */
+#barWrapper {
+  grid-row: 4 / span 2; /* Span one row */
+  grid-column: 1 / span 1; /* Span one column */
+  /* Add your bar chart styles here */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(205, 205, 205);
+}
+
+
+#sunburstWrapper{
+  grid-row: 1 / span 2; /* Span two rows */
+  grid-column: 2 / span 1; /* Span one column */
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid rgb(205, 205, 205);
+}
+
+/* World section */
+#World {
+  grid-row: 2 / span 1; /* Span two rows */
+  grid-column: 1 / span 1; /* Span one column */
+  background-color: #ffffff; /* Background color */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+  padding: 10px; /* Padding */
+  display: grid;
+  gap: 20px; /* Gap between grid items */
+}
+
+/* Year Slider section */
+#YearWrapper {
+  grid-row: 1 / span 1; /* Span one row */
+  grid-column: 2 / span 1; /* Span three   columns */
+  background-color: #ffffff; /* Background color */
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  border-radius: 10px;
+}
+
+
+#filter-buttons {
+  display: flex;
+  justify-content: space-between;
+  width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+button {
+  background-color: #eef1fb; 
+  border-radius: 7px;
+  border: none;
+  padding: 8px 12px;
+}
+
+button:active {
+  background-color: #8fa2e1;
+}
+
+
+
+button {
+  transition: background-color 0.3s ease;
+}
+
+.filter-button:hover {
+    background-color: #EEEEEE;
+    border-color: #EEEEEE;
+}
+
+.filter-button.active {
+    background-color: #7E45D9;
+    border-color: #7E45D9;
+    color: white;
+}
+
+.filter-button.active:hover {
+    border-color: #7234D5;
+    background-color: #7234D5;
+}
+
+.no-data-message {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.zodiac-button:hover {
+  background-color: #b5b7f5; /* Change to the desired hover effect */
+}
+
+.highlighted-label {
+  fill: red; /* Change the color to your preference */
+  font-weight: bold; /* Add any other styling you want */
+}
+
+
+
+.multipleSelection { 
+  background-color: #eef1fb;
+  border-radius: 5px; 
+} 
+
+.selectBox { 
+    position: relative; 
+} 
+
+.selectBox select { 
+    width: 100%; 
+    font-weight: bold; 
+    padding: 5px;
+} 
+
+.overSelect { 
+    position: absolute; 
+    left: 0; 
+    right: 0; 
+    top: 0; 
+    bottom: 0; 
+} 
+
+#manDropdown { 
+    display: none; 
+} 
+
+#manDropdown label { 
+    display: block; 
+} 
+
+#manDropdown label:hover { 
+    background-color: #b5b7f5; 
+} 
+
+
+#womanDropdown { 
+    display: none; 
+} 
+
+#womanDropdown label { 
+    display: block; 
+} 
+
+#womanDropdown label:hover { 
+    background-color: #b5b7f5; 
+} 
+
+.grid line {
+  stroke: gray; 
+}
+
+.bar text {
+  fill: black;
+  font-family: emoji; 
+}

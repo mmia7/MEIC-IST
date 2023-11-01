@@ -1,0 +1,14 @@
+0   1   FEV FEB
+1   .5
+0   2   ABR APR
+2   .5
+0   3   MAI MAY
+3   .5
+0   4   AGO AUG
+4   .5
+0   5   SET SEP
+5   .5
+0   6   OUT OCT
+6   .5
+0   7   DEZ DEC
+7   .5

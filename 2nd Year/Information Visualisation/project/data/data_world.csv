@@ -1,0 +1,609 @@
+Year,Divorce Rate,Country
+2000,2.5999999,Australia
+2001,2.8,Australia
+2002,2.7,Australia
+2003,2.7,Australia
+2004,2.5999999,Australia
+2005,2.5999999,Australia
+2006,2.5,Australia
+2007,2.3,Australia
+2008,2.2,Australia
+2009,2.3,Australia
+2010,2.3,Australia
+2011,2.2,Australia
+2012,2.2,Australia
+2013,2.0999999,Australia
+2014,2.0,Australia
+2015,2.0,Australia
+2000,2.4000001,Austria
+2001,2.5999999,Austria
+2002,2.5,Austria
+2003,2.3,Austria
+2004,2.4000001,Austria
+2005,2.4000001,Austria
+2006,2.5,Austria
+2007,2.5,Austria
+2008,2.4000001,Austria
+2009,2.3,Austria
+2010,2.0999999,Austria
+2011,2.0999999,Austria
+2012,2.0,Austria
+2013,1.9,Austria
+2014,1.9,Austria
+2015,1.9,Austria
+2000,2.5999999,Belgium
+2001,2.8,Belgium
+2002,3.0,Belgium
+2003,3.0,Belgium
+2004,3.0,Belgium
+2005,2.9000001,Belgium
+2006,2.8,Belgium
+2007,2.8,Belgium
+2008,3.3,Belgium
+2009,3.0,Belgium
+2010,2.7,Belgium
+2011,2.5,Belgium
+2012,2.3,Belgium
+2013,2.2,Belgium
+2014,2.2,Belgium
+2015,2.2,Belgium
+2000,1.3,Bulgaria
+2001,1.3,Bulgaria
+2002,1.3,Bulgaria
+2003,1.5,Bulgaria
+2004,1.9,Bulgaria
+2005,1.9,Bulgaria
+2006,2.0,Bulgaria
+2007,2.2,Bulgaria
+2008,1.9,Bulgaria
+2009,1.6,Bulgaria
+2010,1.5,Bulgaria
+2011,1.4,Bulgaria
+2012,1.6,Bulgaria
+2013,1.5,Bulgaria
+2014,1.5,Bulgaria
+2015,1.5,Bulgaria
+2000,1.0,Croatia
+2001,1.1,Croatia
+2002,1.0,Croatia
+2003,1.1,Croatia
+2004,1.2,Croatia
+2005,1.1,Croatia
+2006,1.1,Croatia
+2007,1.1,Croatia
+2008,1.2,Croatia
+2009,1.2,Croatia
+2010,1.2,Croatia
+2011,1.3,Croatia
+2012,1.3,Croatia
+2013,1.4,Croatia
+2014,1.4,Croatia
+2015,1.4,Croatia
+2000,1.7,Cyprus
+2001,1.7,Cyprus
+2002,1.9,Cyprus
+2003,2.0,Cyprus
+2004,2.2,Cyprus
+2005,2.0,Cyprus
+2006,2.3,Cyprus
+2007,2.0999999,Cyprus
+2008,2.0999999,Cyprus
+2009,2.2,Cyprus
+2010,2.3,Cyprus
+2011,2.3,Cyprus
+2012,2.4000001,Cyprus
+2013,2.2,Cyprus
+2014,2.2,Cyprus
+2015,2.0999999,Cyprus
+2000,2.9000001,Czech Republic
+2001,3.0999999,Czech Republic
+2002,3.0999999,Czech Republic
+2003,3.8,Czech Republic
+2004,3.2,Czech Republic
+2005,3.0999999,Czech Republic
+2006,3.0999999,Czech Republic
+2007,3.0,Czech Republic
+2008,3.0,Czech Republic
+2009,2.8,Czech Republic
+2010,2.9000001,Czech Republic
+2011,2.7,Czech Republic
+2012,2.5,Czech Republic
+2013,2.7,Czech Republic
+2014,2.5,Czech Republic
+2015,2.5,Czech Republic
+2000,2.7,Denmark
+2001,2.7,Denmark
+2002,2.8,Denmark
+2003,2.9000001,Denmark
+2004,2.9000001,Denmark
+2005,2.8,Denmark
+2006,2.5999999,Denmark
+2007,2.5999999,Denmark
+2008,2.7,Denmark
+2009,2.7,Denmark
+2010,2.5999999,Denmark
+2011,2.5999999,Denmark
+2012,2.8,Denmark
+2013,3.4000001,Denmark
+2014,3.4000001,Denmark
+2015,2.9000001,Denmark
+2000,3.0,Estonia
+2001,3.0999999,Estonia
+2002,3.0,Estonia
+2003,2.9000001,Estonia
+2004,3.0999999,Estonia
+2005,3.0,Estonia
+2006,2.8,Estonia
+2007,2.8,Estonia
+2008,2.5999999,Estonia
+2009,2.4000001,Estonia
+2010,2.2,Estonia
+2011,2.3,Estonia
+2012,2.4000001,Estonia
+2013,2.5,Estonia
+2014,2.4000001,Estonia
+2015,2.5999999,Estonia
+2000,2.7,Finland
+2001,2.5999999,Finland
+2002,2.5999999,Finland
+2003,2.5999999,Finland
+2004,2.5,Finland
+2005,2.5999999,Finland
+2006,2.5,Finland
+2007,2.5,Finland
+2008,2.5,Finland
+2009,2.5,Finland
+2010,2.5,Finland
+2011,2.5,Finland
+2012,2.4000001,Finland
+2013,2.5,Finland
+2014,2.5,Finland
+2015,2.5,Finland
+2000,1.9,France
+2001,1.9,France
+2002,1.9,France
+2003,2.0999999,France
+2004,2.2,France
+2005,2.5,France
+2006,2.2,France
+2007,2.0999999,France
+2008,2.0999999,France
+2009,2.0,France
+2010,2.0999999,France
+2011,2.0,France
+2012,2.0,France
+2013,1.9,France
+2014,1.9,France
+2015,1.9,France
+2000,2.4000001,Germany
+2001,2.4000001,Germany
+2002,2.5,Germany
+2003,2.5999999,Germany
+2004,2.5999999,Germany
+2005,2.4000001,Germany
+2006,2.3,Germany
+2007,2.3,Germany
+2008,2.3,Germany
+2009,2.3,Germany
+2010,2.3,Germany
+2011,2.3,Germany
+2012,2.2,Germany
+2013,2.0999999,Germany
+2014,2.0999999,Germany
+2015,2.0,Germany
+2000,1.0,Greece
+2001,1.0,Greece
+2002,1.0,Greece
+2003,1.1,Greece
+2004,1.1,Greece
+2005,1.2,Greece
+2006,1.2,Greece
+2007,1.2,Greece
+2008,1.2,Greece
+2009,1.2,Greece
+2010,1.2,Greece
+2011,1.1,Greece
+2012,1.3,Greece
+2013,1.5,Greece
+2014,1.3,Greece
+2015,1.4,Greece
+2000,2.3,Hungary
+2001,2.4000001,Hungary
+2002,2.5,Hungary
+2003,2.5,Hungary
+2004,2.4000001,Hungary
+2005,2.5,Hungary
+2006,2.5,Hungary
+2007,2.5,Hungary
+2008,2.5,Hungary
+2009,2.4000001,Hungary
+2010,2.4000001,Hungary
+2011,2.3,Hungary
+2012,2.2,Hungary
+2013,2.0,Hungary
+2014,2.0,Hungary
+2015,2.0999999,Hungary
+2000,0.69999999,Ireland
+2001,0.69999999,Ireland
+2002,0.69999999,Ireland
+2003,0.69999999,Ireland
+2004,0.80000001,Ireland
+2005,0.80000001,Ireland
+2006,0.89999998,Ireland
+2007,0.80000001,Ireland
+2008,0.80000001,Ireland
+2009,0.69999999,Ireland
+2010,0.69999999,Ireland
+2011,0.60000002,Ireland
+2012,0.60000002,Ireland
+2013,0.60000002,Ireland
+2014,0.60000002,Ireland
+2015,0.69999999,Ireland
+2000,1.8,Israel
+2001,1.8,Israel
+2002,1.7,Israel
+2003,1.7,Israel
+2004,1.6,Israel
+2005,1.6,Israel
+2006,1.9,Israel
+2007,1.8,Israel
+2008,1.8,Israel
+2009,1.8,Israel
+2010,1.7,Israel
+2011,1.7,Israel
+2012,1.7,Israel
+2013,1.8,Israel
+2014,1.8,Israel
+2015,1.7,Israel
+2000,0.69999999,Italy
+2001,0.69999999,Italy
+2002,0.69999999,Italy
+2003,0.80000001,Italy
+2004,0.80000001,Italy
+2005,0.80000001,Italy
+2006,0.89999998,Italy
+2007,0.89999998,Italy
+2008,0.89999998,Italy
+2009,0.89999998,Italy
+2010,0.89999998,Italy
+2011,0.89999998,Italy
+2012,0.89999998,Italy
+2013,0.89999998,Italy
+2014,0.89999998,Italy
+2015,1.4,Italy
+2000,2.0999999,Japan
+2001,2.3,Japan
+2002,2.3,Japan
+2003,2.3,Japan
+2004,2.2,Japan
+2005,2.0999999,Japan
+2006,2.0,Japan
+2007,2.0,Japan
+2008,2.0,Japan
+2009,2.0,Japan
+2010,2.0,Japan
+2011,1.9,Japan
+2012,1.9,Japan
+2013,1.8,Japan
+2014,1.8,Japan
+2015,1.8,Japan
+2000,2.5999999,Latvia
+2001,2.5,Latvia
+2002,2.5999999,Latvia
+2003,2.0999999,Latvia
+2004,2.3,Latvia
+2005,2.8,Latvia
+2006,3.3,Latvia
+2007,3.4000001,Latvia
+2008,2.9000001,Latvia
+2009,2.4000001,Latvia
+2010,2.4000001,Latvia
+2011,4.0,Latvia
+2012,3.5999999,Latvia
+2013,3.5,Latvia
+2014,3.0999999,Latvia
+2015,2.5999999,Latvia
+2000,0.32002867456924144,Xalapa
+2001,0.37123326250032,Xalapa
+2002,0.37635372129342787,Xalapa
+2003,0.3865946388796436,Xalapa
+2004,0.3328298215520111,Xalapa
+2005,0.16701522016962936,Xalapa
+2006,0.3170868672785717,Xalapa
+2007,0.2904612524689207,Xalapa
+2008,0.442953410015104,Xalapa
+2009,0.442953410015104,Xalapa
+2010,0.32974616096853654,Xalapa
+2011,0.45640362677102075,Xalapa
+2012,0.2642336786569068,Xalapa
+2013,0.23147743750109187,Xalapa
+2014,0.1878024492933387,Xalapa
+2015,0.02620499292465191,Xalapa
+2000,3.0999999,Lithuania
+2001,3.2,Lithuania
+2002,3.0999999,Lithuania
+2003,3.0999999,Lithuania
+2004,3.3,Lithuania
+2005,3.3,Lithuania
+2006,3.4000001,Lithuania
+2007,3.5,Lithuania
+2008,3.2,Lithuania
+2009,2.9000001,Lithuania
+2010,3.2,Lithuania
+2011,3.4000001,Lithuania
+2012,3.5,Lithuania
+2013,3.4000001,Lithuania
+2014,3.3,Lithuania
+2015,3.2,Lithuania
+2000,2.4000001,Luxembourg
+2001,2.3,Luxembourg
+2002,2.4000001,Luxembourg
+2003,2.3,Luxembourg
+2004,2.3,Luxembourg
+2005,2.2,Luxembourg
+2006,2.5,Luxembourg
+2007,2.3,Luxembourg
+2008,2.0,Luxembourg
+2009,2.0999999,Luxembourg
+2010,2.0999999,Luxembourg
+2011,2.3,Luxembourg
+2012,2.0,Luxembourg
+2013,2.0999999,Luxembourg
+2014,2.5999999,Luxembourg
+2015,2.4000001,Luxembourg
+2000,0.5,Mexico
+2001,0.60000002,Mexico
+2002,0.60000002,Mexico
+2003,0.60000002,Mexico
+2004,0.69999999,Mexico
+2005,0.69999999,Mexico
+2006,0.69999999,Mexico
+2007,0.69999999,Mexico
+2008,0.80000001,Mexico
+2009,0.80000001,Mexico
+2010,0.80000001,Mexico
+2011,0.80000001,Mexico
+2012,0.89999998,Mexico
+2013,0.89999998,Mexico
+2014,0.89999998,Mexico
+2015,1.0,Mexico
+2000,2.2,Netherlands
+2001,2.3,Netherlands
+2002,2.0999999,Netherlands
+2003,1.9,Netherlands
+2004,1.9,Netherlands
+2005,2.0,Netherlands
+2006,1.9,Netherlands
+2007,2.0,Netherlands
+2008,2.0,Netherlands
+2009,1.9,Netherlands
+2010,2.0,Netherlands
+2011,2.0,Netherlands
+2012,2.0999999,Netherlands
+2013,2.0,Netherlands
+2014,2.0999999,Netherlands
+2015,2.0,Netherlands
+2000,2.5,New Zealand
+2001,2.5,New Zealand
+2002,2.5999999,New Zealand
+2003,2.5999999,New Zealand
+2004,2.5999999,New Zealand
+2005,2.4000001,New Zealand
+2006,2.4000001,New Zealand
+2007,2.3,New Zealand
+2008,2.3,New Zealand
+2009,2.0,New Zealand
+2010,2.0,New Zealand
+2011,1.9,New Zealand
+2012,2.0,New Zealand
+2013,1.9,New Zealand
+2014,1.8,New Zealand
+2015,1.9,New Zealand
+2000,0.69999999,North Macedonia
+2001,0.69999999,North Macedonia
+2002,0.60000002,North Macedonia
+2003,0.69999999,North Macedonia
+2004,0.80000001,North Macedonia
+2005,0.80000001,North Macedonia
+2006,0.69999999,North Macedonia
+2007,0.69999999,North Macedonia
+2008,0.60000002,North Macedonia
+2009,0.60000002,North Macedonia
+2010,0.80000001,North Macedonia
+2011,0.89999998,North Macedonia
+2012,0.89999998,North Macedonia
+2013,1.0,North Macedonia
+2014,1.1,North Macedonia
+2015,1.0,North Macedonia
+2000,2.2,Norway
+2001,2.3,Norway
+2002,2.3,Norway
+2003,2.4000001,Norway
+2004,2.4000001,Norway
+2005,2.4000001,Norway
+2006,2.3,Norway
+2007,2.2,Norway
+2008,2.0999999,Norway
+2009,2.0999999,Norway
+2010,2.0999999,Norway
+2011,2.0999999,Norway
+2012,2.0,Norway
+2013,2.0,Norway
+2014,1.9,Norway
+2015,1.9,Norway
+2000,1.1,Poland
+2001,1.2,Poland
+2002,1.2,Poland
+2003,1.3,Poland
+2004,1.5,Poland
+2005,1.8,Poland
+2006,1.9,Poland
+2007,1.7,Poland
+2008,1.7,Poland
+2009,1.7,Poland
+2010,1.6,Poland
+2011,1.7,Poland
+2012,1.7,Poland
+2013,1.7,Poland
+2014,1.7,Poland
+2015,1.8,Poland
+2000,1.9,Portugal
+2001,1.8,Portugal
+2002,2.7,Portugal
+2003,2.2,Portugal
+2004,2.2,Portugal
+2005,2.2,Portugal
+2006,2.3,Portugal
+2007,2.4000001,Portugal
+2008,2.5,Portugal
+2009,2.5,Portugal
+2010,2.5999999,Portugal
+2011,2.5,Portugal
+2012,2.4000001,Portugal
+2013,2.2,Portugal
+2014,2.0999999,Portugal
+2015,2.3,Portugal
+2000,1.4,Romania
+2001,1.4,Romania
+2002,1.5,Romania
+2003,1.5,Romania
+2004,1.6,Romania
+2005,1.6,Romania
+2006,1.5,Romania
+2007,1.7,Romania
+2008,1.7,Romania
+2009,1.6,Romania
+2010,1.6,Romania
+2011,1.8,Romania
+2012,1.6,Romania
+2013,1.4,Romania
+2014,1.4,Romania
+2015,1.6,Romania
+2000,1.7,Slovakia
+2001,1.8,Slovakia
+2002,2.0,Slovakia
+2003,2.0,Slovakia
+2004,2.0,Slovakia
+2005,2.2,Slovakia
+2006,2.4000001,Slovakia
+2007,2.3,Slovakia
+2008,2.4000001,Slovakia
+2009,2.4000001,Slovakia
+2010,2.2,Slovakia
+2011,2.0999999,Slovakia
+2012,2.0,Slovakia
+2013,2.0,Slovakia
+2014,1.9,Slovakia
+2015,1.8,Slovakia
+2000,1.1,Slovenia
+2001,1.1,Slovenia
+2002,1.2,Slovenia
+2003,1.2,Slovenia
+2004,1.2,Slovenia
+2005,1.3,Slovenia
+2006,1.2,Slovenia
+2007,1.3,Slovenia
+2008,1.1,Slovenia
+2009,1.1,Slovenia
+2010,1.2,Slovenia
+2011,1.1,Slovenia
+2012,1.2,Slovenia
+2013,1.1,Slovenia
+2014,1.2,Slovenia
+2015,1.2,Slovenia
+2000,2.5,South Korea
+2001,2.8,South Korea
+2002,3.0,South Korea
+2003,3.4000001,South Korea
+2004,2.9000001,South Korea
+2005,2.5999999,South Korea
+2006,2.5,South Korea
+2007,2.5,South Korea
+2008,2.4000001,South Korea
+2009,2.5,South Korea
+2010,2.3,South Korea
+2011,2.3,South Korea
+2012,2.3,South Korea
+2013,2.3,South Korea
+2014,2.3,South Korea
+2015,2.0999999,South Korea
+2000,0.89999998,Spain
+2001,1.0,Spain
+2002,1.0,Spain
+2003,1.1,Spain
+2004,1.2,Spain
+2005,1.7,Spain
+2006,2.9000001,Spain
+2007,2.8,Spain
+2008,2.4000001,Spain
+2009,2.0999999,Spain
+2010,2.2,Spain
+2011,2.2,Spain
+2012,2.2,Spain
+2013,2.0,Spain
+2014,2.2,Spain
+2015,2.0999999,Spain
+2000,2.4000001,Sweden
+2001,2.4000001,Sweden
+2002,2.4000001,Sweden
+2003,2.4000001,Sweden
+2004,2.2,Sweden
+2005,2.2,Sweden
+2006,2.2,Sweden
+2007,2.3,Sweden
+2008,2.3,Sweden
+2009,2.4000001,Sweden
+2010,2.5,Sweden
+2011,2.5,Sweden
+2012,2.5,Sweden
+2013,2.8,Sweden
+2014,2.7,Sweden
+2015,2.5,Sweden
+2000,1.5,Switzerland
+2001,2.2,Switzerland
+2002,2.2,Switzerland
+2003,2.3,Switzerland
+2004,2.4000001,Switzerland
+2005,2.9000001,Switzerland
+2006,2.8,Switzerland
+2007,2.5999999,Switzerland
+2008,2.5999999,Switzerland
+2009,2.5,Switzerland
+2010,2.8,Switzerland
+2011,2.2,Switzerland
+2012,2.2,Switzerland
+2013,2.0999999,Switzerland
+2014,2.0,Switzerland
+2015,2.0999999,Switzerland
+2000,2.5999999,United Kingdom
+2001,2.7,United Kingdom
+2002,2.7,United Kingdom
+2003,2.8,United Kingdom
+2004,2.8,United Kingdom
+2005,2.5999999,United Kingdom
+2006,2.4000001,United Kingdom
+2007,2.3,United Kingdom
+2008,2.2,United Kingdom
+2009,2.0,United Kingdom
+2010,2.0999999,United Kingdom
+2011,2.0999999,United Kingdom
+2012,2.0,United Kingdom
+2013,2.0,United Kingdom
+2014,1.9,United Kingdom
+2015,1.7,United Kingdom
+2000,4.0999999,United States
+2001,4.0,United States
+2002,3.9000001,United States
+2003,3.8,United States
+2004,3.7,United States
+2005,3.5999999,United States
+2006,3.7,United States
+2007,3.5999999,United States
+2008,3.5,United States
+2009,3.5,United States
+2010,3.5999999,United States
+2011,3.5999999,United States
+2012,3.4000001,United States
+2013,3.3,United States
+2014,3.2,United States
+2015,3.0999999,United States

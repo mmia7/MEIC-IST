@@ -1,0 +1,15 @@
+0   0   0   eps
+0   1   1   eps
+1   99  eps January
+1   99  0   October
+1   99  1   November
+1   99  2   December
+0   99  2   February
+0   99  3   March
+0   99  4   April
+0   99  5   May
+0   99  6   June
+0   99  7   July
+0   99  8   August
+0   99  9   September
+99
